@@ -5,6 +5,7 @@ from __future__ import annotations
 from typing import Any
 
 from lib.college_matches import is_college_tournament
+from lib.tennis_abstract import MatchRow, PlayerProfile
 
 
 def _parse_sets(score: str) -> list[tuple[int, int]]:
