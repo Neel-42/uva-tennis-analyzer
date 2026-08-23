@@ -11,6 +11,7 @@ from typing import Any
 import requests
 from bs4 import BeautifulSoup
 
+from lib.college_matches import has_college_data, is_college_only
 from lib.tennis_abstract import HEADERS, fetch_player, slug_variants
 
 ROSTER_URL = "https://virginiasports.com/sports/mten/roster"
@@ -30,12 +31,9 @@ ROSTER_SLUGS: dict[str, str] = {
     "Andres Santamarta Roig": "AndresSantamartaRoig",
 }
 
-# Players who should show "Limited public data" (no TA match analysis).
-NO_MATCH_DATA: set[str] = {
-    "Stiles Brockett",
-    "Stefan Regalia",
-    "Ty Switzer",
-}
+# Players with no data from any source. Anyone with curated college results in
+# data/college_matches.json is covered even without a Tennis Abstract page.
+NO_MATCH_DATA: set[str] = set()
 
 _roster_cache: tuple[float, list["RosterPlayer"]] | None = None
 
@@ -50,6 +48,7 @@ class RosterPlayer:
     rank: int | None = None
     country: str | None = None
     match_count: int = 0
+    college_only: bool = False
 
 
 def _normalize_name(name: str) -> str:
@@ -221,7 +220,8 @@ def get_uva_roster(refresh: bool = False) -> list[RosterPlayer]:
 
     for entry in raw:
         slug = lookup_slug(entry["name"])
-        has_data = not _is_no_match_data(entry["name"]) and bool(slug)
+        college = bool(slug) and has_college_data(slug)
+        has_data = bool(slug) and (college or not _is_no_match_data(entry["name"]))
         roster.append(
             RosterPlayer(
                 name=entry["name"],
@@ -232,6 +232,7 @@ def get_uva_roster(refresh: bool = False) -> list[RosterPlayer]:
                 rank=None,
                 country=None,
                 match_count=0,
+                college_only=bool(slug) and is_college_only(slug),
             )
         )
 
@@ -248,6 +249,13 @@ def enrich_roster_player(name: str) -> RosterPlayer | None:
     slug, has_data, meta = resolve_player_slug(entry.name)
     if _is_no_match_data(entry.name):
         has_data = False
+
+    # College-only players have no Tennis Abstract page, so fall back to the
+    # curated results keyed off the roster-derived slug.
+    fallback_slug = slug or lookup_slug(entry.name)
+    if not has_data and fallback_slug and has_college_data(fallback_slug):
+        slug, has_data = fallback_slug, True
+
     return RosterPlayer(
         name=entry.name,
         class_year=entry.class_year,
@@ -257,6 +265,7 @@ def enrich_roster_player(name: str) -> RosterPlayer | None:
         rank=meta.get("rank"),
         country=meta.get("country"),
         match_count=meta.get("match_count", 0),
+        college_only=bool(slug) and is_college_only(slug),
     )
 
 

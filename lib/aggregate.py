@@ -9,7 +9,7 @@ from __future__ import annotations
 from datetime import datetime
 from typing import Any, Iterable
 
-from lib.college_matches import is_college_tournament
+from lib.college_matches import get_player_meta, is_college_tournament
 from lib.pie_charts import (
     _parse_score_games,
     _side_rates,
@@ -110,8 +110,16 @@ def _pct(won: float, total: float) -> float | None:
     return (won / total * 100) if total > 0 else None
 
 
+def _has_score(match: MatchRow) -> bool:
+    """Some cited results have no published score, so they carry no point math."""
+    return bool(match.score and match.score.strip())
+
+
 def _featured_matches(matches: list[MatchRow]) -> list[dict[str, Any]]:
     """Highest-signal matches: college/NCAA first, then best point shares."""
+    matches = [m for m in matches if _has_score(m)]
+    if not matches:
+        return []
 
     def score(m: MatchRow) -> tuple[int, int, float]:
         college = 1 if (is_college_tournament(m.tournament) or "-college-" in m.id) else 0
@@ -153,6 +161,7 @@ def _build_notes(
     serve_ad: float | None,
     return_deuce: float | None,
     return_ad: float | None,
+    highlights_only: bool = False,
 ) -> tuple[list[str], list[str], list[str]]:
     notes: list[str] = []
     strengths: list[str] = []
@@ -162,10 +171,16 @@ def _build_notes(
     losses = len(matches) - wins
     first = profile.full_name.split()[0]
 
-    notes.append(
-        f"{len(matches)} matches in this sample: {wins}-{losses} record "
-        f"({wins / len(matches) * 100:.0f}% win rate)."
-    )
+    if highlights_only:
+        notes.append(
+            f"{_plural(len(matches))} with a published score in this sample, drawn from UVA's highlight "
+            "notes rather than a full match log."
+        )
+    else:
+        notes.append(
+            f"{_plural(len(matches))} in this sample: {wins}-{losses} record "
+            f"({wins / len(matches) * 100:.0f}% win rate)."
+        )
 
     if serve_ad is not None and serve_deuce is not None:
         gap = serve_ad - serve_deuce
@@ -219,7 +234,7 @@ def _build_notes(
         )
 
     deciders = [m for m in matches if len(m.score.split()) >= 3]
-    if deciders:
+    if deciders and not highlights_only:
         d_wins = sum(1 for m in deciders if m.result == "W")
         notes.append(
             f"{first} is {d_wins}-{len(deciders) - d_wins} in matches that went the distance "
@@ -229,10 +244,11 @@ def _build_notes(
             strengths.append("Strong closing record in three-set matches — holds up physically and mentally.")
 
     college = [m for m in matches if is_college_tournament(m.tournament) or "-college-" in m.id]
-    if college:
+    if college and not highlights_only:
         c_wins = sum(1 for m in college if m.result == "W")
         notes.append(
-            f"College play (duals, ITA, NCAA): {c_wins}-{len(college) - c_wins} across {len(college)} matches."
+            f"College play (duals, ITA, NCAA): {c_wins}-{len(college) - c_wins} across "
+            f"{_plural(len(college))}."
         )
 
     return notes, strengths, development
@@ -240,6 +256,12 @@ def _build_notes(
 
 def _insight(kind: str, priority: float, short: str, text: str) -> dict[str, Any]:
     return {"kind": kind, "priority": priority, "short": short, "text": text}
+
+
+def _plural(n: int, word: str = "match") -> str:
+    if word == "match":
+        return f"{n} match" if n == 1 else f"{n} matches"
+    return f"{n} {word}" if n == 1 else f"{n} {word}s"
 
 
 def _build_scouting(
@@ -251,8 +273,14 @@ def _build_scouting(
     return_ad: float | None,
     overall_pct: float,
     limit: int = 4,
+    highlights_only: bool = False,
 ) -> list[dict[str, Any]]:
-    """Rank the biggest strengths and weaknesses, keeping a mix of both."""
+    """Rank the biggest strengths and weaknesses, keeping a mix of both.
+
+    When the sample is a win-biased highlight set, anything derived from wins,
+    losses or point share is suppressed: it would flatter the player rather than
+    describe them.
+    """
     cand: list[dict[str, Any]] = []
 
     # The deuce/ad spread comes from charted reference rates, so it is a modeled
@@ -405,7 +433,7 @@ def _build_scouting(
             )
 
     deciders = [m for m in pool if len(m.score.split()) >= 3]
-    if len(deciders) >= 4:
+    if len(deciders) >= 4 and not highlights_only:
         d_wins = sum(1 for m in deciders if m.result == "W")
         rate = d_wins / len(deciders)
         if rate >= 0.65:
@@ -427,7 +455,7 @@ def _build_scouting(
                 )
             )
 
-    if len(pool) >= 5:
+    if len(pool) >= 5 and not highlights_only:
         wins = sum(1 for m in pool if m.result == "W")
         win_rate = wins / len(pool) * 100
         if win_rate >= 70:
@@ -459,17 +487,29 @@ def _build_scouting(
     ]
     if len(quality) >= 2:
         best = min(quality, key=lambda m: m.opponent_rank or 9999)
+        # A count of documented wins is a floor, so it survives a win-biased sample.
+        prefix = "At least " if highlights_only else ""
         cand.append(
             _insight(
                 "strength",
                 6 + len(quality) * 0.4,
-                f"{len(quality)} wins over higher-ranked opponents",
-                f"Beat {len(quality)} better-ranked opponents in this sample, best of them #{best.opponent_rank} "
-                f"({best.opponent} at {best.tournament}) — the level travels up.",
+                f"{prefix}{len(quality)} wins over higher-ranked opponents".strip(),
+                f"{prefix or 'Beat '}{len(quality)} better-ranked opponents are on record, best of them "
+                f"#{best.opponent_rank} ({best.opponent} at {best.tournament}) — the level travels up.",
             )
         )
 
-    if overall_pct >= 53:
+    if highlights_only:
+        cand.append(
+            _insight(
+                "note",
+                0.9,
+                "Win-biased sample",
+                "These results come from UVA's own highlight notes, which name wins far more often than "
+                "losses, so nothing here should be read as a win rate.",
+            )
+        )
+    elif overall_pct >= 53:
         cand.append(
             _insight(
                 "strength",
@@ -525,8 +565,9 @@ def _build_scouting(
             _insight(
                 "note",
                 0.5,
-                f"Small sample ({len(pool)} matches)",
-                f"Only {len(pool)} matches in this filter, so treat every figure above as indicative rather than settled.",
+                f"Small sample ({_plural(len(pool))})",
+                f"Only {_plural(len(pool))} in this filter, so treat every figure above as indicative "
+                "rather than settled.",
             )
         )
     notes = [c for c in cand if c["kind"] == "note"]
@@ -562,6 +603,103 @@ def scouting_highlights(items: list[dict[str, Any]], limit: int = 3) -> list[dic
     return picked[:limit]
 
 
+def _records_only_report(
+    profile: PlayerProfile,
+    pool: list[MatchRow],
+    surface: str | None,
+    meta: dict[str, Any],
+) -> dict[str, Any]:
+    """No published scorelines, so report the official record and cited results only."""
+    official = meta.get("officialRecord") or {}
+    seasons = official.get("seasons") or []
+    wins = sum(1 for m in pool if m.result == "W")
+    scored = [m for m in pool if _has_score(m)]
+
+    notes = []
+    if official.get("careerSingles"):
+        notes.append(
+            f"Official career singles record: {official['careerSingles']} "
+            f"({official.get('source', 'UVA')})."
+        )
+    for season in seasons:
+        notes.append(f"{season['season']}: {season.get('singles', '—')} in singles.")
+    if meta.get("profile", {}).get("notes"):
+        notes.append(meta["profile"]["notes"])
+
+    if scored:
+        notes.append(
+            f"UVA documents {_plural(len(pool), 'result')} by name for this player, only "
+            f"{len(scored)} with a published score. That is too thin a base for deuce/ad or "
+            "points-won estimates, so the record and the results themselves are all that is shown."
+        )
+    else:
+        notes.append(
+            f"UVA documents {_plural(len(pool), 'result')} by name for this player, none with a "
+            "published scoreline, so no point-level analysis is possible. Adding a score to "
+            "data/college_matches.json is all that is needed to unlock the full breakdown."
+        )
+
+    return {
+        "player": profile.full_name,
+        "playerLabel": profile.full_name.split()[0],
+        "surface": surface or "all",
+        "surfaceCounts": {},
+        "recordsOnly": True,
+        "matchCount": len(pool),
+        "scoredCount": len(scored),
+        "unscoredCount": len(pool) - len(scored),
+        "record": {"wins": wins, "losses": len(pool) - wins},
+        "officialRecord": official or None,
+        "highlightsOnly": bool(meta.get("highlightsOnly")),
+        "collegeOnly": bool(meta.get("collegeOnly")),
+        "bioNotes": (meta.get("profile") or {}).get("notes"),
+        "profile": {
+            "slug": profile.slug,
+            "country": profile.country,
+            "rank": profile.rank,
+            "hand": profile.hand,
+            "backhand": profile.backhand,
+            "heightCm": profile.height_cm,
+        },
+        "note": (
+            "Official season records are published, but none of this player's individual results carry a "
+            "public scoreline, so the deuce/ad and points-won breakdowns cannot be built."
+        ),
+        "coachingNotes": notes,
+        "scoutingReport": [
+            _insight(
+                "note",
+                1.0,
+                f"Career {official['careerSingles']} in singles" if official.get("careerSingles") else "On the roster",
+                f"Official college singles record of {official.get('careerSingles', '—')} "
+                f"({official.get('source', 'UVA')}).",
+            ),
+            _insight(
+                "note",
+                0.9,
+                "Too few published scorelines",
+                f"{_plural(len(pool), 'result')} documented by name, {len(scored) or 'none'} with a "
+                "public score — not enough for a point-level breakdown.",
+            ),
+        ],
+        "featuredMatches": [],
+        "matches": [
+            {
+                "id": m.id,
+                "date": m.date,
+                "tournament": m.tournament,
+                "round": m.round,
+                "surface": m.surface,
+                "opponent": m.opponent,
+                "result": m.result,
+                "score": m.score or "score not published",
+                "isCollege": True,
+            }
+            for m in sorted(pool, key=lambda m: _parse_date(m.date), reverse=True)
+        ],
+    }
+
+
 def build_player_report(
     profile: PlayerProfile,
     matches: Iterable[MatchRow],
@@ -585,8 +723,19 @@ def build_player_report(
             "note": "No matches available for this surface filter.",
         }
 
+    # Cited results without a published score still count toward the record and the
+    # match list, but cannot feed anything derived from a scoreline.
+    scored = [m for m in pool if _has_score(m)]
+    unscored = len(pool) - len(scored)
+
+    # Pie charts built from one or two win-biased highlights flatter more than they
+    # inform, so fall back to the plain record below three scored matches.
+    meta_early = get_player_meta(profile.slug)
+    if not scored or (meta_early.get("highlightsOnly") and len(scored) < 3):
+        return _records_only_report(profile, pool, surface, meta_early)
+
     totals = _Totals()
-    for match in pool:
+    for match in scored:
         _accumulate(match, totals)
 
     serve_deuce = _pct(totals.serve_deuce_won, totals.serve_deuce_pts)
@@ -597,7 +746,7 @@ def build_player_report(
     ad_t = _pct(totals.serve_ad_t, totals.serve_ad_pts)
     overall = _pct(totals.all_won, totals.all_pts) or 50
 
-    weights = [(m, estimate_total_points(m.score)) for m in pool]
+    weights = [(m, estimate_total_points(m.score)) for m in scored]
     averages = {
         "acePct": _weighted_avg([(m.ace_pct, w) for m, w in weights]),
         "dfPct": _weighted_avg([(m.df_pct, w) for m, w in weights]),
@@ -609,8 +758,8 @@ def build_player_report(
 
     wins = sum(1 for m in pool if m.result == "W")
     losses = len(pool) - wins
-    games_won = sum(_parse_score_games(m.score)[0] for m in pool)
-    games_lost = sum(_parse_score_games(m.score)[1] for m in pool)
+    games_won = sum(_parse_score_games(m.score)[0] for m in scored)
+    games_lost = sum(_parse_score_games(m.score)[1] for m in scored)
 
     dates = sorted(_parse_date(m.date) for m in pool)
     date_range = ""
@@ -622,21 +771,55 @@ def build_player_report(
         key = _surface_key(m.surface)
         surface_counts[key] = surface_counts.get(key, 0) + 1
 
+    meta = get_player_meta(profile.slug)
+
+    # Curated college results are win-biased; Tennis Abstract results are complete.
+    # Only drop win-derived insights when the biased half dominates the sample.
+    highlight_count = (
+        sum(1 for m in pool if "-college-" in m.id) if meta.get("highlightsOnly") else 0
+    )
+    highlight_share = highlight_count / len(pool) if pool else 0
+    highlights_only = highlight_share >= 0.5
+
     notes, strengths, development = _build_notes(
-        profile, pool, averages, serve_deuce, serve_ad, return_deuce, return_ad
+        profile,
+        scored or pool,
+        averages,
+        serve_deuce,
+        serve_ad,
+        return_deuce,
+        return_ad,
+        highlights_only,
     )
 
-    detailed = sum(1 for m in pool if m.first_serve_won_pct is not None or m.ace_pct is not None)
+    if highlight_count and meta.get("officialRecord"):
+        official = meta["officialRecord"]
+        notes.insert(
+            0,
+            f"Official college singles record is {official.get('careerSingles', '—')} "
+            f"({official.get('source', 'UVA')}). {highlight_count} of these results come from UVA's "
+            "highlight notes, which name wins far more often than losses — read those as cited examples, "
+            "not as a win rate.",
+        )
+
+    if unscored:
+        notes.append(
+            f"{unscored} of these {len(pool)} results are documented without a published score, so they "
+            "count toward the record and appear in the match list but are left out of every point estimate."
+        )
+
+    detailed = sum(1 for m in scored if m.first_serve_won_pct is not None or m.ace_pct is not None)
     if detailed == 0:
         notes.append(
             "None of these matches have published box scores, so ace and serve-percentage averages are "
-            "unavailable. Scoreline-derived figures (points won, games, deuce/ad splits) still cover every match."
+            "unavailable. Scoreline-derived figures (points won, games, deuce/ad splits) still cover every "
+            "match with a score."
         )
-    elif detailed < len(pool):
+    elif detailed < len(scored):
         notes.append(
             f"Box-score serve stats (ace %, double faults, first/second serve won) are published for "
-            f"{detailed} of {len(pool)} matches — averages use those matches, while the deuce/ad splits "
-            "and point totals cover all of them."
+            f"{detailed} of {len(scored)} scored matches — averages use those, while the deuce/ad splits "
+            "and point totals cover every scored match."
         )
 
     serve_ad_better = (serve_ad or 0) >= (serve_deuce or 0)
@@ -658,11 +841,19 @@ def build_player_report(
         "surface": surface or "all",
         "surfaceCounts": surface_counts,
         "matchCount": len(pool),
+        "scoredCount": len(scored),
+        "unscoredCount": unscored,
         "record": {"wins": wins, "losses": losses},
+        "officialRecord": meta.get("officialRecord"),
+        "highlightCount": highlight_count,
+        "highlightsOnly": highlights_only,
+        "collegeOnly": bool(meta.get("collegeOnly")),
+        "bioNotes": (meta.get("profile") or {}).get("notes"),
         "games": {"won": games_won, "lost": games_lost},
         "dateRange": date_range,
         "note": (
-            f"Aggregated across {len(pool)} matches"
+            f"Aggregated across {len(scored)} scored matches"
+            + (f" of {len(pool)} documented" if unscored else "")
             + (f" ({date_range})" if date_range else "")
             + ". Point totals are estimated from scorelines; deuce/ad splits use charted "
             "hard-court reference rates adjusted by each match's serve and return stats. "
@@ -673,13 +864,20 @@ def build_player_report(
             "opponentPct": 100 - int(round(overall)),
             "playerLabel": first,
             "totalPoints": int(round(totals.all_pts)),
-            "source": f"Weighted across {len(pool)} matches",
+            "source": f"Weighted across {len(scored)} scored matches",
             "isLoss": False,
         },
         "statAverages": {k: (round(v, 1) if v is not None else None) for k, v in averages.items()},
-        "statCoverage": {"detailed": detailed, "total": len(pool)},
+        "statCoverage": {"detailed": detailed, "total": len(scored)},
         "scoutingReport": _build_scouting(
-            pool, averages, serve_deuce, serve_ad, return_deuce, return_ad, overall
+            scored or pool,
+            averages,
+            serve_deuce,
+            serve_ad,
+            return_deuce,
+            return_ad,
+            overall,
+            highlights_only=highlights_only,
         ),
         "serve": {
             "verdict": "Ad side" if serve_ad_better else "Deuce side",

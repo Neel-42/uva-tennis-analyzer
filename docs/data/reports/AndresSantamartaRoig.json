@@ -14,25 +14,42 @@
     },
     "surface": "all",
     "surfaceCounts": {
-      "clay": 18
+      "clay": 18,
+      "hard": 11
     },
-    "matchCount": 18,
+    "matchCount": 29,
+    "scoredCount": 29,
+    "unscoredCount": 0,
     "record": {
-      "wins": 8,
+      "wins": 19,
       "losses": 10
     },
+    "officialRecord": {
+      "seasons": [
+        {
+          "season": "2025-26",
+          "singles": "17-6"
+        }
+      ],
+      "careerSingles": "17-6",
+      "source": "UVA career stats table"
+    },
+    "highlightCount": 11,
+    "highlightsOnly": false,
+    "collegeOnly": false,
+    "bioNotes": null,
     "games": {
-      "won": 231,
-      "lost": 128
+      "won": 395,
+      "lost": 234
     },
     "dateRange": "Oct 2025 \u2013 Jul 2026",
-    "note": "Aggregated across 18 matches (Oct 2025 \u2013 Jul 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "note": "Aggregated across 29 scored matches (Oct 2025 \u2013 Jul 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
     "pointsWon": {
-      "playerPct": 50,
-      "opponentPct": 50,
+      "playerPct": 55,
+      "opponentPct": 45,
       "playerLabel": "Andres",
-      "totalPoints": 1510,
-      "source": "Weighted across 18 matches",
+      "totalPoints": 2645,
+      "source": "Weighted across 29 scored matches",
       "isLoss": false
     },
     "statAverages": {
@@ -45,28 +62,28 @@
     },
     "statCoverage": {
       "detailed": 17,
-      "total": 18
+      "total": 29
     },
     "scoutingReport": [
       {
         "kind": "strength",
+        "short": "Closes tight matches (5-2)",
+        "text": "5-2 in three-setters \u2014 holds up physically and mentally in long matches."
+      },
+      {
+        "kind": "strength",
+        "short": "Wins 55% of points",
+        "text": "Takes 55% of all points played, a margin that usually converts to comfortable wins."
+      },
+      {
+        "kind": "strength",
         "short": "7 wins over higher-ranked opponents",
-        "text": "Beat 7 better-ranked opponents in this sample, best of them #174 (Federico Cina at Brasov CH) \u2014 the level travels up."
+        "text": "Beat 7 better-ranked opponents are on record, best of them #174 (Federico Cina at Brasov CH) \u2014 the level travels up."
       },
       {
         "kind": "weakness",
         "short": "1st serve won only 61%",
         "text": "Just 61% of first-serve points are won \u2014 the first ball is not doing enough damage."
-      },
-      {
-        "kind": "weakness",
-        "short": "8-10 record",
-        "text": "Winning only 44% of matches (8-10) \u2014 results are not yet matching the level."
-      },
-      {
-        "kind": "weakness",
-        "short": "Few free points (0.9% aces)",
-        "text": "Only 0.9% of serves are aces, so almost every service point has to be won in the rally."
       }
     ],
     "serve": {
@@ -74,29 +91,29 @@
       "cells": [
         {
           "title": "Deuce court",
-          "pct": 68,
-          "total": 257,
+          "pct": 69,
+          "total": 454,
           "caption": "Serve points won",
           "highlight": false
         },
         {
           "title": "Ad court",
-          "pct": 82,
-          "total": 311,
+          "pct": 84,
+          "total": 553,
           "caption": "Serve points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 T serve",
           "pct": 30,
-          "total": 112,
+          "total": 197,
           "caption": "T-serve share",
           "highlight": false
         },
         {
           "title": "Ad \u2014 T serve",
-          "pct": 34,
-          "total": 129,
+          "pct": 35,
+          "total": 228,
           "caption": "T-serve share",
           "highlight": false
         }
@@ -108,42 +125,45 @@
         {
           "title": "Deuce court",
           "pct": 42,
-          "total": 158,
+          "total": 277,
           "caption": "Return points won",
           "highlight": false
         },
         {
           "title": "Ad court",
           "pct": 46,
-          "total": 173,
+          "total": 303,
           "caption": "Return points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 total",
           "pct": 42,
-          "total": 377,
+          "total": 661,
           "caption": "Return points played",
           "highlight": false
         },
         {
           "title": "Ad \u2014 total",
           "pct": 46,
-          "total": 377,
+          "total": 661,
           "caption": "Return points played",
           "highlight": false
         }
       ]
     },
     "coachingNotes": [
-      "18 matches in this sample: 8-10 record (44% win rate).",
-      "Serving is stronger on the ad side (82% vs 68% points won) \u2014 a 14-point spread across the sample.",
+      "Official college singles record is 17-6 (UVA career stats table). 11 of these results come from UVA's highlight notes, which name wins far more often than losses \u2014 read those as cited examples, not as a win rate.",
+      "29 matches in this sample: 19-10 record (66% win rate).",
+      "Serving is stronger on the ad side (84% vs 69% points won) \u2014 a 15-point spread across the sample.",
       "Returning is marginally better on the ad side (46% vs 42%).",
-      "Andres is 2-2 in matches that went the distance (4 three-setters in this sample).",
-      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 17 of 18 matches \u2014 averages use those matches, while the deuce/ad splits and point totals cover all of them."
+      "Andres is 5-2 in matches that went the distance (7 three-setters in this sample).",
+      "College play (duals, ITA, NCAA): 11-0 across 11 matches.",
+      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 17 of 29 scored matches \u2014 averages use those, while the deuce/ad splits and point totals cover every scored match."
     ],
     "strengths": [
-      "Reliable ad-side serving pattern to lean on in tight games (break points, game points)."
+      "Reliable ad-side serving pattern to lean on in tight games (break points, game points).",
+      "Strong closing record in three-set matches \u2014 holds up physically and mentally."
     ],
     "development": [
       "Ace rate averages 0.9% \u2014 free points are rare, so rally tolerance carries the load.",
@@ -151,94 +171,94 @@
     ],
     "featuredMatches": [
       {
-        "id": "AndresSantamartaRoig-4",
-        "date": "29-Jun-2026",
-        "tournament": "Brasov CH",
-        "round": "R32",
-        "surface": "Clay",
-        "opponent": "Federico Cina",
-        "opponentRank": 174,
+        "id": "AndresSantamartaRoig-college-2526-fsu-craig",
+        "date": "27-Mar-2026",
+        "tournament": "Dual at Florida State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Corey Craig",
+        "opponentRank": 96,
         "result": "W",
-        "score": "6-4 6-3",
-        "pointsWonPct": 57,
-        "totalPoints": 80,
-        "source": "Dominance ratio",
-        "isCollege": false
-      },
-      {
-        "id": "AndresSantamartaRoig-6",
-        "date": "22-Jun-2026",
-        "tournament": "Plovdiv CH",
-        "round": "QF",
-        "surface": "Clay",
-        "opponent": "Ognjen Milic",
-        "opponentRank": 370,
-        "result": "W",
-        "score": "6-0 6-2",
-        "pointsWonPct": 64,
-        "totalPoints": 59,
-        "source": "Dominance ratio",
-        "isCollege": false
-      },
-      {
-        "id": "AndresSantamartaRoig-7",
-        "date": "22-Jun-2026",
-        "tournament": "Plovdiv CH",
-        "round": "R16",
-        "surface": "Clay",
-        "opponent": "Enrico Dalla Valle",
-        "opponentRank": 363,
-        "result": "W",
-        "score": "6-2 6-4",
-        "pointsWonPct": 58,
+        "score": "6-4  6-2",
+        "pointsWonPct": 67,
         "totalPoints": 76,
-        "source": "Dominance ratio",
-        "isCollege": false
+        "source": "Games-won estimate",
+        "isCollege": true
       },
       {
-        "id": "AndresSantamartaRoig-8",
-        "date": "22-Jun-2026",
-        "tournament": "Plovdiv CH",
-        "round": "R32",
-        "surface": "Clay",
-        "opponent": "Philip Henning",
-        "opponentRank": 252,
+        "id": "AndresSantamartaRoig-college-2526-wake-robertson",
+        "date": "22-Mar-2026",
+        "tournament": "Dual at Wake Forest",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Charlie Robertson",
+        "opponentRank": null,
         "result": "W",
-        "score": "6-4 6-1",
-        "pointsWonPct": 57,
-        "totalPoints": 71,
-        "source": "Dominance ratio",
-        "isCollege": false
-      },
-      {
-        "id": "AndresSantamartaRoig-12",
-        "date": "24-Nov-2025",
-        "tournament": "Maia CH",
-        "round": "Q2",
-        "surface": "Clay",
-        "opponent": "Stefan Palosi",
-        "opponentRank": 526,
-        "result": "W",
-        "score": "4-6 6-1 6-2",
-        "pointsWonPct": 61,
-        "totalPoints": 105,
-        "source": "Dominance ratio",
-        "isCollege": false
-      },
-      {
-        "id": "AndresSantamartaRoig-11",
-        "date": "24-Nov-2025",
-        "tournament": "Maia CH",
-        "round": "R32",
-        "surface": "Clay",
-        "opponent": "Francisco Rocha",
-        "opponentRank": 767,
-        "result": "W",
-        "score": "6-4 6-4",
-        "pointsWonPct": 54,
+        "score": "7-6(5)  6-1",
+        "pointsWonPct": 65,
         "totalPoints": 84,
-        "source": "Dominance ratio",
-        "isCollege": false
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-ncstate-sabaliauskas",
+        "date": "20-Mar-2026",
+        "tournament": "Dual at NC State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Ainius Sabaliauskas",
+        "opponentRank": null,
+        "result": "W",
+        "score": "6-3  6-1",
+        "pointsWonPct": 75,
+        "totalPoints": 67,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-unc-mayew",
+        "date": "15-Mar-2026",
+        "tournament": "Dual vs North Carolina",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Ian Mayew",
+        "opponentRank": 82,
+        "result": "W",
+        "score": "6-4  6-3",
+        "pointsWonPct": 63,
+        "totalPoints": 80,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-columbia-thorat",
+        "date": "30-Jan-2026",
+        "tournament": "Dual vs Columbia",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Abhishket Thorat",
+        "opponentRank": null,
+        "result": "W",
+        "score": "3-6  6-2  6-1",
+        "pointsWonPct": 62,
+        "totalPoints": 101,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-tcu-woestendick",
+        "date": "15-Jan-2026",
+        "tournament": "Dual vs TCU",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Cooper Woestendick",
+        "opponentRank": null,
+        "result": "W",
+        "score": "7-6(9)  6-2",
+        "pointsWonPct": 62,
+        "totalPoints": 88,
+        "source": "Games-won estimate",
+        "isCollege": true
       }
     ],
     "matches": [
@@ -353,6 +373,127 @@
         "isCollege": false
       },
       {
+        "id": "AndresSantamartaRoig-college-2526-ncaa-sf-shah",
+        "date": "16-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "SF",
+        "surface": "Hard",
+        "opponent": "Aryan Shah",
+        "result": "W",
+        "score": "3-6  7-6(7-4)  6-4",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-ncaa-qf-serrano",
+        "date": "14-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "QF",
+        "surface": "Hard",
+        "opponent": "Mario Martinez Serrano",
+        "result": "W",
+        "score": "6-2  7-6(10-8)",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-ncaa-columbia-palta",
+        "date": "02-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Sachin Palta",
+        "result": "W",
+        "score": "4-6  6-4  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-fsu-craig",
+        "date": "27-Mar-2026",
+        "tournament": "Dual at Florida State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Corey Craig",
+        "result": "W",
+        "score": "6-4  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-wake-robertson",
+        "date": "22-Mar-2026",
+        "tournament": "Dual at Wake Forest",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Charlie Robertson",
+        "result": "W",
+        "score": "7-6(5)  6-1",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-ncstate-sabaliauskas",
+        "date": "20-Mar-2026",
+        "tournament": "Dual at NC State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Ainius Sabaliauskas",
+        "result": "W",
+        "score": "6-3  6-1",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-unc-mayew",
+        "date": "15-Mar-2026",
+        "tournament": "Dual vs North Carolina",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Ian Mayew",
+        "result": "W",
+        "score": "6-4  6-3",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-ita-indoors-serrano",
+        "date": "14-Feb-2026",
+        "tournament": "ITA National Team Indoor Championship",
+        "round": "QF",
+        "surface": "Hard (indoor)",
+        "opponent": "Mario Martinez Serrano",
+        "result": "W",
+        "score": "6-4  7-5",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-osu-anthrop",
+        "date": "07-Feb-2026",
+        "tournament": "Dual at Ohio State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Jack Anthrop",
+        "result": "W",
+        "score": "6-4  6-4",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-columbia-thorat",
+        "date": "30-Jan-2026",
+        "tournament": "Dual vs Columbia",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Abhishket Thorat",
+        "result": "W",
+        "score": "3-6  6-2  6-1",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-tcu-woestendick",
+        "date": "15-Jan-2026",
+        "tournament": "Dual vs TCU",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Cooper Woestendick",
+        "result": "W",
+        "score": "7-6(9)  6-2",
+        "isCollege": true
+      },
+      {
         "id": "AndresSantamartaRoig-10",
         "date": "24-Nov-2025",
         "tournament": "Maia CH",
@@ -442,6 +583,376 @@
       }
     ]
   },
+  "hard": {
+    "player": "Andres Santamarta Roig",
+    "playerLabel": "Andres",
+    "profile": {
+      "slug": "AndresSantamartaRoig",
+      "country": "ESP",
+      "rank": 758,
+      "peakRank": 604,
+      "age": 19,
+      "hand": "Right",
+      "backhand": "Two-handed",
+      "heightCm": null
+    },
+    "surface": "hard",
+    "surfaceCounts": {
+      "clay": 18,
+      "hard": 11
+    },
+    "matchCount": 11,
+    "scoredCount": 11,
+    "unscoredCount": 0,
+    "record": {
+      "wins": 11,
+      "losses": 0
+    },
+    "officialRecord": {
+      "seasons": [
+        {
+          "season": "2025-26",
+          "singles": "17-6"
+        }
+      ],
+      "careerSingles": "17-6",
+      "source": "UVA career stats table"
+    },
+    "highlightCount": 11,
+    "highlightsOnly": true,
+    "collegeOnly": false,
+    "bioNotes": null,
+    "games": {
+      "won": 164,
+      "lost": 106
+    },
+    "dateRange": "Jan 2026 \u2013 May 2026",
+    "note": "Aggregated across 11 scored matches (Jan 2026 \u2013 May 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 61,
+      "opponentPct": 39,
+      "playerLabel": "Andres",
+      "totalPoints": 1135,
+      "source": "Weighted across 11 scored matches",
+      "isLoss": false
+    },
+    "statAverages": {
+      "acePct": null,
+      "dfPct": null,
+      "firstServeInPct": null,
+      "firstServeWonPct": null,
+      "secondServeWonPct": null,
+      "dominanceRatio": null
+    },
+    "statCoverage": {
+      "detailed": 0,
+      "total": 11
+    },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "Ad-side serve (modeled)",
+        "text": "The model leans on the ad court (85% of serve points won vs 70% on the deuce side), though this split follows charted reference rates rather than tracked data for this player."
+      },
+      {
+        "kind": "note",
+        "short": "Win-biased sample",
+        "text": "These results come from UVA's own highlight notes, which name wins far more often than losses, so nothing here should be read as a win rate."
+      }
+    ],
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 70,
+          "total": 197,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 85,
+          "total": 241,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 84,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 35,
+          "total": 99,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 42,
+          "total": 118,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 46,
+          "total": 129,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 42,
+          "total": 283,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 46,
+          "total": 283,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    },
+    "coachingNotes": [
+      "Official college singles record is 17-6 (UVA career stats table). 11 of these results come from UVA's highlight notes, which name wins far more often than losses \u2014 read those as cited examples, not as a win rate.",
+      "11 matches with a published score in this sample, drawn from UVA's highlight notes rather than a full match log.",
+      "Serving is stronger on the ad side (85% vs 70% points won) \u2014 a 16-point spread across the sample.",
+      "Returning is marginally better on the ad side (46% vs 42%).",
+      "None of these matches have published box scores, so ace and serve-percentage averages are unavailable. Scoreline-derived figures (points won, games, deuce/ad splits) still cover every match with a score."
+    ],
+    "strengths": [
+      "Reliable ad-side serving pattern to lean on in tight games (break points, game points)."
+    ],
+    "development": [],
+    "featuredMatches": [
+      {
+        "id": "AndresSantamartaRoig-college-2526-fsu-craig",
+        "date": "27-Mar-2026",
+        "tournament": "Dual at Florida State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Corey Craig",
+        "opponentRank": 96,
+        "result": "W",
+        "score": "6-4  6-2",
+        "pointsWonPct": 67,
+        "totalPoints": 76,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-wake-robertson",
+        "date": "22-Mar-2026",
+        "tournament": "Dual at Wake Forest",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Charlie Robertson",
+        "opponentRank": null,
+        "result": "W",
+        "score": "7-6(5)  6-1",
+        "pointsWonPct": 65,
+        "totalPoints": 84,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-ncstate-sabaliauskas",
+        "date": "20-Mar-2026",
+        "tournament": "Dual at NC State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Ainius Sabaliauskas",
+        "opponentRank": null,
+        "result": "W",
+        "score": "6-3  6-1",
+        "pointsWonPct": 75,
+        "totalPoints": 67,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-unc-mayew",
+        "date": "15-Mar-2026",
+        "tournament": "Dual vs North Carolina",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Ian Mayew",
+        "opponentRank": 82,
+        "result": "W",
+        "score": "6-4  6-3",
+        "pointsWonPct": 63,
+        "totalPoints": 80,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-columbia-thorat",
+        "date": "30-Jan-2026",
+        "tournament": "Dual vs Columbia",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Abhishket Thorat",
+        "opponentRank": null,
+        "result": "W",
+        "score": "3-6  6-2  6-1",
+        "pointsWonPct": 62,
+        "totalPoints": 101,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-tcu-woestendick",
+        "date": "15-Jan-2026",
+        "tournament": "Dual vs TCU",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Cooper Woestendick",
+        "opponentRank": null,
+        "result": "W",
+        "score": "7-6(9)  6-2",
+        "pointsWonPct": 62,
+        "totalPoints": 88,
+        "source": "Games-won estimate",
+        "isCollege": true
+      }
+    ],
+    "matches": [
+      {
+        "id": "AndresSantamartaRoig-college-2526-ncaa-sf-shah",
+        "date": "16-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "SF",
+        "surface": "Hard",
+        "opponent": "Aryan Shah",
+        "result": "W",
+        "score": "3-6  7-6(7-4)  6-4",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-ncaa-qf-serrano",
+        "date": "14-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "QF",
+        "surface": "Hard",
+        "opponent": "Mario Martinez Serrano",
+        "result": "W",
+        "score": "6-2  7-6(10-8)",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-ncaa-columbia-palta",
+        "date": "02-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Sachin Palta",
+        "result": "W",
+        "score": "4-6  6-4  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-fsu-craig",
+        "date": "27-Mar-2026",
+        "tournament": "Dual at Florida State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Corey Craig",
+        "result": "W",
+        "score": "6-4  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-wake-robertson",
+        "date": "22-Mar-2026",
+        "tournament": "Dual at Wake Forest",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Charlie Robertson",
+        "result": "W",
+        "score": "7-6(5)  6-1",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-ncstate-sabaliauskas",
+        "date": "20-Mar-2026",
+        "tournament": "Dual at NC State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Ainius Sabaliauskas",
+        "result": "W",
+        "score": "6-3  6-1",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-unc-mayew",
+        "date": "15-Mar-2026",
+        "tournament": "Dual vs North Carolina",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Ian Mayew",
+        "result": "W",
+        "score": "6-4  6-3",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-ita-indoors-serrano",
+        "date": "14-Feb-2026",
+        "tournament": "ITA National Team Indoor Championship",
+        "round": "QF",
+        "surface": "Hard (indoor)",
+        "opponent": "Mario Martinez Serrano",
+        "result": "W",
+        "score": "6-4  7-5",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-osu-anthrop",
+        "date": "07-Feb-2026",
+        "tournament": "Dual at Ohio State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Jack Anthrop",
+        "result": "W",
+        "score": "6-4  6-4",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-columbia-thorat",
+        "date": "30-Jan-2026",
+        "tournament": "Dual vs Columbia",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Abhishket Thorat",
+        "result": "W",
+        "score": "3-6  6-2  6-1",
+        "isCollege": true
+      },
+      {
+        "id": "AndresSantamartaRoig-college-2526-tcu-woestendick",
+        "date": "15-Jan-2026",
+        "tournament": "Dual vs TCU",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Cooper Woestendick",
+        "result": "W",
+        "score": "7-6(9)  6-2",
+        "isCollege": true
+      }
+    ]
+  },
   "clay": {
     "player": "Andres Santamarta Roig",
     "playerLabel": "Andres",
@@ -457,25 +968,42 @@
     },
     "surface": "clay",
     "surfaceCounts": {
-      "clay": 18
+      "clay": 18,
+      "hard": 11
     },
     "matchCount": 18,
+    "scoredCount": 18,
+    "unscoredCount": 0,
     "record": {
       "wins": 8,
       "losses": 10
     },
+    "officialRecord": {
+      "seasons": [
+        {
+          "season": "2025-26",
+          "singles": "17-6"
+        }
+      ],
+      "careerSingles": "17-6",
+      "source": "UVA career stats table"
+    },
+    "highlightCount": 0,
+    "highlightsOnly": false,
+    "collegeOnly": false,
+    "bioNotes": null,
     "games": {
       "won": 231,
       "lost": 128
     },
     "dateRange": "Oct 2025 \u2013 Jul 2026",
-    "note": "Aggregated across 18 matches (Oct 2025 \u2013 Jul 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "note": "Aggregated across 18 scored matches (Oct 2025 \u2013 Jul 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
     "pointsWon": {
       "playerPct": 50,
       "opponentPct": 50,
       "playerLabel": "Andres",
       "totalPoints": 1510,
-      "source": "Weighted across 18 matches",
+      "source": "Weighted across 18 scored matches",
       "isLoss": false
     },
     "statAverages": {
@@ -494,7 +1022,7 @@
       {
         "kind": "strength",
         "short": "7 wins over higher-ranked opponents",
-        "text": "Beat 7 better-ranked opponents in this sample, best of them #174 (Federico Cina at Brasov CH) \u2014 the level travels up."
+        "text": "Beat 7 better-ranked opponents are on record, best of them #174 (Federico Cina at Brasov CH) \u2014 the level travels up."
       },
       {
         "kind": "weakness",
@@ -583,7 +1111,7 @@
       "Serving is stronger on the ad side (82% vs 68% points won) \u2014 a 14-point spread across the sample.",
       "Returning is marginally better on the ad side (46% vs 42%).",
       "Andres is 2-2 in matches that went the distance (4 three-setters in this sample).",
-      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 17 of 18 matches \u2014 averages use those matches, while the deuce/ad splits and point totals cover all of them."
+      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 17 of 18 scored matches \u2014 averages use those, while the deuce/ad splits and point totals cover every scored match."
     ],
     "strengths": [
       "Reliable ad-side serving pattern to lean on in tight games (break points, game points)."

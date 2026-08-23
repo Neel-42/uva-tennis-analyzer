@@ -88,7 +88,7 @@ def export_static_data() -> None:
 def export_player(name: str) -> list[dict]:
     player = enrich_roster_player(name)
     if not player or not player.slug:
-        raise LookupError("no Tennis Abstract slug resolved")
+        raise LookupError("no Tennis Abstract or college-data slug resolved")
 
     profile, matches = fetch_player_matches(player.slug)
     payload = roster_to_dict([player])[0]

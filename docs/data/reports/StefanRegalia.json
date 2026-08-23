@@ -1,0 +1,152 @@
+{
+  "all": {
+    "player": "Stefan Regalia",
+    "playerLabel": "Stefan",
+    "surface": "all",
+    "surfaceCounts": {},
+    "recordsOnly": true,
+    "matchCount": 1,
+    "scoredCount": 0,
+    "unscoredCount": 1,
+    "record": {
+      "wins": 1,
+      "losses": 0
+    },
+    "officialRecord": {
+      "seasons": [
+        {
+          "season": "2023-24",
+          "singles": "9-8"
+        },
+        {
+          "season": "2024-25",
+          "singles": "3-2"
+        }
+      ],
+      "careerSingles": "12-10",
+      "source": "UVA career stats table"
+    },
+    "highlightsOnly": true,
+    "collegeOnly": true,
+    "bioNotes": "NCAA Elite Scholar-Athlete Award (2026 D-I Men's Tennis Championship); Hoos Choice Teammate of the Year",
+    "profile": {
+      "slug": "StefanRegalia",
+      "country": "USA",
+      "rank": null,
+      "hand": "Unknown",
+      "backhand": "",
+      "heightCm": 175
+    },
+    "note": "Official season records are published, but none of this player's individual results carry a public scoreline, so the deuce/ad and points-won breakdowns cannot be built.",
+    "coachingNotes": [
+      "Official career singles record: 12-10 (UVA career stats table).",
+      "2023-24: 9-8 in singles.",
+      "2024-25: 3-2 in singles.",
+      "NCAA Elite Scholar-Athlete Award (2026 D-I Men's Tennis Championship); Hoos Choice Teammate of the Year",
+      "UVA documents 1 result by name for this player, none with a published scoreline, so no point-level analysis is possible. Adding a score to data/college_matches.json is all that is needed to unlock the full breakdown."
+    ],
+    "scoutingReport": [
+      {
+        "kind": "note",
+        "priority": 1.0,
+        "short": "Career 12-10 in singles",
+        "text": "Official college singles record of 12-10 (UVA career stats table)."
+      },
+      {
+        "kind": "note",
+        "priority": 0.9,
+        "short": "Too few published scorelines",
+        "text": "1 result documented by name, none with a public score \u2014 not enough for a point-level breakdown."
+      }
+    ],
+    "featuredMatches": [],
+    "matches": [
+      {
+        "id": "StefanRegalia-college-2324-orange-blue-wang",
+        "date": "22-Sep-2023",
+        "tournament": "Orange & Blue Classic",
+        "round": "Match",
+        "surface": "Hard",
+        "opponent": "Paul Wang",
+        "result": "W",
+        "score": "score not published",
+        "isCollege": true
+      }
+    ]
+  },
+  "hard": {
+    "player": "Stefan Regalia",
+    "playerLabel": "Stefan",
+    "surface": "hard",
+    "surfaceCounts": {},
+    "recordsOnly": true,
+    "matchCount": 1,
+    "scoredCount": 0,
+    "unscoredCount": 1,
+    "record": {
+      "wins": 1,
+      "losses": 0
+    },
+    "officialRecord": {
+      "seasons": [
+        {
+          "season": "2023-24",
+          "singles": "9-8"
+        },
+        {
+          "season": "2024-25",
+          "singles": "3-2"
+        }
+      ],
+      "careerSingles": "12-10",
+      "source": "UVA career stats table"
+    },
+    "highlightsOnly": true,
+    "collegeOnly": true,
+    "bioNotes": "NCAA Elite Scholar-Athlete Award (2026 D-I Men's Tennis Championship); Hoos Choice Teammate of the Year",
+    "profile": {
+      "slug": "StefanRegalia",
+      "country": "USA",
+      "rank": null,
+      "hand": "Unknown",
+      "backhand": "",
+      "heightCm": 175
+    },
+    "note": "Official season records are published, but none of this player's individual results carry a public scoreline, so the deuce/ad and points-won breakdowns cannot be built.",
+    "coachingNotes": [
+      "Official career singles record: 12-10 (UVA career stats table).",
+      "2023-24: 9-8 in singles.",
+      "2024-25: 3-2 in singles.",
+      "NCAA Elite Scholar-Athlete Award (2026 D-I Men's Tennis Championship); Hoos Choice Teammate of the Year",
+      "UVA documents 1 result by name for this player, none with a published scoreline, so no point-level analysis is possible. Adding a score to data/college_matches.json is all that is needed to unlock the full breakdown."
+    ],
+    "scoutingReport": [
+      {
+        "kind": "note",
+        "priority": 1.0,
+        "short": "Career 12-10 in singles",
+        "text": "Official college singles record of 12-10 (UVA career stats table)."
+      },
+      {
+        "kind": "note",
+        "priority": 0.9,
+        "short": "Too few published scorelines",
+        "text": "1 result documented by name, none with a public score \u2014 not enough for a point-level breakdown."
+      }
+    ],
+    "featuredMatches": [],
+    "matches": [
+      {
+        "id": "StefanRegalia-college-2324-orange-blue-wang",
+        "date": "22-Sep-2023",
+        "tournament": "Orange & Blue Classic",
+        "round": "Match",
+        "surface": "Hard",
+        "opponent": "Paul Wang",
+        "result": "W",
+        "score": "score not published",
+        "isCollege": true
+      }
+    ]
+  }
+}

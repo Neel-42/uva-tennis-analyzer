@@ -1,310 +1,1060 @@
 {
-  "DylanDietrich": [
-    {
-      "id": "ita-all-amer-r16",
-      "date": "2025-09-26",
-      "tournament": "ITA All-American Championship",
-      "surface": "Hard (indoor)",
-      "round": "R16",
-      "opponent": "Jack Anthrop",
-      "result": "W",
-      "score": "6-4, 6-4",
-      "pointsWonPct": 55,
-      "acePct": null,
-      "dfPct": null,
-      "firstServeInPct": null,
-      "firstServeWonPct": null,
-      "secondServeWonPct": null,
-      "source": "Estimated from games won (12-10); UVA recap",
-      "samplePoint": "Round of 16 \u2014 straight sets over a top-70 opponent to secure NCAA singles invite."
+  "_meta": {
+    "source": "virginiasports.com player bios — season highlight notes and the VIRGINIA CAREER STATS tables",
+    "retrieved": "2026-08-23",
+    "caveat": "Bios document highlights, which are almost entirely wins. Treat the match lists here as a cited subset of each player's season, NOT a complete match log. Use officialRecord for win-loss. Matches whose score the bio does not publish carry score: null and are excluded from point-based estimates.",
+    "scoreNote": "Every score below is quoted from the bio text. No score is estimated or inferred."
+  },
+  "players": {
+    "DylanDietrich": {
+      "displayName": "Dylan Dietrich",
+      "highlightsOnly": true,
+      "officialRecord": {
+        "seasons": [
+          { "season": "2023-24", "singles": "23-7" },
+          { "season": "2024-25", "singles": "25-9" },
+          { "season": "2025-26", "singles": "29-4" }
+        ],
+        "careerSingles": "77-20",
+        "source": "UVA career stats table"
+      },
+      "matches": [
+        {
+          "id": "2324-liberty-dual",
+          "date": "2024-01-13",
+          "tournament": "Dual vs Liberty",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Thando Longwe-Smit",
+          "result": "W",
+          "score": "6-0, 6-0",
+          "source": "UVA bio: first dual match, 6-0 6-0 on Court 2"
+        },
+        {
+          "id": "2324-wake-clinch",
+          "date": "2024-03-01",
+          "tournament": "Dual vs Wake Forest",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Matthew Thomson",
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: clinching win vs No. 3 Wake Forest, third set 7-5 (full score not published)"
+        },
+        {
+          "id": "2425-osu-kim",
+          "date": "2025-01-31",
+          "tournament": "Dual vs Ohio State",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Aidan Kim",
+          "opponentRank": 11,
+          "result": "W",
+          "score": "6-4, 6-2",
+          "source": "UVA bio: top-15 win, No. 11 Aidan Kim on court two"
+        },
+        {
+          "id": "2425-texas-gorzny",
+          "date": "2025-02-02",
+          "tournament": "Dual vs Texas",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Sebastian Gorzny",
+          "opponentRank": 2,
+          "result": "W",
+          "score": "2-6, 6-4, 7-5",
+          "source": "UVA bio: downed No. 2 Gorzny in UVA's 4-3 win over No. 1 Texas"
+        },
+        {
+          "id": "2425-clemson-clinch",
+          "date": "2025-04-06",
+          "tournament": "Dual vs Clemson",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Noa Vukadin",
+          "opponentRank": 46,
+          "result": "W",
+          "score": "5-7, 6-4, 6-2",
+          "source": "UVA bio: clinched 4-2 win over No. 25 Clemson on court one"
+        },
+        {
+          "id": "2425-ncaa-super-regional",
+          "date": "2025-05-10",
+          "tournament": "NCAA Super Regional vs Arizona",
+          "surface": "Hard",
+          "round": "Super Regional",
+          "opponent": "Jay Friend",
+          "opponentRank": 6,
+          "result": "W",
+          "score": "1-6, 7-6(1), 7-5",
+          "source": "UVA bio: clinched Super Regional over No. 10 Arizona on court two"
+        },
+        {
+          "id": "2425-ncaa-qf-tcu",
+          "date": "2025-05-16",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "QF",
+          "opponent": "Pedro Vives",
+          "opponentRank": 10,
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: straight-sets win on court two vs No. 2 TCU (score not published)"
+        },
+        {
+          "id": "2526-tcu-chan",
+          "date": "2026-01-15",
+          "tournament": "Dual vs TCU",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Duncan Chan",
+          "opponentRank": 6,
+          "result": "W",
+          "score": "6-4, 7-5",
+          "source": "UVA bio: season-opening win over TCU's 6th-ranked Duncan Chan"
+        },
+        {
+          "id": "2526-texas-gorzny",
+          "date": "2026-01-18",
+          "tournament": "Dual vs Texas",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Sebastian Gorzny",
+          "opponentRank": 39,
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: season-opening win over No. 2 Texas' 39th-ranked Gorzny (score not published)"
+        },
+        {
+          "id": "2526-michigan-dahlin",
+          "date": "2026-01-24",
+          "tournament": "Dual vs Michigan",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Max Dahlin",
+          "result": "W",
+          "score": "6-3, 3-1 RET",
+          "source": "UVA bio: 6-3, 3-1 ret. win over Michigan's Max Dahlin"
+        },
+        {
+          "id": "2526-osu-kim",
+          "date": "2026-02-07",
+          "tournament": "Dual at Ohio State",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Aidan Kim",
+          "opponentRank": 13,
+          "result": "W",
+          "score": "7-6(3), 3-6, 6-4",
+          "source": "UVA bio: win over Ohio State's 13th-ranked Aidan Kim"
+        },
+        {
+          "id": "2526-ita-indoors-kim",
+          "date": "2026-02-16",
+          "tournament": "ITA National Team Indoor Championship",
+          "surface": "Hard (indoor)",
+          "round": "SF",
+          "opponent": "Aidan Kim",
+          "result": "L",
+          "score": null,
+          "source": "UVA bio: only dual-court loss of the season, ITA Indoors semifinals (score not published)"
+        },
+        {
+          "id": "2526-smu-svajda",
+          "date": "2026-03-01",
+          "tournament": "Dual vs SMU",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Trevor Svajda",
+          "opponentRank": 1,
+          "result": "W",
+          "score": "3-6, 6-1, 6-3",
+          "source": "UVA bio: beat SMU's No. 1 Svajda to claim the No. 1 ITA singles ranking"
+        },
+        {
+          "id": "2526-ncstate-borisiouk",
+          "date": "2026-03-20",
+          "tournament": "Dual at NC State",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Martin Borisiouk",
+          "opponentRank": 17,
+          "result": "W",
+          "score": "3-6, 6-3, 6-4",
+          "source": "UVA bio: downed NC State's 17th-ranked Borisiouk"
+        },
+        {
+          "id": "2526-wake-suresh",
+          "date": "2026-03-22",
+          "tournament": "Dual at Wake Forest",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "DK Suresh Ekambaram",
+          "opponentRank": 21,
+          "result": "W",
+          "score": "6-3, 6-4",
+          "source": "UVA bio: downed Wake Forest's 21st-ranked Suresh Ekambaram"
+        },
+        {
+          "id": "2526-nd-dominko",
+          "date": "2026-04-03",
+          "tournament": "Dual vs Notre Dame",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Sebastian Dominko",
+          "opponentRank": 15,
+          "result": "W",
+          "score": "6-2, 2-6, 6-2",
+          "source": "UVA bio: defeated Notre Dame's 15th-ranked Dominko"
+        },
+        {
+          "id": "2526-ncaa-r2-zheng",
+          "date": "2026-05-02",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "R32",
+          "opponent": "Michael Zheng",
+          "opponentRank": 5,
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: clinched second round vs Columbia over two-time NCAA champ No. 5 Zheng (score not published)"
+        },
+        {
+          "id": "2526-ncaa-qf-msstate",
+          "date": "2026-05-14",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "QF",
+          "opponent": "Benito Sanchez Martinez",
+          "opponentRank": 9,
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: 3-0 in Athens, quarterfinal win over Mississippi State's No. 9 (score not published)"
+        },
+        {
+          "id": "2526-ncaa-sf-wake",
+          "date": "2026-05-16",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "SF",
+          "opponent": "DK Suresh",
+          "opponentRank": 27,
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: semifinal win over Wake Forest's No. 27 Suresh (score not published)"
+        },
+        {
+          "id": "2526-ncaa-final-gorzny",
+          "date": "2026-05-17",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "Final",
+          "opponent": "Sebastian Gorzny",
+          "opponentRank": 3,
+          "result": "W",
+          "score": "6-7(2), 6-4, 6-4",
+          "source": "UVA bio: clinched the NCAA title over Texas' third-ranked Gorzny"
+        }
+      ]
     },
-    {
-      "id": "ita-all-amer-sf",
-      "date": "2025-09-27",
-      "tournament": "ITA All-American Championship",
-      "surface": "Hard (indoor)",
-      "round": "SF",
-      "opponent": "Jay Friend",
-      "result": "L",
-      "score": "6-3, 4-6, 7-6(2)",
-      "pointsWonPct": 49,
-      "acePct": null,
-      "dfPct": null,
-      "firstServeInPct": null,
-      "firstServeWonPct": null,
-      "secondServeWonPct": null,
-      "source": "Estimated from games won (16-17); UVA recap",
-      "samplePoint": "Semifinal tiebreak loss \u2014 still qualified for NCAA Individual singles."
+    "KeeganRice": {
+      "displayName": "Keegan Rice",
+      "highlightsOnly": true,
+      "officialRecord": {
+        "seasons": [
+          { "season": "2024-25", "singles": "19-13" },
+          { "season": "2025-26", "singles": "35-6" }
+        ],
+        "careerSingles": "53-19",
+        "source": "UVA career stats table"
+      },
+      "matches": [
+        {
+          "id": "2425-sc-daryabeigi",
+          "date": "2025-01-21",
+          "tournament": "Dual at South Carolina",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Sean Daryabeigi",
+          "opponentRank": 55,
+          "result": "W",
+          "score": "6-7(6), 7-5, 3-0 RET",
+          "source": "UVA bio: topped No. 55 Daryabeigi (ACC Freshman of the Week)"
+        },
+        {
+          "id": "2425-gt-bonetto",
+          "date": "2025-04-04",
+          "tournament": "Dual vs Georgia Tech",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Nate Bonetto",
+          "opponentRank": 113,
+          "result": "W",
+          "score": "6-2, 6-3",
+          "source": "UVA bio: first ranked singles win of his career"
+        },
+        {
+          "id": "2425-wake-xilas",
+          "date": "2025-04-19",
+          "tournament": "ACC Championship vs Wake Forest",
+          "surface": "Hard",
+          "round": "SF",
+          "opponent": "Ioannis Xilas",
+          "opponentRank": 121,
+          "result": "W",
+          "score": "6-0, 7-6(6)",
+          "source": "UVA bio: beat No. 121 Xilas of No. 1 Wake Forest on court three"
+        },
+        {
+          "id": "2425-ncaa-arizona-ludoski",
+          "date": "2025-05-10",
+          "tournament": "NCAA Super Regional vs Arizona",
+          "surface": "Hard",
+          "round": "Super Regional",
+          "opponent": "Zoran Ludoski",
+          "opponentRank": 103,
+          "result": "W",
+          "score": "6-4, 6-2",
+          "source": "UVA bio: third ranked singles win of the season, on court three"
+        },
+        {
+          "id": "2526-ita-allamer-ghibaudo",
+          "date": "2025-09-26",
+          "tournament": "ITA All-American Championship",
+          "surface": "Hard",
+          "round": "R64",
+          "opponent": "Antoine Ghibaudo",
+          "opponentRank": 29,
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: beat No. 29 Ghibaudo of Kentucky to reach the Round of 32 (score not published)"
+        },
+        {
+          "id": "2526-drummondville-rybakov",
+          "date": "2025-11-25",
+          "tournament": "Drummondville Challenger",
+          "surface": "Hard (indoor)",
+          "round": "R32",
+          "opponent": "Alex Rybakov",
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: beat 6-seed Rybakov, ranked No. 268 (score not published)"
+        },
+        {
+          "id": "2526-tcu-ravel",
+          "date": "2026-01-15",
+          "tournament": "Dual vs TCU",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Cosme Rolland De Ravel",
+          "opponentRank": 45,
+          "result": "W",
+          "score": "6-4, 7-5",
+          "source": "UVA bio: win over TCU's 45th-ranked Rolland De Ravel"
+        },
+        {
+          "id": "2526-columbia-palta",
+          "date": "2026-01-30",
+          "tournament": "Dual vs Columbia",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Sachin Palta",
+          "opponentRank": 65,
+          "result": "W",
+          "score": "6-2, 6-1",
+          "source": "UVA bio: win over Columbia's 65th-ranked Palta"
+        },
+        {
+          "id": "2526-ita-indoors-jovanovic",
+          "date": "2026-02-14",
+          "tournament": "ITA National Team Indoor Championship",
+          "surface": "Hard (indoor)",
+          "round": "QF",
+          "opponent": "Petar Jovanovic",
+          "opponentRank": 6,
+          "result": "W",
+          "score": "6-3, 7-6(1)",
+          "source": "UVA bio: second top-10 win of his career, vs Mississippi State"
+        },
+        {
+          "id": "2526-smu-finkelstein",
+          "date": "2026-03-01",
+          "tournament": "Dual vs SMU",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Alex Finkelstein",
+          "opponentRank": 96,
+          "result": "W",
+          "score": "6-1, 3-6, 6-1",
+          "source": "UVA bio: downed SMU's 96th-ranked Finkelstein"
+        },
+        {
+          "id": "2526-stanford-rivera",
+          "date": "2026-03-08",
+          "tournament": "Dual at Stanford",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Hudson Rivera",
+          "opponentRank": 58,
+          "result": "W",
+          "score": "6-3, 6-4",
+          "source": "UVA bio: 2-0 on the California road trip"
+        },
+        {
+          "id": "2526-unc-jones",
+          "date": "2026-03-15",
+          "tournament": "Dual vs North Carolina",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Roan Jones",
+          "opponentRank": 42,
+          "result": "W",
+          "score": "6-2, 6-4",
+          "source": "UVA bio: win over North Carolina's No. 42 Roan Jones"
+        },
+        {
+          "id": "2526-miami-prat",
+          "date": "2026-03-29",
+          "tournament": "Dual at Miami",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Antonio Prat",
+          "opponentRank": 113,
+          "result": "W",
+          "score": "7-6(4), 5-7, 6-2",
+          "source": "UVA bio: top-court win on the Florida road weekend"
+        },
+        {
+          "id": "2526-nd-gregg",
+          "date": "2026-04-03",
+          "tournament": "Dual vs Notre Dame",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Perry Gregg",
+          "opponentRank": 72,
+          "result": "W",
+          "score": "6-3, 6-3",
+          "source": "UVA bio: defeated Notre Dame's 72nd-ranked Gregg"
+        },
+        {
+          "id": "2526-ncaa-columbia-kotzen",
+          "date": "2026-05-02",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "R32",
+          "opponent": "Nicolas Kotzen",
+          "opponentRank": 45,
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: four straight NCAA singles wins incl. Columbia's No. 45 Kotzen (score not published)"
+        },
+        {
+          "id": "2526-ncaa-msstate-jovanovic",
+          "date": "2026-05-14",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "QF",
+          "opponent": "Petar Jovanovic",
+          "opponentRank": 13,
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: NCAA win over Mississippi State's No. 13 Jovanovic (score not published)"
+        },
+        {
+          "id": "2526-ncaa-final-ivanovski",
+          "date": "2026-05-17",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "Final",
+          "opponent": "Kalin Ivanovski",
+          "opponentRank": 41,
+          "result": "W",
+          "score": "6-1, 6-3",
+          "source": "UVA bio: earned UVA's first point of the championship match"
+        },
+        {
+          "id": "2526-ncaa-singles-friend",
+          "date": "2026-05-20",
+          "tournament": "NCAA Singles Championship",
+          "surface": "Hard",
+          "round": "R2",
+          "opponent": "Jay Friend",
+          "opponentRank": 5,
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: highest-ranked win of his career, earned All-America status (score not published)"
+        }
+      ]
     },
-    {
-      "id": "dual-tcu",
-      "date": "2026-01-15",
-      "tournament": "Dual vs #3 TCU",
-      "surface": "Hard",
-      "round": "Dual",
-      "opponent": "Duncan Chan",
-      "result": "W",
-      "score": "6-4, 7-5",
-      "pointsWonPct": 54,
-      "acePct": null,
-      "dfPct": null,
-      "firstServeInPct": null,
-      "firstServeWonPct": null,
-      "secondServeWonPct": null,
-      "source": "Estimated from games won (13-11); no public match stats",
-      "samplePoint": "Season opener at #6 \u2014 straight-set win over a top-10 ranked opponent."
+    "JangjunKim": {
+      "displayName": "Jangjun Kim",
+      "highlightsOnly": true,
+      "officialRecord": {
+        "seasons": [
+          { "season": "2024-25", "singles": "16-7" },
+          { "season": "2025-26", "singles": "25-9" }
+        ],
+        "careerSingles": "41-16",
+        "source": "UVA career stats table"
+      },
+      "matches": [
+        {
+          "id": "2425-sc-karahan",
+          "date": "2025-01-16",
+          "tournament": "Dual at South Carolina",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Atakan Karahan",
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: collegiate debut, three-set win on court six (score not published)"
+        },
+        {
+          "id": "2425-ncstate-manning",
+          "date": "2025-02-16",
+          "tournament": "Dual vs NC State",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "William Manning",
+          "result": "W",
+          "score": "6-2, 4-6, 6-1",
+          "source": "UVA bio: first career ACC win, on court six"
+        },
+        {
+          "id": "2425-unc-wright",
+          "date": "2025-03-02",
+          "tournament": "Dual at North Carolina",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Anthony Wright",
+          "opponentRank": 114,
+          "result": "W",
+          "score": "6-4, 7-6(5)",
+          "source": "UVA bio: first career ranked singles win, on court four"
+        },
+        {
+          "id": "2526-michigan-oral",
+          "date": "2026-01-24",
+          "tournament": "Dual vs Michigan",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Mert Oral",
+          "opponentRank": 123,
+          "result": "W",
+          "score": "6-0, 7-5",
+          "source": "UVA bio: ranked win over Michigan's No. 123 Oral"
+        },
+        {
+          "id": "2526-ita-indoors-nakashima",
+          "date": "2026-02-16",
+          "tournament": "ITA National Team Indoor Championship",
+          "surface": "Hard (indoor)",
+          "round": "SF",
+          "opponent": "Bryce Nakashima",
+          "result": "W",
+          "score": "7-6, 6-4",
+          "source": "UVA bio: ITA Indoors semifinal win vs Ohio State"
+        },
+        {
+          "id": "2526-stanford-leach",
+          "date": "2026-03-08",
+          "tournament": "Dual at Stanford",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Jagger Leach",
+          "result": "W",
+          "score": "2-6, 6-2, 6-2",
+          "source": "UVA bio: defeated Stanford's Jagger Leach"
+        },
+        {
+          "id": "2526-ncstate-leroux",
+          "date": "2026-03-20",
+          "tournament": "Dual at NC State",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Jules Leroux",
+          "result": "W",
+          "score": "4-6, 6-3, 6-1",
+          "source": "UVA bio: downed NC State's Jules Leroux"
+        },
+        {
+          "id": "2526-miami-kroslak",
+          "date": "2026-03-29",
+          "tournament": "Dual at Miami",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Jakub Kroslak",
+          "result": "W",
+          "score": "2-6, 7-6(3), 7-5",
+          "source": "UVA bio: battled back on court three at Miami"
+        },
+        {
+          "id": "2526-ncaa-columbia-boosarawongse",
+          "date": "2026-05-02",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "R32",
+          "opponent": "Thanaphat Boosarawongse",
+          "result": "W",
+          "score": "4-6, 6-3, 6-2",
+          "source": "UVA bio: NCAA second round vs Columbia"
+        },
+        {
+          "id": "2526-ncaa-sc-daryabeigi",
+          "date": "2026-05-08",
+          "tournament": "NCAA Super Regional vs South Carolina",
+          "surface": "Hard",
+          "round": "Super Regional",
+          "opponent": "Sean Daryabeigi",
+          "opponentRank": 73,
+          "result": "W",
+          "score": "5-7, 6-2, 6-2",
+          "source": "UVA bio: clinching win to send UVA to the NCAA Quarterfinals"
+        },
+        {
+          "id": "2526-ncaa-sf-pow",
+          "date": "2026-05-16",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "SF",
+          "opponent": "Luca Pow",
+          "opponentRank": 28,
+          "result": "W",
+          "score": "7-5, 5-7, 6-2",
+          "source": "UVA bio: instrumental in the comeback semifinal win over Wake Forest"
+        },
+        {
+          "id": "2526-ncaa-final-eriksson",
+          "date": "2026-05-17",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "Final",
+          "opponent": "Sebastian Eriksson",
+          "opponentRank": 35,
+          "result": "W",
+          "score": "6-1, 7-6(11-9)",
+          "source": "UVA bio: tied the championship match at 3-3"
+        }
+      ]
     },
-    {
-      "id": "dual-texas",
-      "date": "2026-01-18",
-      "tournament": "Dual vs #2 Texas",
-      "surface": "Hard",
-      "round": "Dual",
-      "opponent": "Sebastian Gorzny",
-      "result": "W",
-      "score": "2-6, 6-3, 6-3",
-      "pointsWonPct": 52,
-      "acePct": null,
-      "dfPct": null,
-      "firstServeInPct": null,
-      "firstServeWonPct": null,
-      "secondServeWonPct": null,
-      "source": "Estimated from games won (14-13); no public match stats",
-      "samplePoint": "First meeting with Gorzny \u2014 dropped the first set then won 6-3, 6-3 (preview of NCAA final)."
+    "AndresSantamartaRoig": {
+      "displayName": "Andres Santamarta Roig",
+      "highlightsOnly": true,
+      "officialRecord": {
+        "seasons": [{ "season": "2025-26", "singles": "17-6" }],
+        "careerSingles": "17-6",
+        "source": "UVA career stats table"
+      },
+      "matches": [
+        {
+          "id": "2526-tcu-woestendick",
+          "date": "2026-01-15",
+          "tournament": "Dual vs TCU",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Cooper Woestendick",
+          "result": "W",
+          "score": "7-6(9), 6-2",
+          "source": "UVA bio: first match of his college career"
+        },
+        {
+          "id": "2526-columbia-thorat",
+          "date": "2026-01-30",
+          "tournament": "Dual vs Columbia",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Abhishket Thorat",
+          "result": "W",
+          "score": "3-6, 6-2, 6-1",
+          "source": "UVA bio: win on court four vs Columbia"
+        },
+        {
+          "id": "2526-osu-anthrop",
+          "date": "2026-02-07",
+          "tournament": "Dual at Ohio State",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Jack Anthrop",
+          "opponentRank": 24,
+          "result": "W",
+          "score": "6-4, 6-4",
+          "source": "UVA bio: first ranked singles win of his college career"
+        },
+        {
+          "id": "2526-ita-indoors-serrano",
+          "date": "2026-02-14",
+          "tournament": "ITA National Team Indoor Championship",
+          "surface": "Hard (indoor)",
+          "round": "QF",
+          "opponent": "Mario Martinez Serrano",
+          "opponentRank": 33,
+          "result": "W",
+          "score": "6-4, 7-5",
+          "source": "UVA bio: ITA Indoors quarterfinal vs Mississippi State"
+        },
+        {
+          "id": "2526-unc-mayew",
+          "date": "2026-03-15",
+          "tournament": "Dual vs North Carolina",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Ian Mayew",
+          "opponentRank": 82,
+          "result": "W",
+          "score": "6-4, 6-3",
+          "source": "UVA bio: downed North Carolina's No. 82 Mayew"
+        },
+        {
+          "id": "2526-ncstate-sabaliauskas",
+          "date": "2026-03-20",
+          "tournament": "Dual at NC State",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Ainius Sabaliauskas",
+          "result": "W",
+          "score": "6-3, 6-1",
+          "source": "UVA bio: 2-0 on the North Carolina road weekend"
+        },
+        {
+          "id": "2526-wake-robertson",
+          "date": "2026-03-22",
+          "tournament": "Dual at Wake Forest",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Charlie Robertson",
+          "result": "W",
+          "score": "7-6(5), 6-1",
+          "source": "UVA bio: 2-0 on the North Carolina road weekend"
+        },
+        {
+          "id": "2526-fsu-craig",
+          "date": "2026-03-27",
+          "tournament": "Dual at Florida State",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Corey Craig",
+          "opponentRank": 96,
+          "result": "W",
+          "score": "6-4, 6-2",
+          "source": "UVA bio: defeated Florida State's No. 96 Craig"
+        },
+        {
+          "id": "2526-ncaa-columbia-palta",
+          "date": "2026-05-02",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "R32",
+          "opponent": "Sachin Palta",
+          "opponentRank": 101,
+          "result": "W",
+          "score": "4-6, 6-4, 6-2",
+          "source": "UVA bio: NCAA second round vs Columbia"
+        },
+        {
+          "id": "2526-ncaa-qf-serrano",
+          "date": "2026-05-14",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "QF",
+          "opponent": "Mario Martinez Serrano",
+          "opponentRank": 65,
+          "result": "W",
+          "score": "6-2, 7-6(10-8)",
+          "source": "UVA bio: clinching point in the NCAA quarterfinals"
+        },
+        {
+          "id": "2526-ncaa-sf-shah",
+          "date": "2026-05-16",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "SF",
+          "opponent": "Aryan Shah",
+          "opponentRank": 125,
+          "result": "W",
+          "score": "3-6, 7-6(7-4), 6-4",
+          "source": "UVA bio: clinching point in the NCAA semifinals"
+        }
+      ]
     },
-    {
-      "id": "dual-osu-home",
-      "date": "2026-02-07",
-      "tournament": "Dual at #2 Ohio State",
-      "surface": "Hard (indoor)",
-      "round": "Dual",
-      "opponent": "Aidan Kim",
-      "result": "W",
-      "score": "7-6(3), 3-6, 6-4",
-      "pointsWonPct": 52,
-      "acePct": null,
-      "dfPct": null,
-      "firstServeInPct": null,
-      "firstServeWonPct": null,
-      "secondServeWonPct": null,
-      "source": "Estimated from games won (16-15); UVA roster bio",
-      "samplePoint": "Beat Kim in Columbus \u2014 preview of the ITA Indoors rematch nine days later."
+    "StilesBrockett": {
+      "displayName": "Stiles Brockett",
+      "collegeOnly": true,
+      "highlightsOnly": true,
+      "profile": {
+        "classYear": "3rd Year",
+        "hometown": "Fairfax, Va.",
+        "height": "6-2",
+        "notes": "All-ACC Third Team in doubles (with Dylan Dietrich); ITA Atlantic Region Most Improved Player"
+      },
+      "officialRecord": {
+        "seasons": [
+          { "season": "2024-25", "singles": "12-7" },
+          { "season": "2025-26", "singles": "25-14" }
+        ],
+        "careerSingles": "37-21",
+        "source": "UVA career stats table"
+      },
+      "matches": [
+        {
+          "id": "2425-liberty-karman",
+          "date": "2024-09-28",
+          "tournament": "Liberty Fall Tournament",
+          "surface": "Hard",
+          "round": "Match",
+          "opponent": "Alexander Karman",
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: first collegiate win, vs William & Mary (score not published)"
+        },
+        {
+          "id": "2425-boise-haddouch",
+          "date": "2025-01-25",
+          "tournament": "Dual vs Boise State",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Idriss Haddouch",
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: dual match debut, straight sets on court six (score not published)"
+        },
+        {
+          "id": "2425-texas-brown",
+          "date": "2025-02-02",
+          "tournament": "Dual vs Texas",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Lucas Brown",
+          "opponentRank": 116,
+          "result": "W",
+          "score": "4-6, 7-5, 6-3",
+          "source": "UVA bio: won the clincher in UVA's 4-3 win over then-No. 1 Texas, on court six"
+        },
+        {
+          "id": "2425-bc-mcdonald",
+          "date": "2025-02-14",
+          "tournament": "Dual at Boston College",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Connor McDonald",
+          "result": "W",
+          "score": "6-0, 6-4",
+          "source": "UVA bio: first ACC victory, on court six"
+        },
+        {
+          "id": "2526-tcu-pascual",
+          "date": "2026-01-15",
+          "tournament": "Dual vs TCU",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Roger Pascual",
+          "opponentRank": 77,
+          "result": "W",
+          "score": "7-6(5), 6-2",
+          "source": "UVA bio: spring opener, highest-ranked singles win of his career"
+        },
+        {
+          "id": "2526-columbia-govila",
+          "date": "2026-01-30",
+          "tournament": "Dual vs Columbia",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Aditya Govila",
+          "result": "W",
+          "score": "6-1, 6-0",
+          "source": "UVA bio: win over Columbia's Aditya Govila"
+        },
+        {
+          "id": "2526-ita-indoors-byers",
+          "date": "2026-02-16",
+          "tournament": "ITA National Team Indoor Championship",
+          "surface": "Hard (indoor)",
+          "round": "SF",
+          "opponent": "Loren Byers",
+          "result": "W",
+          "score": "1-6, 7-5, 6-3",
+          "source": "UVA bio: went 3-0 in singles at ITA Indoors, incl. this win over Ohio State"
+        },
+        {
+          "id": "2526-bc-overvelde",
+          "date": "2026-02-27",
+          "tournament": "Dual vs Boston College",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Matthew Overvelde",
+          "result": "W",
+          "score": "6-1, 6-4",
+          "source": "UVA bio: kicked off ACC play with a singles and doubles win"
+        },
+        {
+          "id": "2526-cal-luemkemann",
+          "date": "2026-03-06",
+          "tournament": "Dual at Cal",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Lenn Luemkemann",
+          "result": "W",
+          "score": "6-2, 3-6, 6-0",
+          "source": "UVA bio: singles win after a ranked doubles win at Cal"
+        },
+        {
+          "id": "2526-fsu-rusher",
+          "date": "2026-03-27",
+          "tournament": "Dual at Florida State",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Azariah Rusher",
+          "opponentRank": 124,
+          "result": "W",
+          "score": "6-3, 6-2",
+          "source": "UVA bio: 2-0 in singles on the Sunshine State road trip"
+        },
+        {
+          "id": "2526-miami-segado",
+          "date": "2026-03-29",
+          "tournament": "Dual at Miami",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Rafael Segado",
+          "result": "W",
+          "score": "6-1, 6-4",
+          "source": "UVA bio: 2-0 in singles on the Sunshine State road trip"
+        },
+        {
+          "id": "2526-ncaa-sf-guilleme",
+          "date": "2026-05-16",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "SF",
+          "opponent": "Joaquin Guilleme",
+          "result": "W",
+          "score": "3-6, 7-6(7-2), 6-3",
+          "source": "UVA bio: critical win over top-seeded Wake Forest in the semifinals"
+        },
+        {
+          "id": "2526-ncaa-final-forger",
+          "date": "2026-05-17",
+          "tournament": "NCAA Team Championship",
+          "surface": "Hard",
+          "round": "Final",
+          "opponent": "Abel Forger",
+          "opponentRank": 102,
+          "result": "W",
+          "score": "6-4, 6-4",
+          "source": "UVA bio: win over second-seeded Texas' 102nd-ranked Forger in the final"
+        }
+      ]
     },
-    {
-      "id": "ita-indoors",
-      "date": "2026-02-16",
-      "tournament": "ITA National Team Indoors",
-      "surface": "Hard (indoor)",
-      "round": "SF",
-      "opponent": "Aidan Kim",
-      "result": "L",
-      "score": "4-6, 6-7(5), 6-4",
-      "pointsWonPct": 49,
-      "acePct": null,
-      "dfPct": null,
-      "firstServeInPct": null,
-      "firstServeWonPct": null,
-      "secondServeWonPct": null,
-      "source": "Estimated from games won (16-17); no public match stats",
-      "samplePoint": "Only spring 2026 dual-court loss \u2014 Kim broke back at 4-4 on a deciding point (double fault)."
+    "RoyHorovitz": {
+      "displayName": "Roy Horovitz",
+      "highlightsOnly": true,
+      "officialRecord": {
+        "seasons": [
+          { "season": "2024-25", "singles": "4-4" },
+          { "season": "2025-26", "singles": "1-0" }
+        ],
+        "careerSingles": "5-4",
+        "source": "UVA career stats table"
+      },
+      "matches": [
+        {
+          "id": "2425-unc-perumov",
+          "date": "2025-03-02",
+          "tournament": "Dual at North Carolina",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Dennis Perumov",
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: first collegiate win, straight sets on court six (score not published)"
+        },
+        {
+          "id": "2425-nd-nad",
+          "date": "2025-03-28",
+          "tournament": "Dual at Notre Dame",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "Peter Nad",
+          "result": "W",
+          "score": "5-7, 6-3, 7-5",
+          "source": "UVA bio: won the clincher in UVA's 4-3 win, on court four"
+        }
+      ]
     },
-    {
-      "id": "dual-svajda",
-      "date": "2026-03-01",
-      "tournament": "Dual vs #38 SMU",
-      "surface": "Hard",
-      "round": "Dual",
-      "opponent": "Trevor Svajda",
-      "result": "W",
-      "score": "3-6, 6-1, 6-3",
-      "pointsWonPct": 52,
-      "acePct": null,
-      "dfPct": null,
-      "firstServeInPct": null,
-      "firstServeWonPct": null,
-      "secondServeWonPct": null,
-      "source": "Estimated from games won (15-14); no public match stats",
-      "samplePoint": "Beat the #1 ranked college player \u2014 lost the first set then dominated sets 2 and 3."
+    "StefanRegalia": {
+      "displayName": "Stefan Regalia",
+      "collegeOnly": true,
+      "highlightsOnly": true,
+      "profile": {
+        "classYear": "4th Year",
+        "hometown": "Arlington, Va.",
+        "height": "5-9",
+        "notes": "NCAA Elite Scholar-Athlete Award (2026 D-I Men's Tennis Championship); Hoos Choice Teammate of the Year"
+      },
+      "officialRecord": {
+        "seasons": [
+          { "season": "2023-24", "singles": "9-8" },
+          { "season": "2024-25", "singles": "3-2" }
+        ],
+        "careerSingles": "12-10",
+        "source": "UVA career stats table"
+      },
+      "matches": [
+        {
+          "id": "2324-orange-blue-wang",
+          "date": "2023-09-22",
+          "tournament": "Orange & Blue Classic",
+          "surface": "Hard",
+          "round": "Match",
+          "opponent": "Paul Wang",
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: first collegiate victory, vs Vanderbilt (score not published)"
+        }
+      ]
     },
-    {
-      "id": "dual-ncstate",
-      "date": "2026-03-20",
-      "tournament": "Dual at NC State",
-      "surface": "Hard",
-      "round": "Dual",
-      "opponent": "Martin Borisiouk",
-      "result": "W",
-      "score": "3-6, 6-3, 6-4",
-      "pointsWonPct": 52,
-      "acePct": null,
-      "dfPct": null,
-      "firstServeInPct": null,
-      "firstServeWonPct": null,
-      "secondServeWonPct": null,
-      "source": "Estimated from games won (15-14); UVA roster bio",
-      "samplePoint": "Road comeback vs #17 Borisiouk \u2014 third-set break to take over at #1 in ITA rankings."
-    },
-    {
-      "id": "dual-wake",
-      "date": "2026-03-22",
-      "tournament": "Dual at #1 Wake Forest",
-      "surface": "Hard",
-      "round": "Dual",
-      "opponent": "DK Suresh Ekambaram",
-      "result": "W",
-      "score": "6-3, 6-4",
-      "pointsWonPct": 57,
-      "acePct": null,
-      "dfPct": null,
-      "firstServeInPct": null,
-      "firstServeWonPct": null,
-      "secondServeWonPct": null,
-      "source": "Estimated from games won (12-9); UVA roster bio",
-      "samplePoint": "Straight-set win at Wake \u2014 forehand pressure from the baseline in both sets."
-    },
-    {
-      "id": "dual-notre-dame",
-      "date": "2026-04-03",
-      "tournament": "Dual vs #15 Notre Dame",
-      "surface": "Hard",
-      "round": "Dual",
-      "opponent": "Sebastian Dominko",
-      "result": "W",
-      "score": "6-2, 2-6, 6-2",
-      "pointsWonPct": 52,
-      "acePct": null,
-      "dfPct": null,
-      "firstServeInPct": null,
-      "firstServeWonPct": null,
-      "secondServeWonPct": null,
-      "source": "Estimated from games won (14-13); UVA roster bio",
-      "samplePoint": "Bounced back after dropping set 2 \u2014 closed third set 6-2 on court 1."
-    },
-    {
-      "id": "ncaa-r32-columbia",
-      "date": "2026-05-02",
-      "tournament": "NCAA Team Championship",
-      "surface": "Hard",
-      "round": "R32",
-      "opponent": "Michael Zheng",
-      "result": "W",
-      "score": "6-7(8), 6-3, 6-4",
-      "pointsWonPct": 53,
-      "acePct": null,
-      "dfPct": null,
-      "firstServeInPct": null,
-      "firstServeWonPct": null,
-      "secondServeWonPct": null,
-      "source": "Estimated from games won (18-16); no public match stats",
-      "samplePoint": "Set 3, 5-4 \u2014 closed out Zheng after losing a tight first-set tiebreak; team clincher."
-    },
-    {
-      "id": "ncaa-qf",
-      "date": "2026-05-14",
-      "tournament": "NCAA Team Championship",
-      "surface": "Hard",
-      "round": "QF",
-      "opponent": "Benito Sanchez Martinez",
-      "result": "W",
-      "score": "6-4, 6-3",
-      "pointsWonPct": 57,
-      "acePct": null,
-      "dfPct": null,
-      "firstServeInPct": null,
-      "firstServeWonPct": null,
-      "secondServeWonPct": null,
-      "source": "Estimated from games won (12-9); no public match stats",
-      "samplePoint": "Quarterfinal at #9 Mississippi State \u2014 clean straight-set win on court 1."
-    },
-    {
-      "id": "ncaa-sf",
-      "date": "2026-05-16",
-      "tournament": "NCAA Team Championship",
-      "surface": "Hard",
-      "round": "SF",
-      "opponent": "DK Suresh",
-      "result": "W",
-      "score": "2-6, 6-0, 6-3",
-      "pointsWonPct": 52,
-      "acePct": null,
-      "dfPct": null,
-      "firstServeInPct": null,
-      "firstServeWonPct": null,
-      "secondServeWonPct": null,
-      "source": "Estimated from games won (14-13); no public match stats",
-      "samplePoint": "Set 2 bagel vs Suresh \u2014 flipped momentum after dropping the opener 6-2."
-    },
-    {
-      "id": "ncaa-final",
-      "date": "2026-05-17",
-      "tournament": "NCAA Team Championship",
-      "surface": "Hard",
-      "round": "Final",
-      "opponent": "Sebastian Gorzny",
-      "result": "W",
-      "score": "6-7(2), 6-4, 6-4",
-      "pointsWonPct": 55,
-      "acePct": null,
-      "dfPct": null,
-      "firstServeInPct": null,
-      "firstServeWonPct": null,
-      "secondServeWonPct": null,
-      "source": "Estimated from games won (18-15); no public match stats",
-      "samplePoint": "Set 3, 5-4 \u2014 championship ace at 40-30 after breaking back from 1-3 (deuce-side holds)."
+    "TySwitzer": {
+      "displayName": "Ty Switzer",
+      "collegeOnly": true,
+      "highlightsOnly": true,
+      "profile": {
+        "classYear": "5th Year",
+        "hometown": "New York, N.Y.",
+        "height": "6-2",
+        "notes": "Norton Pritchett Memorial Award (Coaches Award of Excellence); did not compete in 2025-26"
+      },
+      "officialRecord": {
+        "seasons": [
+          { "season": "2022-23", "singles": "3-6" },
+          { "season": "2023-24", "singles": "1-2" },
+          { "season": "2024-25", "singles": "3-6" }
+        ],
+        "careerSingles": "7-14",
+        "source": "UVA career stats table"
+      },
+      "matches": [
+        {
+          "id": "2223-wm-pellerito",
+          "date": "2022-09-24",
+          "tournament": "Fall tournament vs William & Mary",
+          "surface": "Hard",
+          "round": "Match",
+          "opponent": "Daniel Pellerito",
+          "result": "W",
+          "score": null,
+          "source": "UVA bio: first career win, in a fall match (date and score not published)"
+        },
+        {
+          "id": "2324-jmu-court6",
+          "date": "2024-01-14",
+          "tournament": "Dual vs James Madison",
+          "surface": "Hard",
+          "round": "Dual",
+          "opponent": "James Madison (opponent unnamed)",
+          "result": "W",
+          "score": "6-3, 6-3",
+          "source": "UVA bio: delayed dual match debut, win on court six (opponent not named in bio)"
+        }
+      ]
     }
-  ],
-  "KeeganRice": [
-    {
-      "id": "acc-duke-26",
-      "date": "2026-03-15",
-      "tournament": "ACC Dual vs Duke",
-      "surface": "Hard",
-      "round": "Dual",
-      "opponent": "James Truman",
-      "result": "W",
-      "score": "6-4, 6-2",
-      "pointsWonPct": 58,
-      "source": "UVA 2025-26 season"
-    },
-    {
-      "id": "acc-fs-26",
-      "date": "2026-04-10",
-      "tournament": "ACC Dual vs Florida State",
-      "surface": "Hard",
-      "round": "Dual",
-      "opponent": "Luka Petrovic",
-      "result": "W",
-      "score": "7-5, 6-3",
-      "pointsWonPct": 55,
-      "source": "UVA 2025-26 season"
-    }
-  ],
-  "JackKennedy": [
-    {
-      "id": "acc-unc-26",
-      "date": "2026-03-28",
-      "tournament": "ACC Dual vs North Carolina",
-      "surface": "Hard",
-      "round": "Dual",
-      "opponent": "Ollie Crawford",
-      "result": "W",
-      "score": "6-3, 6-4",
-      "pointsWonPct": 57,
-      "source": "UVA 2025-26 season"
-    }
-  ],
-  "RoyHorovitz": [
-    {
-      "id": "acc-clem-26",
-      "date": "2026-02-28",
-      "tournament": "ACC Dual vs Clemson",
-      "surface": "Hard",
-      "round": "Dual",
-      "opponent": "Maximo Castor",
-      "result": "W",
-      "score": "6-2, 6-4",
-      "pointsWonPct": 60,
-      "source": "UVA 2025-26 season"
-    }
-  ]
+  }
 }

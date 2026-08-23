@@ -183,7 +183,9 @@ function renderMatchList(matches) {
         m.isCollege ? " · college" : ""
       }</span>
         </span>
-        <span class="match-row-score">${m.score}</span>
+        <span class="match-row-score${m.score ? "" : " unscored"}">${
+        m.score || "score not published"
+      }</span>
         <span class="match-row-date">${m.date}</span>
       </li>`
     )
@@ -196,11 +198,75 @@ function renderMatchList(matches) {
     </details>`;
 }
 
+function renderOfficialRecord(report) {
+  const official = report.officialRecord;
+  if (!official) return "";
+  const seasons = (official.seasons || [])
+    .map(
+      (s) => `<li><span class="season">${s.season}</span><span class="rec">${
+        s.singles || "—"
+      }</span></li>`
+    )
+    .join("");
+
+  return `
+    <div class="official-record">
+      <h3>Official college singles record</h3>
+      <p class="official-total">${official.careerSingles || "—"}
+        <span class="official-src">${official.source || "UVA"}</span></p>
+      ${seasons ? `<ul class="season-list">${seasons}</ul>` : ""}
+      ${
+        report.highlightCount
+          ? `<p class="official-caveat">The ${report.highlightCount} cited result${
+              report.highlightCount === 1 ? "" : "s"
+            } below come from UVA's published highlight notes, which name wins far more often than
+             losses. They are examples, not a win rate — use the record above for W-L.</p>`
+          : ""
+      }
+    </div>`;
+}
+
+function renderRecordsOnly(report) {
+  $("#analysis").innerHTML = `
+    <div class="analysis-header">
+      <h2>${report.player} — record only</h2>
+      <div class="pill-row">
+        <span class="pill">${report.matchCount} cited result${
+    report.matchCount === 1 ? "" : "s"
+  }</span>
+        ${
+          report.officialRecord?.careerSingles
+            ? `<span class="pill">Career ${report.officialRecord.careerSingles}</span>`
+            : ""
+        }
+      </div>
+    </div>
+
+    ${renderOfficialRecord(report)}
+
+    <div class="callout">${report.note}</div>
+
+    <div class="section">
+      <h3>What is on record</h3>
+      <ul>${(report.coachingNotes || []).map((n) => `<li>${n}</li>`).join("")}</ul>
+    </div>
+
+    ${renderMatchList(report.matches)}
+  `;
+  $("#analysis").classList.remove("hidden");
+  $("#empty-state")?.classList.add("hidden");
+}
+
 function renderReport(report) {
   if (report.empty) {
     $("#analysis").innerHTML = `<div class="callout">${report.note}</div>`;
     $("#analysis").classList.remove("hidden");
     $("#empty-state")?.classList.add("hidden");
+    return;
+  }
+
+  if (report.recordsOnly) {
+    renderRecordsOnly(report);
     return;
   }
 
@@ -219,7 +285,7 @@ function renderReport(report) {
 
   const statBoxes = [
     ["Matches", report.matchCount],
-    ["Record", `${rec.wins}-${rec.losses}`],
+    [report.highlightsOnly ? "Sample (win-biased)" : "Record", `${rec.wins}-${rec.losses}`],
     ["Games won", `${report.games.won}-${report.games.lost}`],
     ["Dominance ratio", avg.dominanceRatio?.toFixed(2) ?? "—"],
     ["Ace %", avg.acePct != null ? `${avg.acePct}%` : "—"],
@@ -234,7 +300,13 @@ function renderReport(report) {
       <div class="pill-row">
         <span class="pill">${SURFACE_LABELS[report.surface] || report.surface}</span>
         <span class="pill">${report.matchCount} matches</span>
-        <span class="pill ${rec.wins >= rec.losses ? "win" : "loss"}">${rec.wins}-${rec.losses}</span>
+        ${
+          report.officialRecord?.careerSingles
+            ? `<span class="pill win">College ${report.officialRecord.careerSingles}</span>`
+            : `<span class="pill ${rec.wins >= rec.losses ? "win" : "loss"}">${rec.wins}-${
+                rec.losses
+              }</span>`
+        }
         ${report.dateRange ? `<span class="pill">${report.dateRange}</span>` : ""}
         ${report.profile?.rank ? `<span class="pill">Rank #${report.profile.rank}</span>` : ""}
       </div>
@@ -248,6 +320,8 @@ function renderReport(report) {
     </div>`
         : ""
     }
+
+    ${renderOfficialRecord(report)}
 
     <div class="callout">${report.note}</div>
 
@@ -280,7 +354,7 @@ function renderReport(report) {
     <div class="answer-card">
       <h2>Serving (deuce vs ad)</h2>
       <p class="verdict">${report.serve.verdict}</p>
-      <p>Aggregated across all ${report.matchCount} matches. Top row = points won on each side; bottom row = T-serve share. Win % inside each ring; total points below.</p>
+      <p>Aggregated across the ${report.scoredCount ?? report.matchCount} matches with a published score. Top row = points won on each side; bottom row = T-serve share. Win % inside each ring; total points below.</p>
       <div class="summary-pie-grid">
         ${(report.serve.cells || []).map(renderSummaryPieCell).join("")}
       </div>
@@ -289,7 +363,7 @@ function renderReport(report) {
     <div class="answer-card">
       <h2>Returning (deuce vs ad)</h2>
       <p class="verdict tie">${report.return.verdict}</p>
-      <p>Same ${report.matchCount}-match aggregate. Top row = return points won; bottom row = total return points on that side.</p>
+      <p>Same ${report.scoredCount ?? report.matchCount}-match aggregate. Top row = return points won; bottom row = total return points on that side.</p>
       <div class="summary-pie-grid">
         ${(report.return.cells || []).map(renderSummaryPieCell).join("")}
       </div>
@@ -329,9 +403,11 @@ function renderRosterGrid(filter = "") {
   grid.innerHTML = visible
     .map((p) => {
       const active = activeRosterName === p.name ? " active" : "";
-      const badge = p.has_data
-        ? `<span class="badge ready">Analysis available</span>`
-        : `<span class="badge pending">Limited public data</span>`;
+      const badge = !p.has_data
+        ? `<span class="badge pending">Limited public data</span>`
+        : p.college_only
+        ? `<span class="badge college">College record</span>`
+        : `<span class="badge ready">Analysis available</span>`;
       return `
         <button type="button" class="roster-card${active}" data-name="${p.name}">
           <div class="name">${p.name}</div>

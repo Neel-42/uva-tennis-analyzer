@@ -14,26 +14,33 @@
     },
     "surface": "all",
     "surfaceCounts": {
-      "hard": 6,
+      "hard": 5,
       "clay": 17
     },
-    "matchCount": 23,
+    "matchCount": 22,
+    "scoredCount": 22,
+    "unscoredCount": 0,
     "record": {
-      "wins": 16,
+      "wins": 15,
       "losses": 7
     },
+    "officialRecord": null,
+    "highlightCount": 0,
+    "highlightsOnly": false,
+    "collegeOnly": false,
+    "bioNotes": null,
     "games": {
-      "won": 334,
-      "lost": 233
+      "won": 322,
+      "lost": 226
     },
-    "dateRange": "Mar 2026 \u2013 Jul 2026",
-    "note": "Aggregated across 23 matches (Mar 2026 \u2013 Jul 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "dateRange": "Apr 2026 \u2013 Jul 2026",
+    "note": "Aggregated across 22 scored matches (Apr 2026 \u2013 Jul 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
     "pointsWon": {
-      "playerPct": 51,
-      "opponentPct": 49,
+      "playerPct": 50,
+      "opponentPct": 50,
       "playerLabel": "Jack",
-      "totalPoints": 2382,
-      "source": "Weighted across 23 matches",
+      "totalPoints": 2302,
+      "source": "Weighted across 22 scored matches",
       "isLoss": false
     },
     "statAverages": {
@@ -46,7 +53,7 @@
     },
     "statCoverage": {
       "detailed": 22,
-      "total": 23
+      "total": 22
     },
     "scoutingReport": [
       {
@@ -57,7 +64,7 @@
       {
         "kind": "strength",
         "short": "8 wins over higher-ranked opponents",
-        "text": "Beat 8 better-ranked opponents in this sample, best of them #177 (Daniil Glinka at Tallahassee CH) \u2014 the level travels up."
+        "text": "Beat 8 better-ranked opponents are on record, best of them #177 (Daniil Glinka at Tallahassee CH) \u2014 the level travels up."
       },
       {
         "kind": "weakness",
@@ -76,28 +83,28 @@
         {
           "title": "Deuce court",
           "pct": 68,
-          "total": 405,
+          "total": 391,
           "caption": "Serve points won",
           "highlight": false
         },
         {
           "title": "Ad court",
           "pct": 82,
-          "total": 489,
+          "total": 472,
           "caption": "Serve points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 T serve",
           "pct": 30,
-          "total": 177,
+          "total": 171,
           "caption": "T-serve share",
           "highlight": false
         },
         {
           "title": "Ad \u2014 T serve",
           "pct": 34,
-          "total": 204,
+          "total": 197,
           "caption": "T-serve share",
           "highlight": false
         }
@@ -109,40 +116,38 @@
         {
           "title": "Deuce court",
           "pct": 42,
-          "total": 251,
+          "total": 242,
           "caption": "Return points won",
           "highlight": false
         },
         {
           "title": "Ad court",
           "pct": 46,
-          "total": 274,
+          "total": 265,
           "caption": "Return points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 total",
           "pct": 42,
-          "total": 595,
+          "total": 575,
           "caption": "Return points played",
           "highlight": false
         },
         {
           "title": "Ad \u2014 total",
           "pct": 46,
-          "total": 595,
+          "total": 575,
           "caption": "Return points played",
           "highlight": false
         }
       ]
     },
     "coachingNotes": [
-      "23 matches in this sample: 16-7 record (70% win rate).",
+      "22 matches in this sample: 15-7 record (68% win rate).",
       "Serving is stronger on the ad side (82% vs 68% points won) \u2014 a 14-point spread across the sample.",
       "Returning is marginally better on the ad side (46% vs 42%).",
-      "Jack is 9-3 in matches that went the distance (12 three-setters in this sample).",
-      "College play (duals, ITA, NCAA): 1-0 across 1 matches.",
-      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 22 of 23 matches \u2014 averages use those matches, while the deuce/ad splits and point totals cover all of them."
+      "Jack is 9-3 in matches that went the distance (12 three-setters in this sample)."
     ],
     "strengths": [
       "Reliable ad-side serving pattern to lean on in tight games (break points, game points).",
@@ -230,19 +235,19 @@
         "isCollege": false
       },
       {
-        "id": "JackKennedy-college-acc-unc-26",
-        "date": "28-Mar-2026",
-        "tournament": "ACC Dual vs North Carolina",
-        "round": "Dual",
-        "surface": "Hard",
-        "opponent": "Ollie Crawford",
-        "opponentRank": null,
+        "id": "JackKennedy-16",
+        "date": "20-Apr-2026",
+        "tournament": "Savannah CH",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Kei Nishikori",
+        "opponentRank": 464,
         "result": "W",
-        "score": "6-3  6-4",
-        "pointsWonPct": 57,
-        "totalPoints": 80,
+        "score": "6-3 6-7(3) 6-0",
+        "pointsWonPct": 55,
+        "totalPoints": 118,
         "source": "Dominance ratio",
-        "isCollege": true
+        "isCollege": false
       }
     ],
     "matches": [
@@ -487,17 +492,6 @@
         "result": "W",
         "score": "3-6 6-4 4-0 RET",
         "isCollege": false
-      },
-      {
-        "id": "JackKennedy-college-acc-unc-26",
-        "date": "28-Mar-2026",
-        "tournament": "ACC Dual vs North Carolina",
-        "round": "Dual",
-        "surface": "Hard",
-        "opponent": "Ollie Crawford",
-        "result": "W",
-        "score": "6-3  6-4",
-        "isCollege": true
       }
     ]
   },
@@ -516,26 +510,33 @@
     },
     "surface": "hard",
     "surfaceCounts": {
-      "hard": 6,
+      "hard": 5,
       "clay": 17
     },
-    "matchCount": 6,
+    "matchCount": 5,
+    "scoredCount": 5,
+    "unscoredCount": 0,
     "record": {
-      "wins": 3,
+      "wins": 2,
       "losses": 3
     },
+    "officialRecord": null,
+    "highlightCount": 0,
+    "highlightsOnly": false,
+    "collegeOnly": false,
+    "bioNotes": null,
     "games": {
-      "won": 78,
-      "lost": 53
+      "won": 66,
+      "lost": 46
     },
-    "dateRange": "Mar 2026 \u2013 Jul 2026",
-    "note": "Aggregated across 6 matches (Mar 2026 \u2013 Jul 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "dateRange": "Jun 2026 \u2013 Jul 2026",
+    "note": "Aggregated across 5 scored matches (Jun 2026 \u2013 Jul 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
     "pointsWon": {
-      "playerPct": 49,
-      "opponentPct": 51,
+      "playerPct": 48,
+      "opponentPct": 52,
       "playerLabel": "Jack",
-      "totalPoints": 550,
-      "source": "Weighted across 6 matches",
+      "totalPoints": 470,
+      "source": "Weighted across 5 scored matches",
       "isLoss": false
     },
     "statAverages": {
@@ -544,22 +545,17 @@
       "firstServeInPct": 55.9,
       "firstServeWonPct": 66.2,
       "secondServeWonPct": 41.9,
-      "dominanceRatio": 1.0
+      "dominanceRatio": 0.9
     },
     "statCoverage": {
       "detailed": 5,
-      "total": 6
+      "total": 5
     },
     "scoutingReport": [
       {
         "kind": "strength",
         "short": "2 wins over higher-ranked opponents",
-        "text": "Beat 2 better-ranked opponents in this sample, best of them #209 (Liam Broady at Cary CH) \u2014 the level travels up."
-      },
-      {
-        "kind": "strength",
-        "short": "Ad-side serve (modeled)",
-        "text": "The model leans on the ad court (85% of serve points won vs 69% on the deuce side), though this split follows charted reference rates rather than tracked data for this player."
+        "text": "Beat 2 better-ranked opponents are on record, best of them #209 (Liam Broady at Cary CH) \u2014 the level travels up."
       },
       {
         "kind": "weakness",
@@ -568,8 +564,13 @@
       },
       {
         "kind": "weakness",
-        "short": "1st serve in 56%",
-        "text": "Lands only 56% of first serves, which means living on the second ball too often."
+        "short": "2-3 record",
+        "text": "Winning only 40% of matches (2-3) \u2014 results are not yet matching the level."
+      },
+      {
+        "kind": "weakness",
+        "short": "Wins only 48% of points",
+        "text": "Wins 48% of total points \u2014 matches are being decided on thin margins rather than control."
       }
     ],
     "serve": {
@@ -578,28 +579,28 @@
         {
           "title": "Deuce court",
           "pct": 69,
-          "total": 95,
+          "total": 81,
           "caption": "Serve points won",
           "highlight": false
         },
         {
           "title": "Ad court",
           "pct": 85,
-          "total": 116,
+          "total": 99,
           "caption": "Serve points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 T serve",
           "pct": 30,
-          "total": 40,
+          "total": 35,
           "caption": "T-serve share",
           "highlight": false
         },
         {
           "title": "Ad \u2014 T serve",
           "pct": 35,
-          "total": 47,
+          "total": 40,
           "caption": "T-serve share",
           "highlight": false
         }
@@ -610,41 +611,39 @@
       "cells": [
         {
           "title": "Deuce court",
-          "pct": 42,
-          "total": 57,
+          "pct": 41,
+          "total": 48,
           "caption": "Return points won",
           "highlight": false
         },
         {
           "title": "Ad court",
-          "pct": 46,
-          "total": 62,
+          "pct": 45,
+          "total": 53,
           "caption": "Return points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 total",
-          "pct": 42,
-          "total": 137,
+          "pct": 41,
+          "total": 117,
           "caption": "Return points played",
           "highlight": false
         },
         {
           "title": "Ad \u2014 total",
-          "pct": 46,
-          "total": 137,
+          "pct": 45,
+          "total": 117,
           "caption": "Return points played",
           "highlight": false
         }
       ]
     },
     "coachingNotes": [
-      "6 matches in this sample: 3-3 record (50% win rate).",
+      "5 matches in this sample: 2-3 record (40% win rate).",
       "Serving is stronger on the ad side (85% vs 69% points won) \u2014 a 16-point spread across the sample.",
-      "Returning is marginally better on the ad side (46% vs 42%).",
-      "Jack is 1-1 in matches that went the distance (2 three-setters in this sample).",
-      "College play (duals, ITA, NCAA): 1-0 across 1 matches.",
-      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 5 of 6 matches \u2014 averages use those matches, while the deuce/ad splits and point totals cover all of them."
+      "Returning is marginally better on the ad side (45% vs 41%).",
+      "Jack is 1-1 in matches that went the distance (2 three-setters in this sample)."
     ],
     "strengths": [
       "Reliable ad-side serving pattern to lean on in tight games (break points, game points)."
@@ -728,21 +727,6 @@
         "totalPoints": 71,
         "source": "Dominance ratio",
         "isCollege": false
-      },
-      {
-        "id": "JackKennedy-college-acc-unc-26",
-        "date": "28-Mar-2026",
-        "tournament": "ACC Dual vs North Carolina",
-        "round": "Dual",
-        "surface": "Hard",
-        "opponent": "Ollie Crawford",
-        "opponentRank": null,
-        "result": "W",
-        "score": "6-3  6-4",
-        "pointsWonPct": 57,
-        "totalPoints": 80,
-        "source": "Dominance ratio",
-        "isCollege": true
       }
     ],
     "matches": [
@@ -800,17 +784,6 @@
         "result": "W",
         "score": "6-4 6-4",
         "isCollege": false
-      },
-      {
-        "id": "JackKennedy-college-acc-unc-26",
-        "date": "28-Mar-2026",
-        "tournament": "ACC Dual vs North Carolina",
-        "round": "Dual",
-        "surface": "Hard",
-        "opponent": "Ollie Crawford",
-        "result": "W",
-        "score": "6-3  6-4",
-        "isCollege": true
       }
     ]
   },
@@ -829,26 +802,33 @@
     },
     "surface": "clay",
     "surfaceCounts": {
-      "hard": 6,
+      "hard": 5,
       "clay": 17
     },
     "matchCount": 17,
+    "scoredCount": 17,
+    "unscoredCount": 0,
     "record": {
       "wins": 13,
       "losses": 4
     },
+    "officialRecord": null,
+    "highlightCount": 0,
+    "highlightsOnly": false,
+    "collegeOnly": false,
+    "bioNotes": null,
     "games": {
       "won": 256,
       "lost": 180
     },
     "dateRange": "Apr 2026 \u2013 May 2026",
-    "note": "Aggregated across 17 matches (Apr 2026 \u2013 May 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "note": "Aggregated across 17 scored matches (Apr 2026 \u2013 May 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
     "pointsWon": {
       "playerPct": 51,
       "opponentPct": 49,
       "playerLabel": "Jack",
       "totalPoints": 1832,
-      "source": "Weighted across 17 matches",
+      "source": "Weighted across 17 scored matches",
       "isLoss": false
     },
     "statAverages": {
@@ -877,7 +857,7 @@
       {
         "kind": "strength",
         "short": "6 wins over higher-ranked opponents",
-        "text": "Beat 6 better-ranked opponents in this sample, best of them #177 (Daniil Glinka at Tallahassee CH) \u2014 the level travels up."
+        "text": "Beat 6 better-ranked opponents are on record, best of them #177 (Daniil Glinka at Tallahassee CH) \u2014 the level travels up."
       },
       {
         "kind": "weakness",

@@ -1,0 +1,184 @@
+{
+  "all": {
+    "player": "Ty Switzer",
+    "playerLabel": "Ty",
+    "surface": "all",
+    "surfaceCounts": {},
+    "recordsOnly": true,
+    "matchCount": 2,
+    "scoredCount": 1,
+    "unscoredCount": 1,
+    "record": {
+      "wins": 2,
+      "losses": 0
+    },
+    "officialRecord": {
+      "seasons": [
+        {
+          "season": "2022-23",
+          "singles": "3-6"
+        },
+        {
+          "season": "2023-24",
+          "singles": "1-2"
+        },
+        {
+          "season": "2024-25",
+          "singles": "3-6"
+        }
+      ],
+      "careerSingles": "7-14",
+      "source": "UVA career stats table"
+    },
+    "highlightsOnly": true,
+    "collegeOnly": true,
+    "bioNotes": "Norton Pritchett Memorial Award (Coaches Award of Excellence); did not compete in 2025-26",
+    "profile": {
+      "slug": "TySwitzer",
+      "country": "USA",
+      "rank": null,
+      "hand": "Unknown",
+      "backhand": "",
+      "heightCm": 188
+    },
+    "note": "Official season records are published, but none of this player's individual results carry a public scoreline, so the deuce/ad and points-won breakdowns cannot be built.",
+    "coachingNotes": [
+      "Official career singles record: 7-14 (UVA career stats table).",
+      "2022-23: 3-6 in singles.",
+      "2023-24: 1-2 in singles.",
+      "2024-25: 3-6 in singles.",
+      "Norton Pritchett Memorial Award (Coaches Award of Excellence); did not compete in 2025-26",
+      "UVA documents 2 results by name for this player, only 1 with a published score. That is too thin a base for deuce/ad or points-won estimates, so the record and the results themselves are all that is shown."
+    ],
+    "scoutingReport": [
+      {
+        "kind": "note",
+        "priority": 1.0,
+        "short": "Career 7-14 in singles",
+        "text": "Official college singles record of 7-14 (UVA career stats table)."
+      },
+      {
+        "kind": "note",
+        "priority": 0.9,
+        "short": "Too few published scorelines",
+        "text": "2 results documented by name, 1 with a public score \u2014 not enough for a point-level breakdown."
+      }
+    ],
+    "featuredMatches": [],
+    "matches": [
+      {
+        "id": "TySwitzer-college-2324-jmu-court6",
+        "date": "14-Jan-2024",
+        "tournament": "Dual vs James Madison",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "James Madison",
+        "result": "W",
+        "score": "6-3  6-3",
+        "isCollege": true
+      },
+      {
+        "id": "TySwitzer-college-2223-wm-pellerito",
+        "date": "24-Sep-2022",
+        "tournament": "Fall tournament vs William & Mary",
+        "round": "Match",
+        "surface": "Hard",
+        "opponent": "Daniel Pellerito",
+        "result": "W",
+        "score": "score not published",
+        "isCollege": true
+      }
+    ]
+  },
+  "hard": {
+    "player": "Ty Switzer",
+    "playerLabel": "Ty",
+    "surface": "hard",
+    "surfaceCounts": {},
+    "recordsOnly": true,
+    "matchCount": 2,
+    "scoredCount": 1,
+    "unscoredCount": 1,
+    "record": {
+      "wins": 2,
+      "losses": 0
+    },
+    "officialRecord": {
+      "seasons": [
+        {
+          "season": "2022-23",
+          "singles": "3-6"
+        },
+        {
+          "season": "2023-24",
+          "singles": "1-2"
+        },
+        {
+          "season": "2024-25",
+          "singles": "3-6"
+        }
+      ],
+      "careerSingles": "7-14",
+      "source": "UVA career stats table"
+    },
+    "highlightsOnly": true,
+    "collegeOnly": true,
+    "bioNotes": "Norton Pritchett Memorial Award (Coaches Award of Excellence); did not compete in 2025-26",
+    "profile": {
+      "slug": "TySwitzer",
+      "country": "USA",
+      "rank": null,
+      "hand": "Unknown",
+      "backhand": "",
+      "heightCm": 188
+    },
+    "note": "Official season records are published, but none of this player's individual results carry a public scoreline, so the deuce/ad and points-won breakdowns cannot be built.",
+    "coachingNotes": [
+      "Official career singles record: 7-14 (UVA career stats table).",
+      "2022-23: 3-6 in singles.",
+      "2023-24: 1-2 in singles.",
+      "2024-25: 3-6 in singles.",
+      "Norton Pritchett Memorial Award (Coaches Award of Excellence); did not compete in 2025-26",
+      "UVA documents 2 results by name for this player, only 1 with a published score. That is too thin a base for deuce/ad or points-won estimates, so the record and the results themselves are all that is shown."
+    ],
+    "scoutingReport": [
+      {
+        "kind": "note",
+        "priority": 1.0,
+        "short": "Career 7-14 in singles",
+        "text": "Official college singles record of 7-14 (UVA career stats table)."
+      },
+      {
+        "kind": "note",
+        "priority": 0.9,
+        "short": "Too few published scorelines",
+        "text": "2 results documented by name, 1 with a public score \u2014 not enough for a point-level breakdown."
+      }
+    ],
+    "featuredMatches": [],
+    "matches": [
+      {
+        "id": "TySwitzer-college-2324-jmu-court6",
+        "date": "14-Jan-2024",
+        "tournament": "Dual vs James Madison",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "James Madison",
+        "result": "W",
+        "score": "6-3  6-3",
+        "isCollege": true
+      },
+      {
+        "id": "TySwitzer-college-2223-wm-pellerito",
+        "date": "24-Sep-2022",
+        "tournament": "Fall tournament vs William & Mary",
+        "round": "Match",
+        "surface": "Hard",
+        "opponent": "Daniel Pellerito",
+        "result": "W",
+        "score": "score not published",
+        "isCollege": true
+      }
+    ]
+  }
+}

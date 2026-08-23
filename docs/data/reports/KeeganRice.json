@@ -14,25 +14,45 @@
     },
     "surface": "all",
     "surfaceCounts": {
-      "hard": 22
+      "hard": 38
     },
-    "matchCount": 22,
+    "matchCount": 38,
+    "scoredCount": 33,
+    "unscoredCount": 5,
     "record": {
-      "wins": 13,
+      "wins": 29,
       "losses": 9
     },
-    "games": {
-      "won": 300,
-      "lost": 196
+    "officialRecord": {
+      "seasons": [
+        {
+          "season": "2024-25",
+          "singles": "19-13"
+        },
+        {
+          "season": "2025-26",
+          "singles": "35-6"
+        }
+      ],
+      "careerSingles": "53-19",
+      "source": "UVA career stats table"
     },
-    "dateRange": "Jul 2025 \u2013 Aug 2026",
-    "note": "Aggregated across 22 matches (Jul 2025 \u2013 Aug 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "highlightCount": 18,
+    "highlightsOnly": false,
+    "collegeOnly": false,
+    "bioNotes": null,
+    "games": {
+      "won": 447,
+      "lost": 278
+    },
+    "dateRange": "Jan 2025 \u2013 Aug 2026",
+    "note": "Aggregated across 33 scored matches of 38 documented (Jan 2025 \u2013 Aug 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
     "pointsWon": {
-      "playerPct": 50,
-      "opponentPct": 50,
+      "playerPct": 55,
+      "opponentPct": 45,
       "playerLabel": "Keegan",
-      "totalPoints": 2083,
-      "source": "Weighted across 22 matches",
+      "totalPoints": 3046,
+      "source": "Weighted across 33 scored matches",
       "isLoss": false
     },
     "statAverages": {
@@ -45,18 +65,23 @@
     },
     "statCoverage": {
       "detailed": 20,
-      "total": 22
+      "total": 33
     },
     "scoutingReport": [
       {
         "kind": "strength",
-        "short": "9 wins over higher-ranked opponents",
-        "text": "Beat 9 better-ranked opponents in this sample, best of them #129 (Pablo Llamas Ruiz at Vancouver CH) \u2014 the level travels up."
+        "short": "Wins 55% of points",
+        "text": "Takes 55% of all points played, a margin that usually converts to comfortable wins."
       },
       {
         "kind": "strength",
-        "short": "Ad-side serve (modeled)",
-        "text": "The model leans on the ad court (83% of serve points won vs 69% on the deuce side), though this split follows charted reference rates rather than tracked data for this player."
+        "short": "9 wins over higher-ranked opponents",
+        "text": "Beat 9 better-ranked opponents are on record, best of them #129 (Pablo Llamas Ruiz at Vancouver CH) \u2014 the level travels up."
+      },
+      {
+        "kind": "strength",
+        "short": "24-9 record",
+        "text": "Winning 73% of matches in this sample (24-9)."
       },
       {
         "kind": "weakness",
@@ -70,28 +95,28 @@
         {
           "title": "Deuce court",
           "pct": 69,
-          "total": 358,
+          "total": 526,
           "caption": "Serve points won",
           "highlight": false
         },
         {
           "title": "Ad court",
-          "pct": 83,
-          "total": 434,
+          "pct": 84,
+          "total": 639,
           "caption": "Serve points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 T serve",
           "pct": 30,
-          "total": 155,
+          "total": 226,
           "caption": "T-serve share",
           "highlight": false
         },
         {
           "title": "Ad \u2014 T serve",
-          "pct": 34,
-          "total": 179,
+          "pct": 35,
+          "total": 263,
           "caption": "T-serve share",
           "highlight": false
         }
@@ -103,40 +128,42 @@
         {
           "title": "Deuce court",
           "pct": 42,
-          "total": 220,
+          "total": 320,
           "caption": "Return points won",
           "highlight": false
         },
         {
           "title": "Ad court",
           "pct": 46,
-          "total": 240,
+          "total": 349,
           "caption": "Return points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 total",
           "pct": 42,
-          "total": 520,
+          "total": 761,
           "caption": "Return points played",
           "highlight": false
         },
         {
           "title": "Ad \u2014 total",
           "pct": 46,
-          "total": 520,
+          "total": 761,
           "caption": "Return points played",
           "highlight": false
         }
       ]
     },
     "coachingNotes": [
-      "22 matches in this sample: 13-9 record (59% win rate).",
-      "Serving is stronger on the ad side (83% vs 69% points won) \u2014 a 14-point spread across the sample.",
+      "Official college singles record is 53-19 (UVA career stats table). 18 of these results come from UVA's highlight notes, which name wins far more often than losses \u2014 read those as cited examples, not as a win rate.",
+      "33 matches in this sample: 24-9 record (73% win rate).",
+      "Serving is stronger on the ad side (84% vs 69% points won) \u2014 a 15-point spread across the sample.",
       "Returning is marginally better on the ad side (46% vs 42%).",
-      "Keegan is 4-4 in matches that went the distance (8 three-setters in this sample).",
-      "College play (duals, ITA, NCAA): 2-0 across 2 matches.",
-      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 20 of 22 matches \u2014 averages use those matches, while the deuce/ad splits and point totals cover all of them."
+      "Keegan is 7-4 in matches that went the distance (11 three-setters in this sample).",
+      "College play (duals, ITA, NCAA): 13-0 across 13 matches.",
+      "5 of these 38 results are documented without a published score, so they count toward the record and appear in the match list but are left out of every point estimate.",
+      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 20 of 33 scored matches \u2014 averages use those, while the deuce/ad splits and point totals cover every scored match."
     ],
     "strengths": [
       "Reliable ad-side serving pattern to lean on in tight games (break points, game points)."
@@ -147,94 +174,94 @@
     ],
     "featuredMatches": [
       {
-        "id": "KeeganRice-12",
-        "date": "06-Jul-2026",
-        "tournament": "M25 Laval",
-        "round": "R16",
+        "id": "KeeganRice-college-2526-ncaa-final-ivanovski",
+        "date": "17-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "Final",
         "surface": "Hard",
-        "opponent": "Matthew Thomson",
-        "opponentRank": 1230,
+        "opponent": "Kalin Ivanovski",
+        "opponentRank": 41,
         "result": "W",
-        "score": "6-1 6-4",
-        "pointsWonPct": 62,
-        "totalPoints": 71,
-        "source": "Dominance ratio",
-        "isCollege": false
+        "score": "6-1  6-3",
+        "pointsWonPct": 75,
+        "totalPoints": 67,
+        "source": "Games-won estimate",
+        "isCollege": true
       },
       {
-        "id": "KeeganRice-10",
-        "date": "06-Jul-2026",
-        "tournament": "M25 Laval",
+        "id": "KeeganRice-college-2526-nd-gregg",
+        "date": "03-Apr-2026",
+        "tournament": "Dual vs Notre Dame",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Perry Gregg",
+        "opponentRank": 72,
+        "result": "W",
+        "score": "6-3  6-3",
+        "pointsWonPct": 67,
+        "totalPoints": 76,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-unc-jones",
+        "date": "15-Mar-2026",
+        "tournament": "Dual vs North Carolina",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Roan Jones",
+        "opponentRank": 42,
+        "result": "W",
+        "score": "6-2  6-4",
+        "pointsWonPct": 67,
+        "totalPoints": 76,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-columbia-palta",
+        "date": "30-Jan-2026",
+        "tournament": "Dual vs Columbia",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Sachin Palta",
+        "opponentRank": 65,
+        "result": "W",
+        "score": "6-2  6-1",
+        "pointsWonPct": 80,
+        "totalPoints": 63,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2425-wake-xilas",
+        "date": "19-Apr-2025",
+        "tournament": "ACC Championship vs Wake Forest",
         "round": "SF",
         "surface": "Hard",
-        "opponent": "Jay Dylan Hara Friend",
-        "opponentRank": 407,
+        "opponent": "Ioannis Xilas",
+        "opponentRank": 121,
         "result": "W",
-        "score": "7-5 6-2",
-        "pointsWonPct": 61,
-        "totalPoints": 84,
-        "source": "Dominance ratio",
-        "isCollege": false
-      },
-      {
-        "id": "KeeganRice-13",
-        "date": "06-Jul-2026",
-        "tournament": "M25 Laval",
-        "round": "R32",
-        "surface": "Hard",
-        "opponent": "Dan Martin",
-        "opponentRank": null,
-        "result": "W",
-        "score": "6-2 6-2",
-        "pointsWonPct": 60,
-        "totalPoints": 67,
-        "source": "Dominance ratio",
-        "isCollege": false
-      },
-      {
-        "id": "KeeganRice-college-acc-fs-26",
-        "date": "10-Apr-2026",
-        "tournament": "ACC Dual vs Florida State",
-        "round": "Dual",
-        "surface": "Hard",
-        "opponent": "Luka Petrovic",
-        "opponentRank": null,
-        "result": "W",
-        "score": "7-5  6-3",
-        "pointsWonPct": 55,
-        "totalPoints": 88,
-        "source": "Dominance ratio",
+        "score": "6-0  7-6(6)",
+        "pointsWonPct": 68,
+        "totalPoints": 80,
+        "source": "Games-won estimate",
         "isCollege": true
       },
       {
-        "id": "KeeganRice-college-acc-duke-26",
-        "date": "15-Mar-2026",
-        "tournament": "ACC Dual vs Duke",
+        "id": "KeeganRice-college-2425-gt-bonetto",
+        "date": "04-Apr-2025",
+        "tournament": "Dual vs Georgia Tech",
         "round": "Dual",
         "surface": "Hard",
-        "opponent": "James Truman",
-        "opponentRank": null,
+        "opponent": "Nate Bonetto",
+        "opponentRank": 113,
         "result": "W",
-        "score": "6-4  6-2",
-        "pointsWonPct": 58,
-        "totalPoints": 76,
-        "source": "Dominance ratio",
+        "score": "6-2  6-3",
+        "pointsWonPct": 71,
+        "totalPoints": 71,
+        "source": "Games-won estimate",
         "isCollege": true
-      },
-      {
-        "id": "KeeganRice-19",
-        "date": "14-Jul-2025",
-        "tournament": "Granby CH",
-        "round": "Q1",
-        "surface": "Hard",
-        "opponent": "Alvin Nicholas Tudorica",
-        "opponentRank": 429,
-        "result": "W",
-        "score": "6-0 6-1",
-        "pointsWonPct": 69,
-        "totalPoints": 55,
-        "source": "Dominance ratio",
-        "isCollege": false
       }
     ],
     "matches": [
@@ -393,25 +420,146 @@
         "isCollege": false
       },
       {
-        "id": "KeeganRice-college-acc-fs-26",
-        "date": "10-Apr-2026",
-        "tournament": "ACC Dual vs Florida State",
-        "round": "Dual",
+        "id": "KeeganRice-college-2526-ncaa-singles-friend",
+        "date": "20-May-2026",
+        "tournament": "NCAA Singles Championship",
+        "round": "R2",
         "surface": "Hard",
-        "opponent": "Luka Petrovic",
+        "opponent": "Jay Friend",
         "result": "W",
-        "score": "7-5  6-3",
+        "score": "",
         "isCollege": true
       },
       {
-        "id": "KeeganRice-college-acc-duke-26",
-        "date": "15-Mar-2026",
-        "tournament": "ACC Dual vs Duke",
+        "id": "KeeganRice-college-2526-ncaa-final-ivanovski",
+        "date": "17-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "Final",
+        "surface": "Hard",
+        "opponent": "Kalin Ivanovski",
+        "result": "W",
+        "score": "6-1  6-3",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-ncaa-msstate-jovanovic",
+        "date": "14-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "QF",
+        "surface": "Hard",
+        "opponent": "Petar Jovanovic",
+        "result": "W",
+        "score": "",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-ncaa-columbia-kotzen",
+        "date": "02-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Nicolas Kotzen",
+        "result": "W",
+        "score": "",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-nd-gregg",
+        "date": "03-Apr-2026",
+        "tournament": "Dual vs Notre Dame",
         "round": "Dual",
         "surface": "Hard",
-        "opponent": "James Truman",
+        "opponent": "Perry Gregg",
         "result": "W",
-        "score": "6-4  6-2",
+        "score": "6-3  6-3",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-miami-prat",
+        "date": "29-Mar-2026",
+        "tournament": "Dual at Miami",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Antonio Prat",
+        "result": "W",
+        "score": "7-6(4)  5-7  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-unc-jones",
+        "date": "15-Mar-2026",
+        "tournament": "Dual vs North Carolina",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Roan Jones",
+        "result": "W",
+        "score": "6-2  6-4",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-stanford-rivera",
+        "date": "08-Mar-2026",
+        "tournament": "Dual at Stanford",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Hudson Rivera",
+        "result": "W",
+        "score": "6-3  6-4",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-smu-finkelstein",
+        "date": "01-Mar-2026",
+        "tournament": "Dual vs SMU",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Alex Finkelstein",
+        "result": "W",
+        "score": "6-1  3-6  6-1",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-ita-indoors-jovanovic",
+        "date": "14-Feb-2026",
+        "tournament": "ITA National Team Indoor Championship",
+        "round": "QF",
+        "surface": "Hard (indoor)",
+        "opponent": "Petar Jovanovic",
+        "result": "W",
+        "score": "6-3  7-6(1)",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-columbia-palta",
+        "date": "30-Jan-2026",
+        "tournament": "Dual vs Columbia",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Sachin Palta",
+        "result": "W",
+        "score": "6-2  6-1",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-tcu-ravel",
+        "date": "15-Jan-2026",
+        "tournament": "Dual vs TCU",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Cosme Rolland De Ravel",
+        "result": "W",
+        "score": "6-4  7-5",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-drummondville-rybakov",
+        "date": "25-Nov-2025",
+        "tournament": "Drummondville Challenger",
+        "round": "R32",
+        "surface": "Hard (indoor)",
+        "opponent": "Alex Rybakov",
+        "result": "W",
+        "score": "",
         "isCollege": true
       },
       {
@@ -459,6 +607,17 @@
         "isCollege": false
       },
       {
+        "id": "KeeganRice-college-2526-ita-allamer-ghibaudo",
+        "date": "26-Sep-2025",
+        "tournament": "ITA All-American Championship",
+        "round": "R64",
+        "surface": "Hard",
+        "opponent": "Antoine Ghibaudo",
+        "result": "W",
+        "score": "",
+        "isCollege": true
+      },
+      {
         "id": "KeeganRice-18",
         "date": "14-Jul-2025",
         "tournament": "Granby CH",
@@ -479,6 +638,50 @@
         "result": "W",
         "score": "6-0 6-1",
         "isCollege": false
+      },
+      {
+        "id": "KeeganRice-college-2425-ncaa-arizona-ludoski",
+        "date": "10-May-2025",
+        "tournament": "NCAA Super Regional vs Arizona",
+        "round": "Super Regional",
+        "surface": "Hard",
+        "opponent": "Zoran Ludoski",
+        "result": "W",
+        "score": "6-4  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2425-wake-xilas",
+        "date": "19-Apr-2025",
+        "tournament": "ACC Championship vs Wake Forest",
+        "round": "SF",
+        "surface": "Hard",
+        "opponent": "Ioannis Xilas",
+        "result": "W",
+        "score": "6-0  7-6(6)",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2425-gt-bonetto",
+        "date": "04-Apr-2025",
+        "tournament": "Dual vs Georgia Tech",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Nate Bonetto",
+        "result": "W",
+        "score": "6-2  6-3",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2425-sc-daryabeigi",
+        "date": "21-Jan-2025",
+        "tournament": "Dual at South Carolina",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Sean Daryabeigi",
+        "result": "W",
+        "score": "6-7(6)  7-5  3-0 RET",
+        "isCollege": true
       }
     ]
   },
@@ -497,25 +700,45 @@
     },
     "surface": "hard",
     "surfaceCounts": {
-      "hard": 22
+      "hard": 38
     },
-    "matchCount": 22,
+    "matchCount": 38,
+    "scoredCount": 33,
+    "unscoredCount": 5,
     "record": {
-      "wins": 13,
+      "wins": 29,
       "losses": 9
     },
-    "games": {
-      "won": 300,
-      "lost": 196
+    "officialRecord": {
+      "seasons": [
+        {
+          "season": "2024-25",
+          "singles": "19-13"
+        },
+        {
+          "season": "2025-26",
+          "singles": "35-6"
+        }
+      ],
+      "careerSingles": "53-19",
+      "source": "UVA career stats table"
     },
-    "dateRange": "Jul 2025 \u2013 Aug 2026",
-    "note": "Aggregated across 22 matches (Jul 2025 \u2013 Aug 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "highlightCount": 18,
+    "highlightsOnly": false,
+    "collegeOnly": false,
+    "bioNotes": null,
+    "games": {
+      "won": 447,
+      "lost": 278
+    },
+    "dateRange": "Jan 2025 \u2013 Aug 2026",
+    "note": "Aggregated across 33 scored matches of 38 documented (Jan 2025 \u2013 Aug 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
     "pointsWon": {
-      "playerPct": 50,
-      "opponentPct": 50,
+      "playerPct": 55,
+      "opponentPct": 45,
       "playerLabel": "Keegan",
-      "totalPoints": 2083,
-      "source": "Weighted across 22 matches",
+      "totalPoints": 3046,
+      "source": "Weighted across 33 scored matches",
       "isLoss": false
     },
     "statAverages": {
@@ -528,18 +751,23 @@
     },
     "statCoverage": {
       "detailed": 20,
-      "total": 22
+      "total": 33
     },
     "scoutingReport": [
       {
         "kind": "strength",
-        "short": "9 wins over higher-ranked opponents",
-        "text": "Beat 9 better-ranked opponents in this sample, best of them #129 (Pablo Llamas Ruiz at Vancouver CH) \u2014 the level travels up."
+        "short": "Wins 55% of points",
+        "text": "Takes 55% of all points played, a margin that usually converts to comfortable wins."
       },
       {
         "kind": "strength",
-        "short": "Ad-side serve (modeled)",
-        "text": "The model leans on the ad court (83% of serve points won vs 69% on the deuce side), though this split follows charted reference rates rather than tracked data for this player."
+        "short": "9 wins over higher-ranked opponents",
+        "text": "Beat 9 better-ranked opponents are on record, best of them #129 (Pablo Llamas Ruiz at Vancouver CH) \u2014 the level travels up."
+      },
+      {
+        "kind": "strength",
+        "short": "24-9 record",
+        "text": "Winning 73% of matches in this sample (24-9)."
       },
       {
         "kind": "weakness",
@@ -553,28 +781,28 @@
         {
           "title": "Deuce court",
           "pct": 69,
-          "total": 358,
+          "total": 526,
           "caption": "Serve points won",
           "highlight": false
         },
         {
           "title": "Ad court",
-          "pct": 83,
-          "total": 434,
+          "pct": 84,
+          "total": 639,
           "caption": "Serve points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 T serve",
           "pct": 30,
-          "total": 155,
+          "total": 226,
           "caption": "T-serve share",
           "highlight": false
         },
         {
           "title": "Ad \u2014 T serve",
-          "pct": 34,
-          "total": 179,
+          "pct": 35,
+          "total": 263,
           "caption": "T-serve share",
           "highlight": false
         }
@@ -586,40 +814,42 @@
         {
           "title": "Deuce court",
           "pct": 42,
-          "total": 220,
+          "total": 320,
           "caption": "Return points won",
           "highlight": false
         },
         {
           "title": "Ad court",
           "pct": 46,
-          "total": 240,
+          "total": 349,
           "caption": "Return points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 total",
           "pct": 42,
-          "total": 520,
+          "total": 761,
           "caption": "Return points played",
           "highlight": false
         },
         {
           "title": "Ad \u2014 total",
           "pct": 46,
-          "total": 520,
+          "total": 761,
           "caption": "Return points played",
           "highlight": false
         }
       ]
     },
     "coachingNotes": [
-      "22 matches in this sample: 13-9 record (59% win rate).",
-      "Serving is stronger on the ad side (83% vs 69% points won) \u2014 a 14-point spread across the sample.",
+      "Official college singles record is 53-19 (UVA career stats table). 18 of these results come from UVA's highlight notes, which name wins far more often than losses \u2014 read those as cited examples, not as a win rate.",
+      "33 matches in this sample: 24-9 record (73% win rate).",
+      "Serving is stronger on the ad side (84% vs 69% points won) \u2014 a 15-point spread across the sample.",
       "Returning is marginally better on the ad side (46% vs 42%).",
-      "Keegan is 4-4 in matches that went the distance (8 three-setters in this sample).",
-      "College play (duals, ITA, NCAA): 2-0 across 2 matches.",
-      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 20 of 22 matches \u2014 averages use those matches, while the deuce/ad splits and point totals cover all of them."
+      "Keegan is 7-4 in matches that went the distance (11 three-setters in this sample).",
+      "College play (duals, ITA, NCAA): 13-0 across 13 matches.",
+      "5 of these 38 results are documented without a published score, so they count toward the record and appear in the match list but are left out of every point estimate.",
+      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 20 of 33 scored matches \u2014 averages use those, while the deuce/ad splits and point totals cover every scored match."
     ],
     "strengths": [
       "Reliable ad-side serving pattern to lean on in tight games (break points, game points)."
@@ -630,94 +860,94 @@
     ],
     "featuredMatches": [
       {
-        "id": "KeeganRice-12",
-        "date": "06-Jul-2026",
-        "tournament": "M25 Laval",
-        "round": "R16",
+        "id": "KeeganRice-college-2526-ncaa-final-ivanovski",
+        "date": "17-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "Final",
         "surface": "Hard",
-        "opponent": "Matthew Thomson",
-        "opponentRank": 1230,
+        "opponent": "Kalin Ivanovski",
+        "opponentRank": 41,
         "result": "W",
-        "score": "6-1 6-4",
-        "pointsWonPct": 62,
-        "totalPoints": 71,
-        "source": "Dominance ratio",
-        "isCollege": false
+        "score": "6-1  6-3",
+        "pointsWonPct": 75,
+        "totalPoints": 67,
+        "source": "Games-won estimate",
+        "isCollege": true
       },
       {
-        "id": "KeeganRice-10",
-        "date": "06-Jul-2026",
-        "tournament": "M25 Laval",
+        "id": "KeeganRice-college-2526-nd-gregg",
+        "date": "03-Apr-2026",
+        "tournament": "Dual vs Notre Dame",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Perry Gregg",
+        "opponentRank": 72,
+        "result": "W",
+        "score": "6-3  6-3",
+        "pointsWonPct": 67,
+        "totalPoints": 76,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-unc-jones",
+        "date": "15-Mar-2026",
+        "tournament": "Dual vs North Carolina",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Roan Jones",
+        "opponentRank": 42,
+        "result": "W",
+        "score": "6-2  6-4",
+        "pointsWonPct": 67,
+        "totalPoints": 76,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-columbia-palta",
+        "date": "30-Jan-2026",
+        "tournament": "Dual vs Columbia",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Sachin Palta",
+        "opponentRank": 65,
+        "result": "W",
+        "score": "6-2  6-1",
+        "pointsWonPct": 80,
+        "totalPoints": 63,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2425-wake-xilas",
+        "date": "19-Apr-2025",
+        "tournament": "ACC Championship vs Wake Forest",
         "round": "SF",
         "surface": "Hard",
-        "opponent": "Jay Dylan Hara Friend",
-        "opponentRank": 407,
+        "opponent": "Ioannis Xilas",
+        "opponentRank": 121,
         "result": "W",
-        "score": "7-5 6-2",
-        "pointsWonPct": 61,
-        "totalPoints": 84,
-        "source": "Dominance ratio",
-        "isCollege": false
-      },
-      {
-        "id": "KeeganRice-13",
-        "date": "06-Jul-2026",
-        "tournament": "M25 Laval",
-        "round": "R32",
-        "surface": "Hard",
-        "opponent": "Dan Martin",
-        "opponentRank": null,
-        "result": "W",
-        "score": "6-2 6-2",
-        "pointsWonPct": 60,
-        "totalPoints": 67,
-        "source": "Dominance ratio",
-        "isCollege": false
-      },
-      {
-        "id": "KeeganRice-college-acc-fs-26",
-        "date": "10-Apr-2026",
-        "tournament": "ACC Dual vs Florida State",
-        "round": "Dual",
-        "surface": "Hard",
-        "opponent": "Luka Petrovic",
-        "opponentRank": null,
-        "result": "W",
-        "score": "7-5  6-3",
-        "pointsWonPct": 55,
-        "totalPoints": 88,
-        "source": "Dominance ratio",
+        "score": "6-0  7-6(6)",
+        "pointsWonPct": 68,
+        "totalPoints": 80,
+        "source": "Games-won estimate",
         "isCollege": true
       },
       {
-        "id": "KeeganRice-college-acc-duke-26",
-        "date": "15-Mar-2026",
-        "tournament": "ACC Dual vs Duke",
+        "id": "KeeganRice-college-2425-gt-bonetto",
+        "date": "04-Apr-2025",
+        "tournament": "Dual vs Georgia Tech",
         "round": "Dual",
         "surface": "Hard",
-        "opponent": "James Truman",
-        "opponentRank": null,
+        "opponent": "Nate Bonetto",
+        "opponentRank": 113,
         "result": "W",
-        "score": "6-4  6-2",
-        "pointsWonPct": 58,
-        "totalPoints": 76,
-        "source": "Dominance ratio",
+        "score": "6-2  6-3",
+        "pointsWonPct": 71,
+        "totalPoints": 71,
+        "source": "Games-won estimate",
         "isCollege": true
-      },
-      {
-        "id": "KeeganRice-19",
-        "date": "14-Jul-2025",
-        "tournament": "Granby CH",
-        "round": "Q1",
-        "surface": "Hard",
-        "opponent": "Alvin Nicholas Tudorica",
-        "opponentRank": 429,
-        "result": "W",
-        "score": "6-0 6-1",
-        "pointsWonPct": 69,
-        "totalPoints": 55,
-        "source": "Dominance ratio",
-        "isCollege": false
       }
     ],
     "matches": [
@@ -876,25 +1106,146 @@
         "isCollege": false
       },
       {
-        "id": "KeeganRice-college-acc-fs-26",
-        "date": "10-Apr-2026",
-        "tournament": "ACC Dual vs Florida State",
-        "round": "Dual",
+        "id": "KeeganRice-college-2526-ncaa-singles-friend",
+        "date": "20-May-2026",
+        "tournament": "NCAA Singles Championship",
+        "round": "R2",
         "surface": "Hard",
-        "opponent": "Luka Petrovic",
+        "opponent": "Jay Friend",
         "result": "W",
-        "score": "7-5  6-3",
+        "score": "",
         "isCollege": true
       },
       {
-        "id": "KeeganRice-college-acc-duke-26",
-        "date": "15-Mar-2026",
-        "tournament": "ACC Dual vs Duke",
+        "id": "KeeganRice-college-2526-ncaa-final-ivanovski",
+        "date": "17-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "Final",
+        "surface": "Hard",
+        "opponent": "Kalin Ivanovski",
+        "result": "W",
+        "score": "6-1  6-3",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-ncaa-msstate-jovanovic",
+        "date": "14-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "QF",
+        "surface": "Hard",
+        "opponent": "Petar Jovanovic",
+        "result": "W",
+        "score": "",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-ncaa-columbia-kotzen",
+        "date": "02-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Nicolas Kotzen",
+        "result": "W",
+        "score": "",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-nd-gregg",
+        "date": "03-Apr-2026",
+        "tournament": "Dual vs Notre Dame",
         "round": "Dual",
         "surface": "Hard",
-        "opponent": "James Truman",
+        "opponent": "Perry Gregg",
         "result": "W",
-        "score": "6-4  6-2",
+        "score": "6-3  6-3",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-miami-prat",
+        "date": "29-Mar-2026",
+        "tournament": "Dual at Miami",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Antonio Prat",
+        "result": "W",
+        "score": "7-6(4)  5-7  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-unc-jones",
+        "date": "15-Mar-2026",
+        "tournament": "Dual vs North Carolina",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Roan Jones",
+        "result": "W",
+        "score": "6-2  6-4",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-stanford-rivera",
+        "date": "08-Mar-2026",
+        "tournament": "Dual at Stanford",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Hudson Rivera",
+        "result": "W",
+        "score": "6-3  6-4",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-smu-finkelstein",
+        "date": "01-Mar-2026",
+        "tournament": "Dual vs SMU",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Alex Finkelstein",
+        "result": "W",
+        "score": "6-1  3-6  6-1",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-ita-indoors-jovanovic",
+        "date": "14-Feb-2026",
+        "tournament": "ITA National Team Indoor Championship",
+        "round": "QF",
+        "surface": "Hard (indoor)",
+        "opponent": "Petar Jovanovic",
+        "result": "W",
+        "score": "6-3  7-6(1)",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-columbia-palta",
+        "date": "30-Jan-2026",
+        "tournament": "Dual vs Columbia",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Sachin Palta",
+        "result": "W",
+        "score": "6-2  6-1",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-tcu-ravel",
+        "date": "15-Jan-2026",
+        "tournament": "Dual vs TCU",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Cosme Rolland De Ravel",
+        "result": "W",
+        "score": "6-4  7-5",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2526-drummondville-rybakov",
+        "date": "25-Nov-2025",
+        "tournament": "Drummondville Challenger",
+        "round": "R32",
+        "surface": "Hard (indoor)",
+        "opponent": "Alex Rybakov",
+        "result": "W",
+        "score": "",
         "isCollege": true
       },
       {
@@ -942,6 +1293,17 @@
         "isCollege": false
       },
       {
+        "id": "KeeganRice-college-2526-ita-allamer-ghibaudo",
+        "date": "26-Sep-2025",
+        "tournament": "ITA All-American Championship",
+        "round": "R64",
+        "surface": "Hard",
+        "opponent": "Antoine Ghibaudo",
+        "result": "W",
+        "score": "",
+        "isCollege": true
+      },
+      {
         "id": "KeeganRice-18",
         "date": "14-Jul-2025",
         "tournament": "Granby CH",
@@ -962,6 +1324,50 @@
         "result": "W",
         "score": "6-0 6-1",
         "isCollege": false
+      },
+      {
+        "id": "KeeganRice-college-2425-ncaa-arizona-ludoski",
+        "date": "10-May-2025",
+        "tournament": "NCAA Super Regional vs Arizona",
+        "round": "Super Regional",
+        "surface": "Hard",
+        "opponent": "Zoran Ludoski",
+        "result": "W",
+        "score": "6-4  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2425-wake-xilas",
+        "date": "19-Apr-2025",
+        "tournament": "ACC Championship vs Wake Forest",
+        "round": "SF",
+        "surface": "Hard",
+        "opponent": "Ioannis Xilas",
+        "result": "W",
+        "score": "6-0  7-6(6)",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2425-gt-bonetto",
+        "date": "04-Apr-2025",
+        "tournament": "Dual vs Georgia Tech",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Nate Bonetto",
+        "result": "W",
+        "score": "6-2  6-3",
+        "isCollege": true
+      },
+      {
+        "id": "KeeganRice-college-2425-sc-daryabeigi",
+        "date": "21-Jan-2025",
+        "tournament": "Dual at South Carolina",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Sean Daryabeigi",
+        "result": "W",
+        "score": "6-7(6)  7-5  3-0 RET",
+        "isCollege": true
       }
     ]
   }

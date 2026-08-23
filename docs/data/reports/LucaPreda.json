@@ -18,22 +18,29 @@
       "clay": 10
     },
     "matchCount": 19,
+    "scoredCount": 19,
+    "unscoredCount": 0,
     "record": {
       "wins": 9,
       "losses": 10
     },
+    "officialRecord": null,
+    "highlightCount": 0,
+    "highlightsOnly": false,
+    "collegeOnly": false,
+    "bioNotes": null,
     "games": {
       "won": 229,
       "lost": 156
     },
     "dateRange": "Jun 2025 \u2013 Nov 2025",
-    "note": "Aggregated across 19 matches (Jun 2025 \u2013 Nov 2025). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "note": "Aggregated across 19 scored matches (Jun 2025 \u2013 Nov 2025). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
     "pointsWon": {
       "playerPct": 51,
       "opponentPct": 49,
       "playerLabel": "Luca",
       "totalPoints": 1618,
-      "source": "Weighted across 19 matches",
+      "source": "Weighted across 19 scored matches",
       "isLoss": false
     },
     "statAverages": {
@@ -52,7 +59,7 @@
       {
         "kind": "strength",
         "short": "5 wins over higher-ranked opponents",
-        "text": "Beat 5 better-ranked opponents in this sample, best of them #188 (Oliver Crawford at Hersonissos 6 CH) \u2014 the level travels up."
+        "text": "Beat 5 better-ranked opponents are on record, best of them #188 (Oliver Crawford at Hersonissos 6 CH) \u2014 the level travels up."
       },
       {
         "kind": "weakness",
@@ -473,22 +480,29 @@
       "clay": 10
     },
     "matchCount": 9,
+    "scoredCount": 9,
+    "unscoredCount": 0,
     "record": {
       "wins": 4,
       "losses": 5
     },
+    "officialRecord": null,
+    "highlightCount": 0,
+    "highlightsOnly": false,
+    "collegeOnly": false,
+    "bioNotes": null,
     "games": {
       "won": 119,
       "lost": 91
     },
     "dateRange": "Oct 2025 \u2013 Nov 2025",
-    "note": "Aggregated across 9 matches (Oct 2025 \u2013 Nov 2025). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "note": "Aggregated across 9 scored matches (Oct 2025 \u2013 Nov 2025). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
     "pointsWon": {
       "playerPct": 50,
       "opponentPct": 50,
       "playerLabel": "Luca",
       "totalPoints": 883,
-      "source": "Weighted across 9 matches",
+      "source": "Weighted across 9 scored matches",
       "isLoss": false
     },
     "statAverages": {
@@ -507,7 +521,7 @@
       {
         "kind": "strength",
         "short": "3 wins over higher-ranked opponents",
-        "text": "Beat 3 better-ranked opponents in this sample, best of them #188 (Oliver Crawford at Hersonissos 6 CH) \u2014 the level travels up."
+        "text": "Beat 3 better-ranked opponents are on record, best of them #188 (Oliver Crawford at Hersonissos 6 CH) \u2014 the level travels up."
       },
       {
         "kind": "weakness",
@@ -818,22 +832,29 @@
       "clay": 10
     },
     "matchCount": 10,
+    "scoredCount": 10,
+    "unscoredCount": 0,
     "record": {
       "wins": 5,
       "losses": 5
     },
+    "officialRecord": null,
+    "highlightCount": 0,
+    "highlightsOnly": false,
+    "collegeOnly": false,
+    "bioNotes": null,
     "games": {
       "won": 110,
       "lost": 65
     },
     "dateRange": "Jun 2025 \u2013 Aug 2025",
-    "note": "Aggregated across 10 matches (Jun 2025 \u2013 Aug 2025). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "note": "Aggregated across 10 scored matches (Jun 2025 \u2013 Aug 2025). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
     "pointsWon": {
       "playerPct": 53,
       "opponentPct": 47,
       "playerLabel": "Luca",
       "totalPoints": 735,
-      "source": "Weighted across 10 matches",
+      "source": "Weighted across 10 scored matches",
       "isLoss": false
     },
     "statAverages": {
@@ -852,7 +873,7 @@
       {
         "kind": "strength",
         "short": "2 wins over higher-ranked opponents",
-        "text": "Beat 2 better-ranked opponents in this sample, best of them #276 (Marko Topo at Iasi CH) \u2014 the level travels up."
+        "text": "Beat 2 better-ranked opponents are on record, best of them #276 (Marko Topo at Iasi CH) \u2014 the level travels up."
       },
       {
         "kind": "strength",

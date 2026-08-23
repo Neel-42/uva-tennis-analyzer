@@ -227,6 +227,72 @@ button:hover { border-color: var(--accent); }
   color: var(--muted);
 }
 
+.official-record {
+  margin: 0 0 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  background: var(--card-alt, rgba(255, 255, 255, 0.02));
+}
+
+.official-record h3 {
+  margin: 0 0 6px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.official-total {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.official-src {
+  margin-left: 8px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.season-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.season-list li {
+  display: flex;
+  gap: 6px;
+  font-size: 0.85rem;
+}
+
+.season-list .season {
+  color: var(--muted);
+}
+
+.season-list .rec {
+  font-variant-numeric: tabular-nums;
+}
+
+.official-caveat {
+  margin: 10px 0 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.match-row-score.unscored {
+  font-style: italic;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
 .surface-filter {
   display: flex;
   flex-wrap: wrap;
@@ -440,6 +506,11 @@ button:hover { border-color: var(--accent); }
 .roster-card .badge.pending {
   border-color: var(--muted);
   color: var(--muted);
+}
+
+.roster-card .badge.college {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .search-results {

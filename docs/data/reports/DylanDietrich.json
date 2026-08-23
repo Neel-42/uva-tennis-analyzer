@@ -15,25 +15,49 @@
     "surface": "all",
     "surfaceCounts": {
       "clay": 21,
-      "hard": 14
+      "hard": 20
     },
-    "matchCount": 35,
+    "matchCount": 41,
+    "scoredCount": 34,
+    "unscoredCount": 7,
     "record": {
-      "wins": 27,
-      "losses": 8
+      "wins": 34,
+      "losses": 7
     },
+    "officialRecord": {
+      "seasons": [
+        {
+          "season": "2023-24",
+          "singles": "23-7"
+        },
+        {
+          "season": "2024-25",
+          "singles": "25-9"
+        },
+        {
+          "season": "2025-26",
+          "singles": "29-4"
+        }
+      ],
+      "careerSingles": "77-20",
+      "source": "UVA career stats table"
+    },
+    "highlightCount": 20,
+    "highlightsOnly": false,
+    "collegeOnly": false,
+    "bioNotes": null,
     "games": {
-      "won": 488,
-      "lost": 357
+      "won": 465,
+      "lost": 330
     },
-    "dateRange": "Sep 2025 \u2013 Aug 2026",
-    "note": "Aggregated across 35 matches (Sep 2025 \u2013 Aug 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "dateRange": "Jan 2024 \u2013 Aug 2026",
+    "note": "Aggregated across 34 scored matches of 41 documented (Jan 2024 \u2013 Aug 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
     "pointsWon": {
-      "playerPct": 54,
-      "opponentPct": 46,
+      "playerPct": 56,
+      "opponentPct": 44,
       "playerLabel": "Dylan",
-      "totalPoints": 3550,
-      "source": "Weighted across 35 matches",
+      "totalPoints": 3340,
+      "source": "Weighted across 34 scored matches",
       "isLoss": false
     },
     "statAverages": {
@@ -42,11 +66,11 @@
       "firstServeInPct": 64.8,
       "firstServeWonPct": 74.6,
       "secondServeWonPct": 52.2,
-      "dominanceRatio": 1.2
+      "dominanceRatio": 1.3
     },
     "statCoverage": {
       "detailed": 21,
-      "total": 35
+      "total": 34
     },
     "scoutingReport": [
       {
@@ -56,13 +80,13 @@
       },
       {
         "kind": "strength",
-        "short": "27-8 record",
-        "text": "Winning 77% of matches in this sample (27-8)."
+        "short": "28-6 record",
+        "text": "Winning 82% of matches in this sample (28-6)."
       },
       {
         "kind": "strength",
-        "short": "11 wins over higher-ranked opponents",
-        "text": "Beat 11 better-ranked opponents in this sample, best of them #126 (Otto Virtanen at Gstaad) \u2014 the level travels up."
+        "short": "Wins 56% of points",
+        "text": "Takes 56% of all points played, a margin that usually converts to comfortable wins."
       },
       {
         "kind": "weakness",
@@ -76,28 +100,28 @@
         {
           "title": "Deuce court",
           "pct": 70,
-          "total": 623,
+          "total": 586,
           "caption": "Serve points won",
           "highlight": false
         },
         {
           "title": "Ad court",
           "pct": 85,
-          "total": 758,
+          "total": 713,
           "caption": "Serve points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 T serve",
           "pct": 30,
-          "total": 264,
+          "total": 248,
           "caption": "T-serve share",
           "highlight": false
         },
         {
           "title": "Ad \u2014 T serve",
           "pct": 35,
-          "total": 309,
+          "total": 291,
           "caption": "T-serve share",
           "highlight": false
         }
@@ -109,40 +133,42 @@
         {
           "title": "Deuce court",
           "pct": 43,
-          "total": 384,
+          "total": 359,
           "caption": "Return points won",
           "highlight": false
         },
         {
           "title": "Ad court",
           "pct": 47,
-          "total": 419,
+          "total": 391,
           "caption": "Return points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 total",
           "pct": 43,
-          "total": 887,
+          "total": 835,
           "caption": "Return points played",
           "highlight": false
         },
         {
           "title": "Ad \u2014 total",
           "pct": 47,
-          "total": 887,
+          "total": 835,
           "caption": "Return points played",
           "highlight": false
         }
       ]
     },
     "coachingNotes": [
-      "35 matches in this sample: 27-8 record (77% win rate).",
+      "Official college singles record is 77-20 (UVA career stats table). 20 of these results come from UVA's highlight notes, which name wins far more often than losses \u2014 read those as cited examples, not as a win rate.",
+      "34 matches in this sample: 28-6 record (82% win rate).",
       "Serving is stronger on the ad side (85% vs 70% points won) \u2014 a 15-point spread across the sample.",
       "Returning is marginally better on the ad side (47% vs 43%).",
-      "Dylan is 13-5 in matches that went the distance (18 three-setters in this sample).",
-      "College play (duals, ITA, NCAA): 12-2 across 14 matches.",
-      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 21 of 35 matches \u2014 averages use those matches, while the deuce/ad splits and point totals cover all of them."
+      "Dylan is 14-3 in matches that went the distance (17 three-setters in this sample).",
+      "College play (duals, ITA, NCAA): 13-0 across 13 matches.",
+      "7 of these 41 results are documented without a published score, so they count toward the record and appear in the match list but are left out of every point estimate.",
+      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 21 of 34 scored matches \u2014 averages use those, while the deuce/ad splits and point totals cover every scored match."
     ],
     "strengths": [
       "Reliable ad-side serving pattern to lean on in tight games (break points, game points).",
@@ -152,93 +178,93 @@
     "development": [],
     "featuredMatches": [
       {
-        "id": "DylanDietrich-college-ncaa-final",
-        "date": "17-May-2026",
-        "tournament": "NCAA Team Championship",
-        "round": "Final",
-        "surface": "Hard",
-        "opponent": "Sebastian Gorzny",
-        "opponentRank": null,
-        "result": "W",
-        "score": "6-7(2)  6-4  6-4",
-        "pointsWonPct": 55,
-        "totalPoints": 139,
-        "source": "Dominance ratio",
-        "isCollege": true
-      },
-      {
-        "id": "DylanDietrich-college-ncaa-qf",
-        "date": "14-May-2026",
-        "tournament": "NCAA Team Championship",
-        "round": "QF",
-        "surface": "Hard",
-        "opponent": "Benito Sanchez Martinez",
-        "opponentRank": null,
-        "result": "W",
-        "score": "6-4  6-3",
-        "pointsWonPct": 57,
-        "totalPoints": 80,
-        "source": "Dominance ratio",
-        "isCollege": true
-      },
-      {
-        "id": "DylanDietrich-college-ncaa-r32-columbia",
-        "date": "02-May-2026",
-        "tournament": "NCAA Team Championship",
-        "round": "R32",
-        "surface": "Hard",
-        "opponent": "Michael Zheng",
-        "opponentRank": null,
-        "result": "W",
-        "score": "6-7(8)  6-3  6-4",
-        "pointsWonPct": 53,
-        "totalPoints": 134,
-        "source": "Dominance ratio",
-        "isCollege": true
-      },
-      {
-        "id": "DylanDietrich-college-dual-wake",
+        "id": "DylanDietrich-college-2526-wake-suresh",
         "date": "22-Mar-2026",
-        "tournament": "Dual at #1 Wake Forest",
+        "tournament": "Dual at Wake Forest",
         "round": "Dual",
         "surface": "Hard",
         "opponent": "DK Suresh Ekambaram",
-        "opponentRank": null,
+        "opponentRank": 21,
         "result": "W",
         "score": "6-3  6-4",
-        "pointsWonPct": 57,
+        "pointsWonPct": 63,
         "totalPoints": 80,
-        "source": "Dominance ratio",
+        "source": "Games-won estimate",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-tcu",
+        "id": "DylanDietrich-college-2526-smu-svajda",
+        "date": "01-Mar-2026",
+        "tournament": "Dual vs SMU",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Trevor Svajda",
+        "opponentRank": 1,
+        "result": "W",
+        "score": "3-6  6-1  6-3",
+        "pointsWonPct": 60,
+        "totalPoints": 105,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2526-michigan-dahlin",
+        "date": "24-Jan-2026",
+        "tournament": "Dual vs Michigan",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Max Dahlin",
+        "opponentRank": null,
+        "result": "W",
+        "score": "6-3  3-1 RET",
+        "pointsWonPct": 69,
+        "totalPoints": 55,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2526-tcu-chan",
         "date": "15-Jan-2026",
-        "tournament": "Dual vs #3 TCU",
+        "tournament": "Dual vs TCU",
         "round": "Dual",
         "surface": "Hard",
         "opponent": "Duncan Chan",
-        "opponentRank": null,
+        "opponentRank": 6,
         "result": "W",
         "score": "6-4  7-5",
-        "pointsWonPct": 54,
+        "pointsWonPct": 59,
         "totalPoints": 92,
-        "source": "Dominance ratio",
+        "source": "Games-won estimate",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-ita-all-amer-r16",
-        "date": "26-Sep-2025",
-        "tournament": "ITA All-American Championship",
-        "round": "R16",
-        "surface": "Hard (indoor)",
-        "opponent": "Jack Anthrop",
+        "id": "DylanDietrich-college-2425-osu-kim",
+        "date": "31-Jan-2025",
+        "tournament": "Dual vs Ohio State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Aidan Kim",
+        "opponentRank": 11,
+        "result": "W",
+        "score": "6-4  6-2",
+        "pointsWonPct": 67,
+        "totalPoints": 76,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2324-liberty-dual",
+        "date": "13-Jan-2024",
+        "tournament": "Dual vs Liberty",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Thando Longwe-Smit",
         "opponentRank": null,
         "result": "W",
-        "score": "6-4  6-4",
-        "pointsWonPct": 55,
-        "totalPoints": 84,
-        "source": "Dominance ratio",
+        "score": "6-0  6-0",
+        "pointsWonPct": 99,
+        "totalPoints": 50,
+        "source": "Games-won estimate",
         "isCollege": true
       }
     ],
@@ -475,7 +501,7 @@
         "isCollege": false
       },
       {
-        "id": "DylanDietrich-college-ncaa-final",
+        "id": "DylanDietrich-college-2526-ncaa-final-gorzny",
         "date": "17-May-2026",
         "tournament": "NCAA Team Championship",
         "round": "Final",
@@ -486,42 +512,42 @@
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-ncaa-sf",
+        "id": "DylanDietrich-college-2526-ncaa-sf-wake",
         "date": "16-May-2026",
         "tournament": "NCAA Team Championship",
         "round": "SF",
         "surface": "Hard",
         "opponent": "DK Suresh",
         "result": "W",
-        "score": "2-6  6-0  6-3",
+        "score": "",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-ncaa-qf",
+        "id": "DylanDietrich-college-2526-ncaa-qf-msstate",
         "date": "14-May-2026",
         "tournament": "NCAA Team Championship",
         "round": "QF",
         "surface": "Hard",
         "opponent": "Benito Sanchez Martinez",
         "result": "W",
-        "score": "6-4  6-3",
+        "score": "",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-ncaa-r32-columbia",
+        "id": "DylanDietrich-college-2526-ncaa-r2-zheng",
         "date": "02-May-2026",
         "tournament": "NCAA Team Championship",
         "round": "R32",
         "surface": "Hard",
         "opponent": "Michael Zheng",
         "result": "W",
-        "score": "6-7(8)  6-3  6-4",
+        "score": "",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-notre-dame",
+        "id": "DylanDietrich-college-2526-nd-dominko",
         "date": "03-Apr-2026",
-        "tournament": "Dual vs #15 Notre Dame",
+        "tournament": "Dual vs Notre Dame",
         "round": "Dual",
         "surface": "Hard",
         "opponent": "Sebastian Dominko",
@@ -530,9 +556,9 @@
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-wake",
+        "id": "DylanDietrich-college-2526-wake-suresh",
         "date": "22-Mar-2026",
-        "tournament": "Dual at #1 Wake Forest",
+        "tournament": "Dual at Wake Forest",
         "round": "Dual",
         "surface": "Hard",
         "opponent": "DK Suresh Ekambaram",
@@ -541,7 +567,7 @@
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-ncstate",
+        "id": "DylanDietrich-college-2526-ncstate-borisiouk",
         "date": "20-Mar-2026",
         "tournament": "Dual at NC State",
         "round": "Dual",
@@ -552,9 +578,9 @@
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-svajda",
+        "id": "DylanDietrich-college-2526-smu-svajda",
         "date": "01-Mar-2026",
-        "tournament": "Dual vs #38 SMU",
+        "tournament": "Dual vs SMU",
         "round": "Dual",
         "surface": "Hard",
         "opponent": "Trevor Svajda",
@@ -563,42 +589,53 @@
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-ita-indoors",
+        "id": "DylanDietrich-college-2526-ita-indoors-kim",
         "date": "16-Feb-2026",
-        "tournament": "ITA National Team Indoors",
+        "tournament": "ITA National Team Indoor Championship",
         "round": "SF",
         "surface": "Hard (indoor)",
         "opponent": "Aidan Kim",
         "result": "L",
-        "score": "4-6  6-7(5)  6-4",
+        "score": "",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-osu-home",
+        "id": "DylanDietrich-college-2526-osu-kim",
         "date": "07-Feb-2026",
-        "tournament": "Dual at #2 Ohio State",
+        "tournament": "Dual at Ohio State",
         "round": "Dual",
-        "surface": "Hard (indoor)",
+        "surface": "Hard",
         "opponent": "Aidan Kim",
         "result": "W",
         "score": "7-6(3)  3-6  6-4",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-texas",
+        "id": "DylanDietrich-college-2526-michigan-dahlin",
+        "date": "24-Jan-2026",
+        "tournament": "Dual vs Michigan",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Max Dahlin",
+        "result": "W",
+        "score": "6-3  3-1 RET",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2526-texas-gorzny",
         "date": "18-Jan-2026",
-        "tournament": "Dual vs #2 Texas",
+        "tournament": "Dual vs Texas",
         "round": "Dual",
         "surface": "Hard",
         "opponent": "Sebastian Gorzny",
         "result": "W",
-        "score": "2-6  6-3  6-3",
+        "score": "",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-tcu",
+        "id": "DylanDietrich-college-2526-tcu-chan",
         "date": "15-Jan-2026",
-        "tournament": "Dual vs #3 TCU",
+        "tournament": "Dual vs TCU",
         "round": "Dual",
         "surface": "Hard",
         "opponent": "Duncan Chan",
@@ -607,25 +644,80 @@
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-ita-all-amer-sf",
-        "date": "27-Sep-2025",
-        "tournament": "ITA All-American Championship",
-        "round": "SF",
-        "surface": "Hard (indoor)",
-        "opponent": "Jay Friend",
-        "result": "L",
-        "score": "6-3  4-6  7-6(2)",
+        "id": "DylanDietrich-college-2425-ncaa-qf-tcu",
+        "date": "16-May-2025",
+        "tournament": "NCAA Team Championship",
+        "round": "QF",
+        "surface": "Hard",
+        "opponent": "Pedro Vives",
+        "result": "W",
+        "score": "",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-ita-all-amer-r16",
-        "date": "26-Sep-2025",
-        "tournament": "ITA All-American Championship",
-        "round": "R16",
-        "surface": "Hard (indoor)",
-        "opponent": "Jack Anthrop",
+        "id": "DylanDietrich-college-2425-ncaa-super-regional",
+        "date": "10-May-2025",
+        "tournament": "NCAA Super Regional vs Arizona",
+        "round": "Super Regional",
+        "surface": "Hard",
+        "opponent": "Jay Friend",
         "result": "W",
-        "score": "6-4  6-4",
+        "score": "1-6  7-6(1)  7-5",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2425-clemson-clinch",
+        "date": "06-Apr-2025",
+        "tournament": "Dual vs Clemson",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Noa Vukadin",
+        "result": "W",
+        "score": "5-7  6-4  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2425-texas-gorzny",
+        "date": "02-Feb-2025",
+        "tournament": "Dual vs Texas",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Sebastian Gorzny",
+        "result": "W",
+        "score": "2-6  6-4  7-5",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2425-osu-kim",
+        "date": "31-Jan-2025",
+        "tournament": "Dual vs Ohio State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Aidan Kim",
+        "result": "W",
+        "score": "6-4  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2324-wake-clinch",
+        "date": "01-Mar-2024",
+        "tournament": "Dual vs Wake Forest",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Matthew Thomson",
+        "result": "W",
+        "score": "",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2324-liberty-dual",
+        "date": "13-Jan-2024",
+        "tournament": "Dual vs Liberty",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Thando Longwe-Smit",
+        "result": "W",
+        "score": "6-0  6-0",
         "isCollege": true
       }
     ]
@@ -646,25 +738,49 @@
     "surface": "hard",
     "surfaceCounts": {
       "clay": 21,
-      "hard": 14
+      "hard": 20
     },
-    "matchCount": 14,
+    "matchCount": 20,
+    "scoredCount": 13,
+    "unscoredCount": 7,
     "record": {
-      "wins": 12,
-      "losses": 2
+      "wins": 19,
+      "losses": 1
     },
+    "officialRecord": {
+      "seasons": [
+        {
+          "season": "2023-24",
+          "singles": "23-7"
+        },
+        {
+          "season": "2024-25",
+          "singles": "25-9"
+        },
+        {
+          "season": "2025-26",
+          "singles": "29-4"
+        }
+      ],
+      "careerSingles": "77-20",
+      "source": "UVA career stats table"
+    },
+    "highlightCount": 20,
+    "highlightsOnly": true,
+    "collegeOnly": false,
+    "bioNotes": null,
     "games": {
-      "won": 206,
-      "lost": 162
+      "won": 183,
+      "lost": 135
     },
-    "dateRange": "Sep 2025 \u2013 May 2026",
-    "note": "Aggregated across 14 matches (Sep 2025 \u2013 May 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "dateRange": "Jan 2024 \u2013 May 2026",
+    "note": "Aggregated across 13 scored matches of 20 documented (Jan 2024 \u2013 May 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
     "pointsWon": {
-      "playerPct": 53,
-      "opponentPct": 47,
+      "playerPct": 58,
+      "opponentPct": 42,
       "playerLabel": "Dylan",
-      "totalPoints": 1546,
-      "source": "Weighted across 14 matches",
+      "totalPoints": 1336,
+      "source": "Weighted across 13 scored matches",
       "isLoss": false
     },
     "statAverages": {
@@ -673,27 +789,22 @@
       "firstServeInPct": null,
       "firstServeWonPct": null,
       "secondServeWonPct": null,
-      "dominanceRatio": 1.1
+      "dominanceRatio": null
     },
     "statCoverage": {
       "detailed": 0,
-      "total": 14
+      "total": 13
     },
     "scoutingReport": [
       {
         "kind": "strength",
-        "short": "12-2 record",
-        "text": "Winning 86% of matches in this sample (12-2)."
-      },
-      {
-        "kind": "strength",
-        "short": "Closes tight matches (8-2)",
-        "text": "8-2 in three-setters \u2014 holds up physically and mentally in long matches."
-      },
-      {
-        "kind": "strength",
         "short": "Ad-side serve (modeled)",
         "text": "The model leans on the ad court (85% of serve points won vs 70% on the deuce side), though this split follows charted reference rates rather than tracked data for this player."
+      },
+      {
+        "kind": "note",
+        "short": "Win-biased sample",
+        "text": "These results come from UVA's own highlight notes, which name wins far more often than losses, so nothing here should be read as a win rate."
       }
     ],
     "serve": {
@@ -702,28 +813,28 @@
         {
           "title": "Deuce court",
           "pct": 70,
-          "total": 269,
+          "total": 232,
           "caption": "Serve points won",
           "highlight": false
         },
         {
           "title": "Ad court",
           "pct": 85,
-          "total": 329,
+          "total": 284,
           "caption": "Serve points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 T serve",
           "pct": 30,
-          "total": 115,
+          "total": 99,
           "caption": "T-serve share",
           "highlight": false
         },
         {
           "title": "Ad \u2014 T serve",
           "pct": 35,
-          "total": 134,
+          "total": 116,
           "caption": "T-serve share",
           "highlight": false
         }
@@ -734,142 +845,141 @@
       "cells": [
         {
           "title": "Deuce court",
-          "pct": 43,
-          "total": 165,
+          "pct": 42,
+          "total": 139,
           "caption": "Return points won",
           "highlight": false
         },
         {
           "title": "Ad court",
-          "pct": 47,
-          "total": 180,
+          "pct": 46,
+          "total": 152,
           "caption": "Return points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 total",
-          "pct": 43,
-          "total": 386,
+          "pct": 42,
+          "total": 334,
           "caption": "Return points played",
           "highlight": false
         },
         {
           "title": "Ad \u2014 total",
-          "pct": 47,
-          "total": 386,
+          "pct": 46,
+          "total": 334,
           "caption": "Return points played",
           "highlight": false
         }
       ]
     },
     "coachingNotes": [
-      "14 matches in this sample: 12-2 record (86% win rate).",
+      "Official college singles record is 77-20 (UVA career stats table). 20 of these results come from UVA's highlight notes, which name wins far more often than losses \u2014 read those as cited examples, not as a win rate.",
+      "13 matches with a published score in this sample, drawn from UVA's highlight notes rather than a full match log.",
       "Serving is stronger on the ad side (85% vs 70% points won) \u2014 a 16-point spread across the sample.",
-      "Returning is marginally better on the ad side (47% vs 43%).",
-      "Dylan is 8-2 in matches that went the distance (10 three-setters in this sample).",
-      "College play (duals, ITA, NCAA): 12-2 across 14 matches.",
-      "None of these matches have published box scores, so ace and serve-percentage averages are unavailable. Scoreline-derived figures (points won, games, deuce/ad splits) still cover every match."
+      "Returning is marginally better on the ad side (46% vs 42%).",
+      "7 of these 20 results are documented without a published score, so they count toward the record and appear in the match list but are left out of every point estimate.",
+      "None of these matches have published box scores, so ace and serve-percentage averages are unavailable. Scoreline-derived figures (points won, games, deuce/ad splits) still cover every match with a score."
     ],
     "strengths": [
-      "Reliable ad-side serving pattern to lean on in tight games (break points, game points).",
-      "Strong closing record in three-set matches \u2014 holds up physically and mentally."
+      "Reliable ad-side serving pattern to lean on in tight games (break points, game points)."
     ],
     "development": [],
     "featuredMatches": [
       {
-        "id": "DylanDietrich-college-ncaa-final",
-        "date": "17-May-2026",
-        "tournament": "NCAA Team Championship",
-        "round": "Final",
-        "surface": "Hard",
-        "opponent": "Sebastian Gorzny",
-        "opponentRank": null,
-        "result": "W",
-        "score": "6-7(2)  6-4  6-4",
-        "pointsWonPct": 55,
-        "totalPoints": 139,
-        "source": "Dominance ratio",
-        "isCollege": true
-      },
-      {
-        "id": "DylanDietrich-college-ncaa-qf",
-        "date": "14-May-2026",
-        "tournament": "NCAA Team Championship",
-        "round": "QF",
-        "surface": "Hard",
-        "opponent": "Benito Sanchez Martinez",
-        "opponentRank": null,
-        "result": "W",
-        "score": "6-4  6-3",
-        "pointsWonPct": 57,
-        "totalPoints": 80,
-        "source": "Dominance ratio",
-        "isCollege": true
-      },
-      {
-        "id": "DylanDietrich-college-ncaa-r32-columbia",
-        "date": "02-May-2026",
-        "tournament": "NCAA Team Championship",
-        "round": "R32",
-        "surface": "Hard",
-        "opponent": "Michael Zheng",
-        "opponentRank": null,
-        "result": "W",
-        "score": "6-7(8)  6-3  6-4",
-        "pointsWonPct": 53,
-        "totalPoints": 134,
-        "source": "Dominance ratio",
-        "isCollege": true
-      },
-      {
-        "id": "DylanDietrich-college-dual-wake",
+        "id": "DylanDietrich-college-2526-wake-suresh",
         "date": "22-Mar-2026",
-        "tournament": "Dual at #1 Wake Forest",
+        "tournament": "Dual at Wake Forest",
         "round": "Dual",
         "surface": "Hard",
         "opponent": "DK Suresh Ekambaram",
-        "opponentRank": null,
+        "opponentRank": 21,
         "result": "W",
         "score": "6-3  6-4",
-        "pointsWonPct": 57,
+        "pointsWonPct": 63,
         "totalPoints": 80,
-        "source": "Dominance ratio",
+        "source": "Games-won estimate",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-tcu",
+        "id": "DylanDietrich-college-2526-smu-svajda",
+        "date": "01-Mar-2026",
+        "tournament": "Dual vs SMU",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Trevor Svajda",
+        "opponentRank": 1,
+        "result": "W",
+        "score": "3-6  6-1  6-3",
+        "pointsWonPct": 60,
+        "totalPoints": 105,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2526-michigan-dahlin",
+        "date": "24-Jan-2026",
+        "tournament": "Dual vs Michigan",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Max Dahlin",
+        "opponentRank": null,
+        "result": "W",
+        "score": "6-3  3-1 RET",
+        "pointsWonPct": 69,
+        "totalPoints": 55,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2526-tcu-chan",
         "date": "15-Jan-2026",
-        "tournament": "Dual vs #3 TCU",
+        "tournament": "Dual vs TCU",
         "round": "Dual",
         "surface": "Hard",
         "opponent": "Duncan Chan",
-        "opponentRank": null,
+        "opponentRank": 6,
         "result": "W",
         "score": "6-4  7-5",
-        "pointsWonPct": 54,
+        "pointsWonPct": 59,
         "totalPoints": 92,
-        "source": "Dominance ratio",
+        "source": "Games-won estimate",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-ita-all-amer-r16",
-        "date": "26-Sep-2025",
-        "tournament": "ITA All-American Championship",
-        "round": "R16",
-        "surface": "Hard (indoor)",
-        "opponent": "Jack Anthrop",
+        "id": "DylanDietrich-college-2425-osu-kim",
+        "date": "31-Jan-2025",
+        "tournament": "Dual vs Ohio State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Aidan Kim",
+        "opponentRank": 11,
+        "result": "W",
+        "score": "6-4  6-2",
+        "pointsWonPct": 67,
+        "totalPoints": 76,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2324-liberty-dual",
+        "date": "13-Jan-2024",
+        "tournament": "Dual vs Liberty",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Thando Longwe-Smit",
         "opponentRank": null,
         "result": "W",
-        "score": "6-4  6-4",
-        "pointsWonPct": 55,
-        "totalPoints": 84,
-        "source": "Dominance ratio",
+        "score": "6-0  6-0",
+        "pointsWonPct": 99,
+        "totalPoints": 50,
+        "source": "Games-won estimate",
         "isCollege": true
       }
     ],
     "matches": [
       {
-        "id": "DylanDietrich-college-ncaa-final",
+        "id": "DylanDietrich-college-2526-ncaa-final-gorzny",
         "date": "17-May-2026",
         "tournament": "NCAA Team Championship",
         "round": "Final",
@@ -880,42 +990,42 @@
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-ncaa-sf",
+        "id": "DylanDietrich-college-2526-ncaa-sf-wake",
         "date": "16-May-2026",
         "tournament": "NCAA Team Championship",
         "round": "SF",
         "surface": "Hard",
         "opponent": "DK Suresh",
         "result": "W",
-        "score": "2-6  6-0  6-3",
+        "score": "",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-ncaa-qf",
+        "id": "DylanDietrich-college-2526-ncaa-qf-msstate",
         "date": "14-May-2026",
         "tournament": "NCAA Team Championship",
         "round": "QF",
         "surface": "Hard",
         "opponent": "Benito Sanchez Martinez",
         "result": "W",
-        "score": "6-4  6-3",
+        "score": "",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-ncaa-r32-columbia",
+        "id": "DylanDietrich-college-2526-ncaa-r2-zheng",
         "date": "02-May-2026",
         "tournament": "NCAA Team Championship",
         "round": "R32",
         "surface": "Hard",
         "opponent": "Michael Zheng",
         "result": "W",
-        "score": "6-7(8)  6-3  6-4",
+        "score": "",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-notre-dame",
+        "id": "DylanDietrich-college-2526-nd-dominko",
         "date": "03-Apr-2026",
-        "tournament": "Dual vs #15 Notre Dame",
+        "tournament": "Dual vs Notre Dame",
         "round": "Dual",
         "surface": "Hard",
         "opponent": "Sebastian Dominko",
@@ -924,9 +1034,9 @@
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-wake",
+        "id": "DylanDietrich-college-2526-wake-suresh",
         "date": "22-Mar-2026",
-        "tournament": "Dual at #1 Wake Forest",
+        "tournament": "Dual at Wake Forest",
         "round": "Dual",
         "surface": "Hard",
         "opponent": "DK Suresh Ekambaram",
@@ -935,7 +1045,7 @@
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-ncstate",
+        "id": "DylanDietrich-college-2526-ncstate-borisiouk",
         "date": "20-Mar-2026",
         "tournament": "Dual at NC State",
         "round": "Dual",
@@ -946,9 +1056,9 @@
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-svajda",
+        "id": "DylanDietrich-college-2526-smu-svajda",
         "date": "01-Mar-2026",
-        "tournament": "Dual vs #38 SMU",
+        "tournament": "Dual vs SMU",
         "round": "Dual",
         "surface": "Hard",
         "opponent": "Trevor Svajda",
@@ -957,42 +1067,53 @@
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-ita-indoors",
+        "id": "DylanDietrich-college-2526-ita-indoors-kim",
         "date": "16-Feb-2026",
-        "tournament": "ITA National Team Indoors",
+        "tournament": "ITA National Team Indoor Championship",
         "round": "SF",
         "surface": "Hard (indoor)",
         "opponent": "Aidan Kim",
         "result": "L",
-        "score": "4-6  6-7(5)  6-4",
+        "score": "",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-osu-home",
+        "id": "DylanDietrich-college-2526-osu-kim",
         "date": "07-Feb-2026",
-        "tournament": "Dual at #2 Ohio State",
+        "tournament": "Dual at Ohio State",
         "round": "Dual",
-        "surface": "Hard (indoor)",
+        "surface": "Hard",
         "opponent": "Aidan Kim",
         "result": "W",
         "score": "7-6(3)  3-6  6-4",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-texas",
+        "id": "DylanDietrich-college-2526-michigan-dahlin",
+        "date": "24-Jan-2026",
+        "tournament": "Dual vs Michigan",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Max Dahlin",
+        "result": "W",
+        "score": "6-3  3-1 RET",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2526-texas-gorzny",
         "date": "18-Jan-2026",
-        "tournament": "Dual vs #2 Texas",
+        "tournament": "Dual vs Texas",
         "round": "Dual",
         "surface": "Hard",
         "opponent": "Sebastian Gorzny",
         "result": "W",
-        "score": "2-6  6-3  6-3",
+        "score": "",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-dual-tcu",
+        "id": "DylanDietrich-college-2526-tcu-chan",
         "date": "15-Jan-2026",
-        "tournament": "Dual vs #3 TCU",
+        "tournament": "Dual vs TCU",
         "round": "Dual",
         "surface": "Hard",
         "opponent": "Duncan Chan",
@@ -1001,25 +1122,80 @@
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-ita-all-amer-sf",
-        "date": "27-Sep-2025",
-        "tournament": "ITA All-American Championship",
-        "round": "SF",
-        "surface": "Hard (indoor)",
-        "opponent": "Jay Friend",
-        "result": "L",
-        "score": "6-3  4-6  7-6(2)",
+        "id": "DylanDietrich-college-2425-ncaa-qf-tcu",
+        "date": "16-May-2025",
+        "tournament": "NCAA Team Championship",
+        "round": "QF",
+        "surface": "Hard",
+        "opponent": "Pedro Vives",
+        "result": "W",
+        "score": "",
         "isCollege": true
       },
       {
-        "id": "DylanDietrich-college-ita-all-amer-r16",
-        "date": "26-Sep-2025",
-        "tournament": "ITA All-American Championship",
-        "round": "R16",
-        "surface": "Hard (indoor)",
-        "opponent": "Jack Anthrop",
+        "id": "DylanDietrich-college-2425-ncaa-super-regional",
+        "date": "10-May-2025",
+        "tournament": "NCAA Super Regional vs Arizona",
+        "round": "Super Regional",
+        "surface": "Hard",
+        "opponent": "Jay Friend",
         "result": "W",
-        "score": "6-4  6-4",
+        "score": "1-6  7-6(1)  7-5",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2425-clemson-clinch",
+        "date": "06-Apr-2025",
+        "tournament": "Dual vs Clemson",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Noa Vukadin",
+        "result": "W",
+        "score": "5-7  6-4  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2425-texas-gorzny",
+        "date": "02-Feb-2025",
+        "tournament": "Dual vs Texas",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Sebastian Gorzny",
+        "result": "W",
+        "score": "2-6  6-4  7-5",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2425-osu-kim",
+        "date": "31-Jan-2025",
+        "tournament": "Dual vs Ohio State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Aidan Kim",
+        "result": "W",
+        "score": "6-4  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2324-wake-clinch",
+        "date": "01-Mar-2024",
+        "tournament": "Dual vs Wake Forest",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Matthew Thomson",
+        "result": "W",
+        "score": "",
+        "isCollege": true
+      },
+      {
+        "id": "DylanDietrich-college-2324-liberty-dual",
+        "date": "13-Jan-2024",
+        "tournament": "Dual vs Liberty",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Thando Longwe-Smit",
+        "result": "W",
+        "score": "6-0  6-0",
         "isCollege": true
       }
     ]
@@ -1040,25 +1216,49 @@
     "surface": "clay",
     "surfaceCounts": {
       "clay": 21,
-      "hard": 14
+      "hard": 20
     },
     "matchCount": 21,
+    "scoredCount": 21,
+    "unscoredCount": 0,
     "record": {
       "wins": 15,
       "losses": 6
     },
+    "officialRecord": {
+      "seasons": [
+        {
+          "season": "2023-24",
+          "singles": "23-7"
+        },
+        {
+          "season": "2024-25",
+          "singles": "25-9"
+        },
+        {
+          "season": "2025-26",
+          "singles": "29-4"
+        }
+      ],
+      "careerSingles": "77-20",
+      "source": "UVA career stats table"
+    },
+    "highlightCount": 0,
+    "highlightsOnly": false,
+    "collegeOnly": false,
+    "bioNotes": null,
     "games": {
       "won": 282,
       "lost": 195
     },
     "dateRange": "Jun 2026 \u2013 Aug 2026",
-    "note": "Aggregated across 21 matches (Jun 2026 \u2013 Aug 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "note": "Aggregated across 21 scored matches (Jun 2026 \u2013 Aug 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
     "pointsWon": {
       "playerPct": 55,
       "opponentPct": 45,
       "playerLabel": "Dylan",
       "totalPoints": 2004,
-      "source": "Weighted across 21 matches",
+      "source": "Weighted across 21 scored matches",
       "isLoss": false
     },
     "statAverages": {
@@ -1082,7 +1282,7 @@
       {
         "kind": "strength",
         "short": "11 wins over higher-ranked opponents",
-        "text": "Beat 11 better-ranked opponents in this sample, best of them #126 (Otto Virtanen at Gstaad) \u2014 the level travels up."
+        "text": "Beat 11 better-ranked opponents are on record, best of them #126 (Otto Virtanen at Gstaad) \u2014 the level travels up."
       },
       {
         "kind": "strength",

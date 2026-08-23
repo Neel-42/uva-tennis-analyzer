@@ -12,21 +12,22 @@
       "rank": null,
       "country": null,
       "match_count": 0,
+      "college_only": false,
       "scouting": [
         {
           "kind": "strength",
-          "short": "7 wins over higher-ranked opponents",
-          "text": "Beat 7 better-ranked opponents in this sample, best of them #174 (Federico Cina at Brasov CH) \u2014 the level travels up."
+          "short": "Closes tight matches (5-2)",
+          "text": "5-2 in three-setters \u2014 holds up physically and mentally in long matches."
+        },
+        {
+          "kind": "strength",
+          "short": "Wins 55% of points",
+          "text": "Takes 55% of all points played, a margin that usually converts to comfortable wins."
         },
         {
           "kind": "weakness",
           "short": "1st serve won only 61%",
           "text": "Just 61% of first-serve points are won \u2014 the first ball is not doing enough damage."
-        },
-        {
-          "kind": "weakness",
-          "short": "8-10 record",
-          "text": "Winning only 44% of matches (8-10) \u2014 results are not yet matching the level."
         }
       ]
     },
@@ -39,6 +40,7 @@
       "rank": null,
       "country": null,
       "match_count": 0,
+      "college_only": false,
       "scouting": [
         {
           "kind": "strength",
@@ -47,8 +49,8 @@
         },
         {
           "kind": "strength",
-          "short": "27-8 record",
-          "text": "Winning 77% of matches in this sample (27-8)."
+          "short": "28-6 record",
+          "text": "Winning 82% of matches in this sample (28-6)."
         },
         {
           "kind": "weakness",
@@ -66,6 +68,7 @@
       "rank": null,
       "country": null,
       "match_count": 0,
+      "college_only": false,
       "scouting": [
         {
           "kind": "strength",
@@ -75,7 +78,7 @@
         {
           "kind": "strength",
           "short": "8 wins over higher-ranked opponents",
-          "text": "Beat 8 better-ranked opponents in this sample, best of them #177 (Daniil Glinka at Tallahassee CH) \u2014 the level travels up."
+          "text": "Beat 8 better-ranked opponents are on record, best of them #177 (Daniil Glinka at Tallahassee CH) \u2014 the level travels up."
         },
         {
           "kind": "weakness",
@@ -93,6 +96,7 @@
       "rank": null,
       "country": null,
       "match_count": 0,
+      "college_only": false,
       "scouting": [
         {
           "kind": "strength",
@@ -101,8 +105,8 @@
         },
         {
           "kind": "strength",
-          "short": "9 wins over higher-ranked opponents",
-          "text": "Beat 9 better-ranked opponents in this sample, best of them #421 (Maximus Jones at M15 Tokyo) \u2014 the level travels up."
+          "short": "Wins 56% of points",
+          "text": "Takes 56% of all points played, a margin that usually converts to comfortable wins."
         },
         {
           "kind": "weakness",
@@ -120,16 +124,17 @@
       "rank": null,
       "country": null,
       "match_count": 0,
+      "college_only": false,
       "scouting": [
         {
           "kind": "strength",
-          "short": "9 wins over higher-ranked opponents",
-          "text": "Beat 9 better-ranked opponents in this sample, best of them #129 (Pablo Llamas Ruiz at Vancouver CH) \u2014 the level travels up."
+          "short": "Wins 55% of points",
+          "text": "Takes 55% of all points played, a margin that usually converts to comfortable wins."
         },
         {
           "kind": "strength",
-          "short": "Ad-side serve (modeled)",
-          "text": "The model leans on the ad court (83% of serve points won vs 69% on the deuce side), though this split follows charted reference rates rather than tracked data for this player."
+          "short": "9 wins over higher-ranked opponents",
+          "text": "Beat 9 better-ranked opponents are on record, best of them #129 (Pablo Llamas Ruiz at Vancouver CH) \u2014 the level travels up."
         },
         {
           "kind": "weakness",
@@ -147,11 +152,12 @@
       "rank": null,
       "country": null,
       "match_count": 0,
+      "college_only": false,
       "scouting": [
         {
           "kind": "strength",
           "short": "5 wins over higher-ranked opponents",
-          "text": "Beat 5 better-ranked opponents in this sample, best of them #188 (Oliver Crawford at Hersonissos 6 CH) \u2014 the level travels up."
+          "text": "Beat 5 better-ranked opponents are on record, best of them #188 (Oliver Crawford at Hersonissos 6 CH) \u2014 the level travels up."
         },
         {
           "kind": "weakness",
@@ -174,16 +180,17 @@
       "rank": null,
       "country": null,
       "match_count": 0,
+      "college_only": false,
       "scouting": [
         {
           "kind": "strength",
-          "short": "Wins 62% of points",
-          "text": "Takes 62% of all points played, a margin that usually converts to comfortable wins."
+          "short": "Wins 61% of points",
+          "text": "Takes 61% of all points played, a margin that usually converts to comfortable wins."
         },
         {
-          "kind": "strength",
-          "short": "Low double faults (1.7%)",
-          "text": "Second-serve mechanics hold up: just 1.7% double faults across the sample."
+          "kind": "weakness",
+          "short": "Return pressure light (DR 0.59)",
+          "text": "Dominance ratio of 0.59 \u2014 struggles to hurt opponents on return, so holds have to carry every match."
         },
         {
           "kind": "weakness",
@@ -197,30 +204,73 @@
       "class_year": "Senior",
       "hometown": "Arlington, Va.",
       "slug": "StefanRegalia",
-      "has_data": false,
+      "has_data": true,
       "rank": null,
       "country": null,
-      "match_count": 0
+      "match_count": 0,
+      "college_only": true,
+      "scouting": [
+        {
+          "kind": "note",
+          "priority": 1.0,
+          "short": "Career 12-10 in singles",
+          "text": "Official college singles record of 12-10 (UVA career stats table)."
+        },
+        {
+          "kind": "note",
+          "priority": 0.9,
+          "short": "Too few published scorelines",
+          "text": "1 result documented by name, none with a public score \u2014 not enough for a point-level breakdown."
+        }
+      ]
     },
     {
       "name": "Stiles Brockett",
       "class_year": "Junior",
       "hometown": "Fairfax, Va.",
       "slug": "StilesBrockett",
-      "has_data": false,
+      "has_data": true,
       "rank": null,
       "country": null,
-      "match_count": 0
+      "match_count": 0,
+      "college_only": true,
+      "scouting": [
+        {
+          "kind": "strength",
+          "short": "Ad-side serve (modeled)",
+          "text": "The model leans on the ad court (85% of serve points won vs 70% on the deuce side), though this split follows charted reference rates rather than tracked data for this player."
+        },
+        {
+          "kind": "note",
+          "short": "Win-biased sample",
+          "text": "These results come from UVA's own highlight notes, which name wins far more often than losses, so nothing here should be read as a win rate."
+        }
+      ]
     },
     {
       "name": "Ty Switzer",
       "class_year": "Graduate Student",
       "hometown": "New York, N.Y.",
       "slug": "TySwitzer",
-      "has_data": false,
+      "has_data": true,
       "rank": null,
       "country": null,
-      "match_count": 0
+      "match_count": 0,
+      "college_only": true,
+      "scouting": [
+        {
+          "kind": "note",
+          "priority": 1.0,
+          "short": "Career 7-14 in singles",
+          "text": "Official college singles record of 7-14 (UVA career stats table)."
+        },
+        {
+          "kind": "note",
+          "priority": 0.9,
+          "short": "Too few published scorelines",
+          "text": "2 results documented by name, 1 with a public score \u2014 not enough for a point-level breakdown."
+        }
+      ]
     }
   ]
 }

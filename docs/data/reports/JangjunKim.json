@@ -14,25 +14,45 @@
     },
     "surface": "all",
     "surfaceCounts": {
-      "hard": 20
+      "hard": 32
     },
-    "matchCount": 20,
+    "matchCount": 32,
+    "scoredCount": 31,
+    "unscoredCount": 1,
     "record": {
-      "wins": 13,
+      "wins": 25,
       "losses": 7
     },
-    "games": {
-      "won": 268,
-      "lost": 163
+    "officialRecord": {
+      "seasons": [
+        {
+          "season": "2024-25",
+          "singles": "16-7"
+        },
+        {
+          "season": "2025-26",
+          "singles": "25-9"
+        }
+      ],
+      "careerSingles": "41-16",
+      "source": "UVA career stats table"
     },
-    "dateRange": "Sep 2025 \u2013 Jul 2026",
-    "note": "Aggregated across 20 matches (Sep 2025 \u2013 Jul 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "highlightCount": 12,
+    "highlightsOnly": false,
+    "collegeOnly": false,
+    "bioNotes": null,
+    "games": {
+      "won": 444,
+      "lost": 286
+    },
+    "dateRange": "Jan 2025 \u2013 Jul 2026",
+    "note": "Aggregated across 31 scored matches of 32 documented (Jan 2025 \u2013 Jul 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
     "pointsWon": {
-      "playerPct": 55,
-      "opponentPct": 45,
+      "playerPct": 56,
+      "opponentPct": 44,
       "playerLabel": "Jangjun",
-      "totalPoints": 1810,
-      "source": "Weighted across 20 matches",
+      "totalPoints": 3067,
+      "source": "Weighted across 31 scored matches",
       "isLoss": false
     },
     "statAverages": {
@@ -45,7 +65,7 @@
     },
     "statCoverage": {
       "detailed": 20,
-      "total": 20
+      "total": 31
     },
     "scoutingReport": [
       {
@@ -55,13 +75,13 @@
       },
       {
         "kind": "strength",
-        "short": "9 wins over higher-ranked opponents",
-        "text": "Beat 9 better-ranked opponents in this sample, best of them #421 (Maximus Jones at M15 Tokyo) \u2014 the level travels up."
+        "short": "Wins 56% of points",
+        "text": "Takes 56% of all points played, a margin that usually converts to comfortable wins."
       },
       {
         "kind": "strength",
-        "short": "Wins 55% of points",
-        "text": "Takes 55% of all points played, a margin that usually converts to comfortable wins."
+        "short": "24-7 record",
+        "text": "Winning 77% of matches in this sample (24-7)."
       },
       {
         "kind": "weakness",
@@ -74,29 +94,29 @@
       "cells": [
         {
           "title": "Deuce court",
-          "pct": 71,
-          "total": 320,
+          "pct": 70,
+          "total": 539,
           "caption": "Serve points won",
           "highlight": false
         },
         {
           "title": "Ad court",
           "pct": 86,
-          "total": 390,
+          "total": 658,
           "caption": "Serve points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 T serve",
           "pct": 30,
-          "total": 134,
+          "total": 228,
           "caption": "T-serve share",
           "highlight": false
         },
         {
           "title": "Ad \u2014 T serve",
           "pct": 35,
-          "total": 158,
+          "total": 267,
           "caption": "T-serve share",
           "highlight": false
         }
@@ -107,135 +127,140 @@
       "cells": [
         {
           "title": "Deuce court",
-          "pct": 44,
-          "total": 197,
+          "pct": 43,
+          "total": 328,
           "caption": "Return points won",
           "highlight": false
         },
         {
           "title": "Ad court",
           "pct": 47,
-          "total": 214,
+          "total": 358,
           "caption": "Return points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 total",
-          "pct": 44,
-          "total": 452,
+          "pct": 43,
+          "total": 766,
           "caption": "Return points played",
           "highlight": false
         },
         {
           "title": "Ad \u2014 total",
           "pct": 47,
-          "total": 452,
+          "total": 766,
           "caption": "Return points played",
           "highlight": false
         }
       ]
     },
     "coachingNotes": [
-      "20 matches in this sample: 13-7 record (65% win rate).",
-      "Serving is stronger on the ad side (86% vs 71% points won) \u2014 a 16-point spread across the sample.",
-      "Returning is marginally better on the ad side (47% vs 44%).",
-      "Jangjun is 3-4 in matches that went the distance (7 three-setters in this sample)."
+      "Official college singles record is 41-16 (UVA career stats table). 12 of these results come from UVA's highlight notes, which name wins far more often than losses \u2014 read those as cited examples, not as a win rate.",
+      "31 matches in this sample: 24-7 record (77% win rate).",
+      "Serving is stronger on the ad side (86% vs 70% points won) \u2014 a 16-point spread across the sample.",
+      "Returning is marginally better on the ad side (47% vs 43%).",
+      "Jangjun is 10-4 in matches that went the distance (14 three-setters in this sample).",
+      "College play (duals, ITA, NCAA): 11-0 across 11 matches.",
+      "1 of these 32 results are documented without a published score, so they count toward the record and appear in the match list but are left out of every point estimate.",
+      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 20 of 31 scored matches \u2014 averages use those, while the deuce/ad splits and point totals cover every scored match."
     ],
     "strengths": [
       "Reliable ad-side serving pattern to lean on in tight games (break points, game points).",
-      "Wins 75% of first-serve points across the sample."
+      "Wins 75% of first-serve points across the sample.",
+      "Strong closing record in three-set matches \u2014 holds up physically and mentally."
     ],
     "development": [],
     "featuredMatches": [
       {
-        "id": "JangjunKim-1",
-        "date": "13-Jul-2026",
-        "tournament": "M15 Wuning",
-        "round": "QF",
+        "id": "JangjunKim-college-2526-ncaa-final-eriksson",
+        "date": "17-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "Final",
         "surface": "Hard",
-        "opponent": "Wishaya Trongcharoenchaikul",
-        "opponentRank": 965,
+        "opponent": "Sebastian Eriksson",
+        "opponentRank": 35,
         "result": "W",
-        "score": "6-3 6-4",
-        "pointsWonPct": 68,
-        "totalPoints": 80,
-        "source": "Dominance ratio",
-        "isCollege": false
+        "score": "6-1  7-6(11-9)",
+        "pointsWonPct": 60,
+        "totalPoints": 168,
+        "source": "Games-won estimate",
+        "isCollege": true
       },
       {
-        "id": "JangjunKim-7",
-        "date": "08-Jun-2026",
-        "tournament": "M15 Tokyo",
-        "round": "F",
+        "id": "JangjunKim-college-2526-ncaa-sc-daryabeigi",
+        "date": "08-May-2026",
+        "tournament": "NCAA Super Regional vs South Carolina",
+        "round": "Super Regional",
         "surface": "Hard",
-        "opponent": "Naoya Honda",
-        "opponentRank": 850,
+        "opponent": "Sean Daryabeigi",
+        "opponentRank": 73,
         "result": "W",
-        "score": "6-2 6-3",
-        "pointsWonPct": 68,
-        "totalPoints": 71,
-        "source": "Dominance ratio",
-        "isCollege": false
+        "score": "5-7  6-2  6-2",
+        "pointsWonPct": 61,
+        "totalPoints": 118,
+        "source": "Games-won estimate",
+        "isCollege": true
       },
       {
-        "id": "JangjunKim-10",
-        "date": "08-Jun-2026",
-        "tournament": "M15 Tokyo",
-        "round": "R16",
-        "surface": "Hard",
-        "opponent": "Maximus Jones",
-        "opponentRank": 421,
-        "result": "W",
-        "score": "6-4 7-5",
-        "pointsWonPct": 66,
-        "totalPoints": 92,
-        "source": "Dominance ratio",
-        "isCollege": false
-      },
-      {
-        "id": "JangjunKim-11",
-        "date": "08-Jun-2026",
-        "tournament": "M15 Tokyo",
+        "id": "JangjunKim-college-2526-ncaa-columbia-boosarawongse",
+        "date": "02-May-2026",
+        "tournament": "NCAA Team Championship",
         "round": "R32",
         "surface": "Hard",
-        "opponent": "Yua Taka",
-        "opponentRank": 1640,
+        "opponent": "Thanaphat Boosarawongse",
+        "opponentRank": null,
         "result": "W",
-        "score": "6-2 6-4",
+        "score": "4-6  6-3  6-2",
+        "pointsWonPct": 59,
+        "totalPoints": 113,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-ncstate-leroux",
+        "date": "20-Mar-2026",
+        "tournament": "Dual at NC State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Jules Leroux",
+        "opponentRank": null,
+        "result": "W",
+        "score": "4-6  6-3  6-1",
         "pointsWonPct": 62,
+        "totalPoints": 109,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-michigan-oral",
+        "date": "24-Jan-2026",
+        "tournament": "Dual vs Michigan",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Mert Oral",
+        "opponentRank": 123,
+        "result": "W",
+        "score": "6-0  7-5",
+        "pointsWonPct": 72,
         "totalPoints": 76,
-        "source": "Dominance ratio",
-        "isCollege": false
+        "source": "Games-won estimate",
+        "isCollege": true
       },
       {
-        "id": "JangjunKim-15",
-        "date": "10-Nov-2025",
-        "tournament": "Drummondville CH",
-        "round": "Q1",
+        "id": "JangjunKim-college-2425-ncstate-manning",
+        "date": "16-Feb-2025",
+        "tournament": "Dual vs NC State",
+        "round": "Dual",
         "surface": "Hard",
-        "opponent": "Trey Hilderbrand",
-        "opponentRank": 718,
+        "opponent": "William Manning",
+        "opponentRank": null,
         "result": "W",
-        "score": "6-1 6-1",
-        "pointsWonPct": 68,
-        "totalPoints": 59,
-        "source": "Dominance ratio",
-        "isCollege": false
-      },
-      {
-        "id": "JangjunKim-14",
-        "date": "10-Nov-2025",
-        "tournament": "Drummondville CH",
-        "round": "Q2",
-        "surface": "Hard",
-        "opponent": "Strong Kirchheimer",
-        "opponentRank": 622,
-        "result": "W",
-        "score": "6-3 6-2",
+        "score": "6-2  4-6  6-1",
         "pointsWonPct": 64,
-        "totalPoints": 71,
-        "source": "Dominance ratio",
-        "isCollege": false
+        "totalPoints": 105,
+        "source": "Games-won estimate",
+        "isCollege": true
       }
     ],
     "matches": [
@@ -372,6 +397,105 @@
         "isCollege": false
       },
       {
+        "id": "JangjunKim-college-2526-ncaa-final-eriksson",
+        "date": "17-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "Final",
+        "surface": "Hard",
+        "opponent": "Sebastian Eriksson",
+        "result": "W",
+        "score": "6-1  7-6(11-9)",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-ncaa-sf-pow",
+        "date": "16-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "SF",
+        "surface": "Hard",
+        "opponent": "Luca Pow",
+        "result": "W",
+        "score": "7-5  5-7  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-ncaa-sc-daryabeigi",
+        "date": "08-May-2026",
+        "tournament": "NCAA Super Regional vs South Carolina",
+        "round": "Super Regional",
+        "surface": "Hard",
+        "opponent": "Sean Daryabeigi",
+        "result": "W",
+        "score": "5-7  6-2  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-ncaa-columbia-boosarawongse",
+        "date": "02-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Thanaphat Boosarawongse",
+        "result": "W",
+        "score": "4-6  6-3  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-miami-kroslak",
+        "date": "29-Mar-2026",
+        "tournament": "Dual at Miami",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Jakub Kroslak",
+        "result": "W",
+        "score": "2-6  7-6(3)  7-5",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-ncstate-leroux",
+        "date": "20-Mar-2026",
+        "tournament": "Dual at NC State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Jules Leroux",
+        "result": "W",
+        "score": "4-6  6-3  6-1",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-stanford-leach",
+        "date": "08-Mar-2026",
+        "tournament": "Dual at Stanford",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Jagger Leach",
+        "result": "W",
+        "score": "2-6  6-2  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-ita-indoors-nakashima",
+        "date": "16-Feb-2026",
+        "tournament": "ITA National Team Indoor Championship",
+        "round": "SF",
+        "surface": "Hard (indoor)",
+        "opponent": "Bryce Nakashima",
+        "result": "W",
+        "score": "7-6  6-4",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-michigan-oral",
+        "date": "24-Jan-2026",
+        "tournament": "Dual vs Michigan",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Mert Oral",
+        "result": "W",
+        "score": "6-0  7-5",
+        "isCollege": true
+      },
+      {
         "id": "JangjunKim-12",
         "date": "10-Nov-2025",
         "tournament": "Drummondville CH",
@@ -458,6 +582,39 @@
         "result": "W",
         "score": "4-6 6-0 6-3",
         "isCollege": false
+      },
+      {
+        "id": "JangjunKim-college-2425-unc-wright",
+        "date": "02-Mar-2025",
+        "tournament": "Dual at North Carolina",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Anthony Wright",
+        "result": "W",
+        "score": "6-4  7-6(5)",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2425-ncstate-manning",
+        "date": "16-Feb-2025",
+        "tournament": "Dual vs NC State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "William Manning",
+        "result": "W",
+        "score": "6-2  4-6  6-1",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2425-sc-karahan",
+        "date": "16-Jan-2025",
+        "tournament": "Dual at South Carolina",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Atakan Karahan",
+        "result": "W",
+        "score": "",
+        "isCollege": true
       }
     ]
   },
@@ -476,25 +633,45 @@
     },
     "surface": "hard",
     "surfaceCounts": {
-      "hard": 20
+      "hard": 32
     },
-    "matchCount": 20,
+    "matchCount": 32,
+    "scoredCount": 31,
+    "unscoredCount": 1,
     "record": {
-      "wins": 13,
+      "wins": 25,
       "losses": 7
     },
-    "games": {
-      "won": 268,
-      "lost": 163
+    "officialRecord": {
+      "seasons": [
+        {
+          "season": "2024-25",
+          "singles": "16-7"
+        },
+        {
+          "season": "2025-26",
+          "singles": "25-9"
+        }
+      ],
+      "careerSingles": "41-16",
+      "source": "UVA career stats table"
     },
-    "dateRange": "Sep 2025 \u2013 Jul 2026",
-    "note": "Aggregated across 20 matches (Sep 2025 \u2013 Jul 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "highlightCount": 12,
+    "highlightsOnly": false,
+    "collegeOnly": false,
+    "bioNotes": null,
+    "games": {
+      "won": 444,
+      "lost": 286
+    },
+    "dateRange": "Jan 2025 \u2013 Jul 2026",
+    "note": "Aggregated across 31 scored matches of 32 documented (Jan 2025 \u2013 Jul 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
     "pointsWon": {
-      "playerPct": 55,
-      "opponentPct": 45,
+      "playerPct": 56,
+      "opponentPct": 44,
       "playerLabel": "Jangjun",
-      "totalPoints": 1810,
-      "source": "Weighted across 20 matches",
+      "totalPoints": 3067,
+      "source": "Weighted across 31 scored matches",
       "isLoss": false
     },
     "statAverages": {
@@ -507,7 +684,7 @@
     },
     "statCoverage": {
       "detailed": 20,
-      "total": 20
+      "total": 31
     },
     "scoutingReport": [
       {
@@ -517,13 +694,13 @@
       },
       {
         "kind": "strength",
-        "short": "9 wins over higher-ranked opponents",
-        "text": "Beat 9 better-ranked opponents in this sample, best of them #421 (Maximus Jones at M15 Tokyo) \u2014 the level travels up."
+        "short": "Wins 56% of points",
+        "text": "Takes 56% of all points played, a margin that usually converts to comfortable wins."
       },
       {
         "kind": "strength",
-        "short": "Wins 55% of points",
-        "text": "Takes 55% of all points played, a margin that usually converts to comfortable wins."
+        "short": "24-7 record",
+        "text": "Winning 77% of matches in this sample (24-7)."
       },
       {
         "kind": "weakness",
@@ -536,29 +713,29 @@
       "cells": [
         {
           "title": "Deuce court",
-          "pct": 71,
-          "total": 320,
+          "pct": 70,
+          "total": 539,
           "caption": "Serve points won",
           "highlight": false
         },
         {
           "title": "Ad court",
           "pct": 86,
-          "total": 390,
+          "total": 658,
           "caption": "Serve points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 T serve",
           "pct": 30,
-          "total": 134,
+          "total": 228,
           "caption": "T-serve share",
           "highlight": false
         },
         {
           "title": "Ad \u2014 T serve",
           "pct": 35,
-          "total": 158,
+          "total": 267,
           "caption": "T-serve share",
           "highlight": false
         }
@@ -569,135 +746,140 @@
       "cells": [
         {
           "title": "Deuce court",
-          "pct": 44,
-          "total": 197,
+          "pct": 43,
+          "total": 328,
           "caption": "Return points won",
           "highlight": false
         },
         {
           "title": "Ad court",
           "pct": 47,
-          "total": 214,
+          "total": 358,
           "caption": "Return points won",
           "highlight": true
         },
         {
           "title": "Deuce \u2014 total",
-          "pct": 44,
-          "total": 452,
+          "pct": 43,
+          "total": 766,
           "caption": "Return points played",
           "highlight": false
         },
         {
           "title": "Ad \u2014 total",
           "pct": 47,
-          "total": 452,
+          "total": 766,
           "caption": "Return points played",
           "highlight": false
         }
       ]
     },
     "coachingNotes": [
-      "20 matches in this sample: 13-7 record (65% win rate).",
-      "Serving is stronger on the ad side (86% vs 71% points won) \u2014 a 16-point spread across the sample.",
-      "Returning is marginally better on the ad side (47% vs 44%).",
-      "Jangjun is 3-4 in matches that went the distance (7 three-setters in this sample)."
+      "Official college singles record is 41-16 (UVA career stats table). 12 of these results come from UVA's highlight notes, which name wins far more often than losses \u2014 read those as cited examples, not as a win rate.",
+      "31 matches in this sample: 24-7 record (77% win rate).",
+      "Serving is stronger on the ad side (86% vs 70% points won) \u2014 a 16-point spread across the sample.",
+      "Returning is marginally better on the ad side (47% vs 43%).",
+      "Jangjun is 10-4 in matches that went the distance (14 three-setters in this sample).",
+      "College play (duals, ITA, NCAA): 11-0 across 11 matches.",
+      "1 of these 32 results are documented without a published score, so they count toward the record and appear in the match list but are left out of every point estimate.",
+      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 20 of 31 scored matches \u2014 averages use those, while the deuce/ad splits and point totals cover every scored match."
     ],
     "strengths": [
       "Reliable ad-side serving pattern to lean on in tight games (break points, game points).",
-      "Wins 75% of first-serve points across the sample."
+      "Wins 75% of first-serve points across the sample.",
+      "Strong closing record in three-set matches \u2014 holds up physically and mentally."
     ],
     "development": [],
     "featuredMatches": [
       {
-        "id": "JangjunKim-1",
-        "date": "13-Jul-2026",
-        "tournament": "M15 Wuning",
-        "round": "QF",
+        "id": "JangjunKim-college-2526-ncaa-final-eriksson",
+        "date": "17-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "Final",
         "surface": "Hard",
-        "opponent": "Wishaya Trongcharoenchaikul",
-        "opponentRank": 965,
+        "opponent": "Sebastian Eriksson",
+        "opponentRank": 35,
         "result": "W",
-        "score": "6-3 6-4",
-        "pointsWonPct": 68,
-        "totalPoints": 80,
-        "source": "Dominance ratio",
-        "isCollege": false
+        "score": "6-1  7-6(11-9)",
+        "pointsWonPct": 60,
+        "totalPoints": 168,
+        "source": "Games-won estimate",
+        "isCollege": true
       },
       {
-        "id": "JangjunKim-7",
-        "date": "08-Jun-2026",
-        "tournament": "M15 Tokyo",
-        "round": "F",
+        "id": "JangjunKim-college-2526-ncaa-sc-daryabeigi",
+        "date": "08-May-2026",
+        "tournament": "NCAA Super Regional vs South Carolina",
+        "round": "Super Regional",
         "surface": "Hard",
-        "opponent": "Naoya Honda",
-        "opponentRank": 850,
+        "opponent": "Sean Daryabeigi",
+        "opponentRank": 73,
         "result": "W",
-        "score": "6-2 6-3",
-        "pointsWonPct": 68,
-        "totalPoints": 71,
-        "source": "Dominance ratio",
-        "isCollege": false
+        "score": "5-7  6-2  6-2",
+        "pointsWonPct": 61,
+        "totalPoints": 118,
+        "source": "Games-won estimate",
+        "isCollege": true
       },
       {
-        "id": "JangjunKim-10",
-        "date": "08-Jun-2026",
-        "tournament": "M15 Tokyo",
-        "round": "R16",
-        "surface": "Hard",
-        "opponent": "Maximus Jones",
-        "opponentRank": 421,
-        "result": "W",
-        "score": "6-4 7-5",
-        "pointsWonPct": 66,
-        "totalPoints": 92,
-        "source": "Dominance ratio",
-        "isCollege": false
-      },
-      {
-        "id": "JangjunKim-11",
-        "date": "08-Jun-2026",
-        "tournament": "M15 Tokyo",
+        "id": "JangjunKim-college-2526-ncaa-columbia-boosarawongse",
+        "date": "02-May-2026",
+        "tournament": "NCAA Team Championship",
         "round": "R32",
         "surface": "Hard",
-        "opponent": "Yua Taka",
-        "opponentRank": 1640,
+        "opponent": "Thanaphat Boosarawongse",
+        "opponentRank": null,
         "result": "W",
-        "score": "6-2 6-4",
+        "score": "4-6  6-3  6-2",
+        "pointsWonPct": 59,
+        "totalPoints": 113,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-ncstate-leroux",
+        "date": "20-Mar-2026",
+        "tournament": "Dual at NC State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Jules Leroux",
+        "opponentRank": null,
+        "result": "W",
+        "score": "4-6  6-3  6-1",
         "pointsWonPct": 62,
+        "totalPoints": 109,
+        "source": "Games-won estimate",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-michigan-oral",
+        "date": "24-Jan-2026",
+        "tournament": "Dual vs Michigan",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Mert Oral",
+        "opponentRank": 123,
+        "result": "W",
+        "score": "6-0  7-5",
+        "pointsWonPct": 72,
         "totalPoints": 76,
-        "source": "Dominance ratio",
-        "isCollege": false
+        "source": "Games-won estimate",
+        "isCollege": true
       },
       {
-        "id": "JangjunKim-15",
-        "date": "10-Nov-2025",
-        "tournament": "Drummondville CH",
-        "round": "Q1",
+        "id": "JangjunKim-college-2425-ncstate-manning",
+        "date": "16-Feb-2025",
+        "tournament": "Dual vs NC State",
+        "round": "Dual",
         "surface": "Hard",
-        "opponent": "Trey Hilderbrand",
-        "opponentRank": 718,
+        "opponent": "William Manning",
+        "opponentRank": null,
         "result": "W",
-        "score": "6-1 6-1",
-        "pointsWonPct": 68,
-        "totalPoints": 59,
-        "source": "Dominance ratio",
-        "isCollege": false
-      },
-      {
-        "id": "JangjunKim-14",
-        "date": "10-Nov-2025",
-        "tournament": "Drummondville CH",
-        "round": "Q2",
-        "surface": "Hard",
-        "opponent": "Strong Kirchheimer",
-        "opponentRank": 622,
-        "result": "W",
-        "score": "6-3 6-2",
+        "score": "6-2  4-6  6-1",
         "pointsWonPct": 64,
-        "totalPoints": 71,
-        "source": "Dominance ratio",
-        "isCollege": false
+        "totalPoints": 105,
+        "source": "Games-won estimate",
+        "isCollege": true
       }
     ],
     "matches": [
@@ -834,6 +1016,105 @@
         "isCollege": false
       },
       {
+        "id": "JangjunKim-college-2526-ncaa-final-eriksson",
+        "date": "17-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "Final",
+        "surface": "Hard",
+        "opponent": "Sebastian Eriksson",
+        "result": "W",
+        "score": "6-1  7-6(11-9)",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-ncaa-sf-pow",
+        "date": "16-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "SF",
+        "surface": "Hard",
+        "opponent": "Luca Pow",
+        "result": "W",
+        "score": "7-5  5-7  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-ncaa-sc-daryabeigi",
+        "date": "08-May-2026",
+        "tournament": "NCAA Super Regional vs South Carolina",
+        "round": "Super Regional",
+        "surface": "Hard",
+        "opponent": "Sean Daryabeigi",
+        "result": "W",
+        "score": "5-7  6-2  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-ncaa-columbia-boosarawongse",
+        "date": "02-May-2026",
+        "tournament": "NCAA Team Championship",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Thanaphat Boosarawongse",
+        "result": "W",
+        "score": "4-6  6-3  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-miami-kroslak",
+        "date": "29-Mar-2026",
+        "tournament": "Dual at Miami",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Jakub Kroslak",
+        "result": "W",
+        "score": "2-6  7-6(3)  7-5",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-ncstate-leroux",
+        "date": "20-Mar-2026",
+        "tournament": "Dual at NC State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Jules Leroux",
+        "result": "W",
+        "score": "4-6  6-3  6-1",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-stanford-leach",
+        "date": "08-Mar-2026",
+        "tournament": "Dual at Stanford",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Jagger Leach",
+        "result": "W",
+        "score": "2-6  6-2  6-2",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-ita-indoors-nakashima",
+        "date": "16-Feb-2026",
+        "tournament": "ITA National Team Indoor Championship",
+        "round": "SF",
+        "surface": "Hard (indoor)",
+        "opponent": "Bryce Nakashima",
+        "result": "W",
+        "score": "7-6  6-4",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2526-michigan-oral",
+        "date": "24-Jan-2026",
+        "tournament": "Dual vs Michigan",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Mert Oral",
+        "result": "W",
+        "score": "6-0  7-5",
+        "isCollege": true
+      },
+      {
         "id": "JangjunKim-12",
         "date": "10-Nov-2025",
         "tournament": "Drummondville CH",
@@ -920,6 +1201,39 @@
         "result": "W",
         "score": "4-6 6-0 6-3",
         "isCollege": false
+      },
+      {
+        "id": "JangjunKim-college-2425-unc-wright",
+        "date": "02-Mar-2025",
+        "tournament": "Dual at North Carolina",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Anthony Wright",
+        "result": "W",
+        "score": "6-4  7-6(5)",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2425-ncstate-manning",
+        "date": "16-Feb-2025",
+        "tournament": "Dual vs NC State",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "William Manning",
+        "result": "W",
+        "score": "6-2  4-6  6-1",
+        "isCollege": true
+      },
+      {
+        "id": "JangjunKim-college-2425-sc-karahan",
+        "date": "16-Jan-2025",
+        "tournament": "Dual at South Carolina",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Atakan Karahan",
+        "result": "W",
+        "score": "",
+        "isCollege": true
       }
     ]
   }

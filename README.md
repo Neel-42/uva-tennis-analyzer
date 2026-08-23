@@ -13,6 +13,23 @@ GitHub Pages serves a **static build** of the app (roster, matches, and reports 
 - One aggregate report per player, filterable by surface (all / hard / clay / indoor)
 - Pie charts for points won and serve/return deuce vs ad, weighted by estimated point totals across the whole sample
 
+## College data provenance
+
+`data/college_matches.json` is curated by hand from the VirginiaSports player bios — both the
+season highlight notes and the VIRGINIA CAREER STATS table. Three rules keep it honest:
+
+- **Every score is quoted from the bio.** Nothing is estimated or inferred. Results the bio
+  mentions without a score carry `"score": null`; they count toward the match list and record
+  but are excluded from all point math.
+- **`officialRecord` is the source of truth for win-loss.** Bios document highlights, which are
+  overwhelmingly wins, so the curated match list is a cited subset — never a full season log.
+- **`highlightsOnly` suppresses win-derived insights** once highlights make up half or more of a
+  player's sample. Below three scored matches the report drops to record-only rather than
+  drawing pie charts off one scoreline.
+
+Stiles Brockett, Stefan Regalia and Ty Switzer have no Tennis Abstract page, so they are marked
+`collegeOnly` and their profiles are synthesised from this file.
+
 Not included: Dylan Dietrich's aggregated hard-court analysis lives in the separate [tennis-match-analyzer](https://github.com/Neel-42/tennis-match-analyzer) repo.
 
 ## Run locally
