@@ -33,6 +33,19 @@ def export_static_data() -> None:
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
 
     roster = get_uva_roster(refresh=True)
+
+    # Tennis Abstract is not always reachable from CI. Anything we cannot refetch
+    # falls back to the committed build so a blocked scrape never strips the site.
+    previous: dict[str, list[dict]] = {}
+    roster_file = DATA_DIR / "roster.json"
+    if roster_file.exists():
+        try:
+            for player in json.loads(roster_file.read_text()).get("players", []):
+                if player.get("scouting"):
+                    previous[player["name"]] = player["scouting"]
+        except (json.JSONDecodeError, KeyError):
+            pass
+
     scouting: dict[str, list[dict]] = {}
 
     for entry in roster:
@@ -50,8 +63,12 @@ def export_static_data() -> None:
                     print(f"  skip {entry.name}: {exc}")
 
     players = roster_to_dict(roster)
+    carried = 0
     for player in players:
         bullets = scouting.get(player["name"])
+        if not bullets and previous.get(player["name"]):
+            bullets = previous[player["name"]]
+            carried += 1
         if bullets:
             player["scouting"] = bullets
 
@@ -61,8 +78,11 @@ def export_static_data() -> None:
         "source": "virginiasports.com",
         "players": players,
     }
-    (DATA_DIR / "roster.json").write_text(json.dumps(roster_payload, indent=2))
-    print(f"Wrote roster ({len(players)} players, {len(scouting)} with scouting bullets)")
+    roster_file.write_text(json.dumps(roster_payload, indent=2))
+    print(
+        f"Wrote roster ({len(players)} players, {len(scouting)} rebuilt, "
+        f"{carried} carried over from the previous build)"
+    )
 
 
 def export_player(name: str) -> list[dict]:
