@@ -1,0 +1,140 @@
+{
+  "player": "Luca Preda",
+  "opponent": "Ioannis Xilas",
+  "tournament": "M25 Heraklion",
+  "surface": "Hard",
+  "round": "QF",
+  "date": "17-Nov-2025",
+  "score": "4-6 6-2 0-0",
+  "result": "L",
+  "sets": [
+    {
+      "player": 4,
+      "opponent": 6
+    },
+    {
+      "player": 6,
+      "opponent": 2
+    },
+    {
+      "player": 0,
+      "opponent": 0
+    }
+  ],
+  "stats": {
+    "dominanceRatio": 0.87,
+    "acePct": 1.3,
+    "dfPct": 3.8,
+    "firstServeInPct": 75.0,
+    "firstServeWonPct": 53.3,
+    "secondServeWonPct": 45.0,
+    "bpSaved": "12/16",
+    "duration": "1:58",
+    "playerRank": 762,
+    "opponentRank": 447
+  },
+  "coachingNotes": [
+    "Low ace rate 1.3% \u2014 won primarily through rally tolerance and placement.",
+    "First serve: 75.0% in, 53.3% won \u2014 room to improve first-serve damage or consistency.",
+    "Second serve points won: 45.0% \u2014 second serve became attackable; opponent gained return momentum.",
+    "Dominance ratio 0.87 (outplayed on key points)"
+  ],
+  "keyMoments": [
+    "Final scoreline: 4-6 6-2 0-0 (1-1 in sets).",
+    "Break points saved: 12/16."
+  ],
+  "tacticalProfile": "Loss on hard vs Ioannis Xilas (QF, M25 Heraklion). Outcome likely decided by serve reliability and break-point conversion.",
+  "strengths": [],
+  "development": [],
+  "source": "Tennis Abstract",
+  "pieCharts": {
+    "modeled": true,
+    "note": "Pie charts modeled from match box stats (dominance ratio, serve/return %). Deuce/ad splits use charted hard-court defaults adjusted for this match. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 47,
+      "opponentPct": 53,
+      "playerLabel": "Luca",
+      "totalPoints": 76,
+      "source": "Dominance ratio",
+      "isLoss": true
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 66,
+          "total": 13,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 78,
+          "total": 15,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 6,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 34,
+          "total": 6,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 47,
+          "total": 9,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 51,
+          "total": 10,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 47,
+          "total": 19,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 51,
+          "total": 19,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    }
+  },
+  "profile": {
+    "slug": "LucaPreda",
+    "full_name": "Luca Preda",
+    "country": "ROU",
+    "rank": 1255,
+    "peak_rank": 748,
+    "age": 20,
+    "hand": "Left",
+    "backhand": "Two-handed",
+    "height_cm": null,
+    "atp_id": "P0ME"
+  }
+}

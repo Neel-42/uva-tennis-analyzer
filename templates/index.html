@@ -11,21 +11,23 @@
     <div class="header-inner">
       <p class="eyebrow">Virginia Cavaliers · Coaching analysis tool</p>
       <h1>UVA Men's Tennis Match Analyzer</h1>
-      <p class="subtitle">Search any player on the current roster — stats, coaching notes, and deuce/ad pie charts</p>
+      <p class="subtitle">Click a player below, choose a match, then analyze — stats, coaching notes, and deuce/ad pie charts</p>
     </div>
   </header>
 
   <main class="container">
     <section class="search-panel card">
-      <label class="label" for="roster-query">UVA roster</label>
+      <label class="label" for="roster-query">UVA roster — click a player</label>
       <div class="search-row">
         <input id="roster-query" type="text" placeholder="Search roster (e.g. Dietrich, Switzer, Rice)" autocomplete="off" />
         <button id="roster-refresh-btn" type="button" class="secondary-btn">Refresh</button>
       </div>
 
       <div id="roster-grid" class="roster-grid"></div>
+      <p class="roster-hint">Select a player card to load their matches (includes college duals &amp; NCAA when available).</p>
 
-      <div class="divider-label">Or search any player</div>
+      <details class="advanced-search">
+      <summary class="divider-label">Search any Tennis Abstract player</summary>
 
       <label class="label" for="player-query">Player name</label>
       <div class="search-row">
@@ -34,6 +36,7 @@
       </div>
 
       <div id="search-results" class="search-results hidden"></div>
+      </details>
 
       <div id="player-card" class="player-card hidden"></div>
 

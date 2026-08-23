@@ -19,7 +19,8 @@ sys.path.insert(0, str(ROOT))
 
 from lib.analysis import build_match_analysis  # noqa: E402
 from lib.pie_charts import build_pie_charts  # noqa: E402
-from lib.tennis_abstract import fetch_player, match_to_dict, profile_to_dict  # noqa: E402
+from lib.college_matches import fetch_player_matches
+from lib.tennis_abstract import match_to_dict, profile_to_dict  # noqa: E402
 from lib.uva_roster import enrich_roster_player, get_uva_roster, roster_to_dict  # noqa: E402
 
 
@@ -42,24 +43,27 @@ def export_static_data() -> None:
     for entry in roster:
         if not entry.slug or not entry.has_data:
             continue
-        player = enrich_roster_player(entry.name)
-        if not player or not player.slug:
-            continue
-        profile, matches = fetch_player(player.slug)
-        payload = roster_to_dict([player])[0]
-        payload["profile"] = profile_to_dict(profile)
-        payload["matches"] = [match_to_dict(m) for m in matches]
-        slug_path = PLAYERS_DIR / f"{player.slug}.json"
-        slug_path.write_text(json.dumps(payload, indent=2))
-        print(f"  player {player.slug}: {len(matches)} matches")
+        try:
+            player = enrich_roster_player(entry.name)
+            if not player or not player.slug:
+                continue
+            profile, matches = fetch_player_matches(player.slug)
+            payload = roster_to_dict([player])[0]
+            payload["profile"] = profile_to_dict(profile)
+            payload["matches"] = [match_to_dict(m) for m in matches]
+            slug_path = PLAYERS_DIR / f"{player.slug}.json"
+            slug_path.write_text(json.dumps(payload, indent=2))
+            print(f"  player {player.slug}: {len(matches)} matches")
 
-        slug_analysis_dir = ANALYSES_DIR / player.slug
-        slug_analysis_dir.mkdir(parents=True, exist_ok=True)
-        for match in matches:
-            analysis = build_match_analysis(profile, match)
-            analysis["pieCharts"] = build_pie_charts(profile, match)
-            analysis["profile"] = profile_to_dict(profile)
-            (slug_analysis_dir / f"{match.id}.json").write_text(json.dumps(analysis, indent=2))
+            slug_analysis_dir = ANALYSES_DIR / player.slug
+            slug_analysis_dir.mkdir(parents=True, exist_ok=True)
+            for match in matches:
+                analysis = build_match_analysis(profile, match)
+                analysis["pieCharts"] = build_pie_charts(profile, match)
+                analysis["profile"] = profile_to_dict(profile)
+                (slug_analysis_dir / f"{match.id}.json").write_text(json.dumps(analysis, indent=2))
+        except Exception as exc:  # noqa: BLE001
+            print(f"  skip {entry.name}: {exc}")
 
 
 def build_html() -> None:
@@ -77,21 +81,23 @@ def build_html() -> None:
     <div class="header-inner">
       <p class="eyebrow">Virginia Cavaliers · Coaching analysis tool</p>
       <h1>UVA Men's Tennis Match Analyzer</h1>
-      <p class="subtitle">Search any player on the current roster — stats, coaching notes, and deuce/ad pie charts</p>
+      <p class="subtitle">Click a player below, choose a match, then analyze — stats, coaching notes, and deuce/ad pie charts</p>
     </div>
   </header>
 
   <main class="container">
     <section class="search-panel card">
-      <label class="label" for="roster-query">UVA roster</label>
+      <label class="label" for="roster-query">UVA roster — click a player</label>
       <div class="search-row">
         <input id="roster-query" type="text" placeholder="Search roster (e.g. Dietrich, Switzer, Rice)" autocomplete="off" />
         <button id="roster-refresh-btn" type="button" class="secondary-btn">Refresh</button>
       </div>
 
       <div id="roster-grid" class="roster-grid"></div>
+      <p class="roster-hint">Select a player card to load their matches (includes college duals &amp; NCAA when available).</p>
 
-      <div class="divider-label">Or search any player</div>
+      <details class="advanced-search">
+      <summary class="divider-label">Search any Tennis Abstract player</summary>
 
       <label class="label" for="player-query">Player name</label>
       <div class="search-row">
@@ -100,6 +106,7 @@ def build_html() -> None:
       </div>
 
       <div id="search-results" class="search-results hidden"></div>
+      </details>
 
       <div id="player-card" class="player-card hidden"></div>
 

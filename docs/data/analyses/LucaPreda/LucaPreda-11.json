@@ -1,0 +1,143 @@
+{
+  "player": "Luca Preda",
+  "opponent": "Radu David Turcanu",
+  "tournament": "M15 Slobozia",
+  "surface": "Clay",
+  "round": "QF",
+  "date": "14-Jul-2025",
+  "score": "6-4 1-6 6-2",
+  "result": "L",
+  "sets": [
+    {
+      "player": 6,
+      "opponent": 4
+    },
+    {
+      "player": 1,
+      "opponent": 6
+    },
+    {
+      "player": 6,
+      "opponent": 2
+    }
+  ],
+  "stats": {
+    "dominanceRatio": 0.99,
+    "acePct": 3.0,
+    "dfPct": 3.0,
+    "firstServeInPct": 71.6,
+    "firstServeWonPct": 56.3,
+    "secondServeWonPct": 31.6,
+    "bpSaved": "4/10",
+    "duration": "2:08",
+    "playerRank": 768,
+    "opponentRank": 898
+  },
+  "coachingNotes": [
+    "Low ace rate 3.0% \u2014 won primarily through rally tolerance and placement.",
+    "First serve: 71.6% in, 56.3% won \u2014 room to improve first-serve damage or consistency.",
+    "Second serve points won: 31.6% \u2014 second serve became attackable; opponent gained return momentum.",
+    "Dominance ratio 0.99 (outplayed on key points)"
+  ],
+  "keyMoments": [
+    "Middle set lost 1-6 \u2014 review momentum shift after Set 1.",
+    "Final scoreline: 6-4 1-6 6-2 (2-1 in sets).",
+    "Break points saved: 4/10."
+  ],
+  "tacticalProfile": "Loss on clay vs Radu David Turcanu (QF, M15 Slobozia). Outcome likely decided by serve reliability and break-point conversion.",
+  "strengths": [],
+  "development": [
+    "Rebuild second-serve patterns (kick wide/body) when behind in games."
+  ],
+  "source": "Tennis Abstract",
+  "pieCharts": {
+    "modeled": true,
+    "note": "Pie charts modeled from match box stats (dominance ratio, serve/return %). Deuce/ad splits use charted hard-court defaults adjusted for this match. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 50,
+      "opponentPct": 50,
+      "playerLabel": "Luca",
+      "totalPoints": 105,
+      "source": "Dominance ratio",
+      "isLoss": true
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 67,
+          "total": 17,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 80,
+          "total": 21,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 8,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 34,
+          "total": 9,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 47,
+          "total": 12,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 51,
+          "total": 14,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 47,
+          "total": 26,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 51,
+          "total": 27,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    }
+  },
+  "profile": {
+    "slug": "LucaPreda",
+    "full_name": "Luca Preda",
+    "country": "ROU",
+    "rank": 1255,
+    "peak_rank": 748,
+    "age": 20,
+    "hand": "Left",
+    "backhand": "Two-handed",
+    "height_cm": null,
+    "atp_id": "P0ME"
+  }
+}

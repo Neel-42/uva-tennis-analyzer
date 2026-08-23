@@ -198,6 +198,29 @@ button:hover { border-color: var(--accent); }
   margin-top: 12px;
 }
 
+.roster-hint {
+  margin: 10px 0 18px;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.advanced-search {
+  margin-bottom: 8px;
+}
+
+.advanced-search summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.advanced-search summary::-webkit-details-marker {
+  display: none;
+}
+
+.advanced-search[open] summary {
+  margin-bottom: 12px;
+}
+
 .roster-card {
   text-align: left;
   padding: 12px 14px;

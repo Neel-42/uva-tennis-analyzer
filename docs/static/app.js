@@ -18,8 +18,19 @@ function apiUrl(path) {
   return `${API_BASE}${path}`;
 }
 
+function siteRoot() {
+  if (location.hostname.endsWith("github.io")) {
+    const segment = location.pathname.split("/").filter(Boolean)[0];
+    return segment ? `/${segment}/` : "/";
+  }
+  if (location.protocol === "file:") {
+    return "./";
+  }
+  return "/";
+}
+
 function staticUrl(path) {
-  return `data/${path.replace(/^\//, "")}`;
+  return `${siteRoot()}data/${path.replace(/^\//, "")}`;
 }
 
 function setStatus(msg, isError = false) {
@@ -337,10 +348,10 @@ function applyTournamentFilter() {
     return;
   }
   sel.innerHTML = filtered
-    .map(
-      (m) =>
-        `<option value="${m.id}">${m.date} · ${m.tournament} · ${m.round} vs ${m.opponent} (${m.result} ${m.score})</option>`
-    )
+    .map((m) => {
+      const tag = /NCAA|Dual|ACC|ITA|Boar/i.test(m.tournament) ? " · college" : "";
+      return `<option value="${m.id}">${m.date} · ${m.tournament}${tag} · ${m.round} vs ${m.opponent} (${m.result} ${m.score})</option>`;
+    })
     .join("");
   sel.disabled = false;
   $("#analyze-btn").disabled = false;

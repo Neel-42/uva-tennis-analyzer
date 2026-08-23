@@ -1,0 +1,137 @@
+{
+  "player": "Dylan Dietrich",
+  "opponent": "Sebastian Dominko",
+  "tournament": "Dual vs #15 Notre Dame",
+  "surface": "Hard",
+  "round": "Dual",
+  "date": "03-Apr-2026",
+  "score": "6-2  2-6  6-2",
+  "result": "W",
+  "sets": [
+    {
+      "player": 6,
+      "opponent": 2
+    },
+    {
+      "player": 2,
+      "opponent": 6
+    },
+    {
+      "player": 6,
+      "opponent": 2
+    }
+  ],
+  "stats": {
+    "dominanceRatio": 1.08,
+    "acePct": null,
+    "dfPct": null,
+    "firstServeInPct": null,
+    "firstServeWonPct": null,
+    "secondServeWonPct": null,
+    "bpSaved": null,
+    "duration": null,
+    "playerRank": null,
+    "opponentRank": null
+  },
+  "coachingNotes": [
+    "Dominance ratio 1.08 (controlled more of the match)"
+  ],
+  "keyMoments": [
+    "Bounced back after dropping Set 2 (2-6) to win the decider 6-2.",
+    "Final scoreline: 6-2  2-6  6-2 (2-1 in sets)."
+  ],
+  "tacticalProfile": "Victory on hard vs Sebastian Dominko (Dual, Dual vs #15 Notre Dame). Outcome likely decided by serve reliability and break-point conversion.",
+  "strengths": [],
+  "development": [],
+  "source": "College match + UVA data",
+  "pieCharts": {
+    "modeled": true,
+    "note": "Pie charts modeled from match box stats (dominance ratio, serve/return %). Deuce/ad splits use charted hard-court defaults adjusted for this match. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 52,
+      "opponentPct": 48,
+      "playerLabel": "Dylan",
+      "totalPoints": 101,
+      "source": "Dominance ratio",
+      "isLoss": false
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 70,
+          "total": 17,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 85,
+          "total": 21,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 7,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 35,
+          "total": 9,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 47,
+          "total": 12,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 51,
+          "total": 13,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 47,
+          "total": 25,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 51,
+          "total": 26,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    }
+  },
+  "profile": {
+    "slug": "DylanDietrich",
+    "full_name": "Dylan Dietrich",
+    "country": "SUI",
+    "rank": 442,
+    "peak_rank": 434,
+    "age": 21,
+    "hand": "Right",
+    "backhand": "Two-handed",
+    "height_cm": 193,
+    "atp_id": "D0HX"
+  }
+}

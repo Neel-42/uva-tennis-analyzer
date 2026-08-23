@@ -481,6 +481,27 @@
       "second_serve_won_pct": 54.5,
       "bp_saved": "4/8",
       "duration": "1:36"
+    },
+    {
+      "id": "JackKennedy-college-acc-unc-26",
+      "date": "28-Mar-2026",
+      "tournament": "ACC Dual vs North Carolina",
+      "surface": "Hard",
+      "round": "Dual",
+      "player_rank": null,
+      "opponent_rank": null,
+      "opponent": "Ollie Crawford",
+      "opponent_slug": null,
+      "result": "W",
+      "score": "6-3  6-4",
+      "dominance_ratio": 1.33,
+      "ace_pct": null,
+      "df_pct": null,
+      "first_serve_in_pct": null,
+      "first_serve_won_pct": null,
+      "second_serve_won_pct": null,
+      "bp_saved": null,
+      "duration": null
     }
   ]
 }

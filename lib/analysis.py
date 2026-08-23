@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from lib.tennis_abstract import MatchRow, PlayerProfile
+from lib.college_matches import is_college_tournament
 
 
 def _parse_sets(score: str) -> list[tuple[int, int]]:
@@ -163,5 +163,7 @@ def build_match_analysis(profile: PlayerProfile, match: MatchRow) -> dict[str, A
         "tacticalProfile": tactical,
         "strengths": strengths,
         "development": development,
-        "source": "Tennis Abstract",
+        "source": "College match + UVA data"
+        if is_college_tournament(match.tournament) or "-college-" in match.id
+        else "Tennis Abstract",
     }

@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 from lib.analysis import build_match_analysis
 from lib.pie_charts import build_pie_charts
+from lib.college_matches import fetch_player_matches
 from lib.tennis_abstract import (
     fetch_player,
     match_to_dict,
@@ -74,7 +75,7 @@ def api_uva_roster_player(player_name: str):
             return jsonify({"error": f"Player not on UVA roster: {player_name}"}), 404
         payload = roster_to_dict([player])[0]
         if player.slug and player.has_data:
-            profile, matches = fetch_player(player.slug)
+            profile, matches = fetch_player_matches(player.slug)
             payload["profile"] = profile_to_dict(profile)
             payload["matches"] = [match_to_dict(m) for m in matches]
         return jsonify(payload)
@@ -98,7 +99,7 @@ def api_search():
 def api_player(slug: str):
     tournament = request.args.get("tournament", "").strip().lower()
     try:
-        profile, matches = fetch_player(slug)
+        profile, matches = fetch_player_matches(slug)
         if tournament:
             matches = [m for m in matches if tournament in m.tournament.lower()]
         return jsonify(
@@ -116,7 +117,7 @@ def api_player(slug: str):
 @app.get("/api/analyze/<slug>/<match_id>")
 def api_analyze(slug: str, match_id: str):
     try:
-        profile, matches = fetch_player(slug)
+        profile, matches = fetch_player_matches(slug)
         match = next((m for m in matches if m.id == match_id), None)
         if not match:
             return jsonify({"error": "Match not found"}), 404
