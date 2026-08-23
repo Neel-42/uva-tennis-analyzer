@@ -9,13 +9,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 STATIC_SRC = ROOT / "static"
-PARTIAL = ROOT / "templates/partials/hard_court_analysis.html"
 
 API_BASE = "https://uva-tennis-analyzer.onrender.com"
 
 
 def main() -> None:
-    hard_court = PARTIAL.read_text()
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,7 +68,15 @@ def main() -> None:
 
     <section id="analysis" class="analysis hidden"></section>
 
-    {hard_court}
+    <section id="empty-state" class="empty-state card">
+      <h2>How it works</h2>
+      <ol>
+        <li>Pick any player from the current UVA men's tennis roster</li>
+        <li>Optionally filter matches by tournament</li>
+        <li>Select a match and click <strong>Analyze match</strong></li>
+      </ol>
+      <p class="empty-note">Stats, coaching notes, key moments, and deuce/ad pie charts for each match you select.</p>
+    </section>
   </main>
 
   <footer class="footer">

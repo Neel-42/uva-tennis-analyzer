@@ -9,7 +9,8 @@ Interactive coaching tool for **UVA men's tennis** — roster lookup, match stat
 - Current UVA roster from [VirginiaSports.com](https://virginiasports.com/sports/mten/roster)
 - Match data from [Tennis Abstract](https://www.tennisabstract.com)
 - Per-match pie charts (points won, serve/return deuce vs ad)
-- Dylan Dietrich hard-court aggregate analysis on the main page
+
+Not included: Dylan Dietrich's aggregated hard-court analysis lives in the separate [tennis-match-analyzer](https://github.com/Neel-42/tennis-match-analyzer) repo.
 
 ## Run locally
 
