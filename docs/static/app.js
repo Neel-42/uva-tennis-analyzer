@@ -246,7 +246,12 @@ function renderRosterGrid(filter = "") {
 async function loadRoster(refresh = false) {
   setStatus("Loading UVA roster…");
   try {
-    if (STATIC_MODE && !refresh) {
+    if (STATIC_MODE) {
+      if (refresh) {
+        setStatus("Reloading roster data…");
+        location.reload();
+        return;
+      }
       const res = await fetch(staticUrl("roster.json"));
       if (!res.ok) throw new Error("Static roster missing");
       const data = await res.json();
