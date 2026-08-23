@@ -1,0 +1,844 @@
+{
+  "all": {
+    "player": "Andres Santamarta Roig",
+    "playerLabel": "Andres",
+    "profile": {
+      "slug": "AndresSantamartaRoig",
+      "country": "ESP",
+      "rank": 758,
+      "peakRank": 604,
+      "age": 19,
+      "hand": "Right",
+      "backhand": "Two-handed",
+      "heightCm": null
+    },
+    "surface": "all",
+    "surfaceCounts": {
+      "clay": 18
+    },
+    "matchCount": 18,
+    "record": {
+      "wins": 8,
+      "losses": 10
+    },
+    "games": {
+      "won": 231,
+      "lost": 128
+    },
+    "dateRange": "Oct 2025 \u2013 Jul 2026",
+    "note": "Aggregated across 18 matches (Oct 2025 \u2013 Jul 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 50,
+      "opponentPct": 50,
+      "playerLabel": "Andres",
+      "totalPoints": 1510,
+      "source": "Weighted across 18 matches",
+      "isLoss": false
+    },
+    "statAverages": {
+      "acePct": 0.9,
+      "dfPct": 3.4,
+      "firstServeInPct": 61.0,
+      "firstServeWonPct": 61.1,
+      "secondServeWonPct": 49.9,
+      "dominanceRatio": 1.0
+    },
+    "statCoverage": {
+      "detailed": 17,
+      "total": 18
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 68,
+          "total": 257,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 82,
+          "total": 311,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 112,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 34,
+          "total": 129,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 42,
+          "total": 158,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 46,
+          "total": 173,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 42,
+          "total": 377,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 46,
+          "total": 377,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    },
+    "coachingNotes": [
+      "18 matches in this sample: 8-10 record (44% win rate).",
+      "Serving is stronger on the ad side (82% vs 68% points won) \u2014 a 14-point spread across the sample.",
+      "Returning is marginally better on the ad side (46% vs 42%).",
+      "Andres is 2-2 in matches that went the distance (4 three-setters in this sample).",
+      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 17 of 18 matches \u2014 averages use those matches, while the deuce/ad splits and point totals cover all of them."
+    ],
+    "strengths": [
+      "Reliable ad-side serving pattern to lean on in tight games (break points, game points)."
+    ],
+    "development": [
+      "Ace rate averages 0.9% \u2014 free points are rare, so rally tolerance carries the load.",
+      "First-serve points won sits at 61% \u2014 add pace or better placement on the first ball."
+    ],
+    "featuredMatches": [
+      {
+        "id": "AndresSantamartaRoig-4",
+        "date": "29-Jun-2026",
+        "tournament": "Brasov CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Federico Cina",
+        "opponentRank": 174,
+        "result": "W",
+        "score": "6-4 6-3",
+        "pointsWonPct": 57,
+        "totalPoints": 80,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-6",
+        "date": "22-Jun-2026",
+        "tournament": "Plovdiv CH",
+        "round": "QF",
+        "surface": "Clay",
+        "opponent": "Ognjen Milic",
+        "opponentRank": 370,
+        "result": "W",
+        "score": "6-0 6-2",
+        "pointsWonPct": 64,
+        "totalPoints": 59,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-7",
+        "date": "22-Jun-2026",
+        "tournament": "Plovdiv CH",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Enrico Dalla Valle",
+        "opponentRank": 363,
+        "result": "W",
+        "score": "6-2 6-4",
+        "pointsWonPct": 58,
+        "totalPoints": 76,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-8",
+        "date": "22-Jun-2026",
+        "tournament": "Plovdiv CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Philip Henning",
+        "opponentRank": 252,
+        "result": "W",
+        "score": "6-4 6-1",
+        "pointsWonPct": 57,
+        "totalPoints": 71,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-12",
+        "date": "24-Nov-2025",
+        "tournament": "Maia CH",
+        "round": "Q2",
+        "surface": "Clay",
+        "opponent": "Stefan Palosi",
+        "opponentRank": 526,
+        "result": "W",
+        "score": "4-6 6-1 6-2",
+        "pointsWonPct": 61,
+        "totalPoints": 105,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-11",
+        "date": "24-Nov-2025",
+        "tournament": "Maia CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Francisco Rocha",
+        "opponentRank": 767,
+        "result": "W",
+        "score": "6-4 6-4",
+        "pointsWonPct": 54,
+        "totalPoints": 84,
+        "source": "Dominance ratio",
+        "isCollege": false
+      }
+    ],
+    "matches": [
+      {
+        "id": "AndresSantamartaRoig-0",
+        "date": "20-Jul-2026",
+        "tournament": "M25 Denia",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Lorenzo Angelini",
+        "result": "L",
+        "score": "6-3 6-1",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-1",
+        "date": "13-Jul-2026",
+        "tournament": "Bunschoten CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Max Schoenhaus",
+        "result": "L",
+        "score": "7-5 6-1",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-2",
+        "date": "06-Jul-2026",
+        "tournament": "Liege CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Gilles Arnaud Bailly",
+        "result": "L",
+        "score": "5-7 6-4 7-5",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-3",
+        "date": "29-Jun-2026",
+        "tournament": "Brasov CH",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Maks Kasnikowski",
+        "result": "L",
+        "score": "6-3 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-4",
+        "date": "29-Jun-2026",
+        "tournament": "Brasov CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Federico Cina",
+        "result": "W",
+        "score": "6-4 6-3",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-5",
+        "date": "22-Jun-2026",
+        "tournament": "Plovdiv CH",
+        "round": "SF",
+        "surface": "Clay",
+        "opponent": "Inaki Montes De La Torre",
+        "result": "L",
+        "score": "6-4 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-6",
+        "date": "22-Jun-2026",
+        "tournament": "Plovdiv CH",
+        "round": "QF",
+        "surface": "Clay",
+        "opponent": "Ognjen Milic",
+        "result": "W",
+        "score": "6-0 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-7",
+        "date": "22-Jun-2026",
+        "tournament": "Plovdiv CH",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Enrico Dalla Valle",
+        "result": "W",
+        "score": "6-2 6-4",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-8",
+        "date": "22-Jun-2026",
+        "tournament": "Plovdiv CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Philip Henning",
+        "result": "W",
+        "score": "6-4 6-1",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-9",
+        "date": "15-Jun-2026",
+        "tournament": "Royan CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Max Alcala Gurri",
+        "result": "L",
+        "score": "7-5 6-1",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-10",
+        "date": "24-Nov-2025",
+        "tournament": "Maia CH",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Daniel Merida Aguilar",
+        "result": "L",
+        "score": "6-3 6-4",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-11",
+        "date": "24-Nov-2025",
+        "tournament": "Maia CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Francisco Rocha",
+        "result": "W",
+        "score": "6-4 6-4",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-12",
+        "date": "24-Nov-2025",
+        "tournament": "Maia CH",
+        "round": "Q2",
+        "surface": "Clay",
+        "opponent": "Stefan Palosi",
+        "result": "W",
+        "score": "4-6 6-1 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-13",
+        "date": "24-Nov-2025",
+        "tournament": "Maia CH",
+        "round": "Q1",
+        "surface": "Clay",
+        "opponent": "Raul Brancaccio",
+        "result": "W",
+        "score": "6-4 3-6 4-1 RET",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-14",
+        "date": "17-Nov-2025",
+        "tournament": "Montemar CH",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Andrej Nedic",
+        "result": "L",
+        "score": "6-4 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-15",
+        "date": "17-Nov-2025",
+        "tournament": "Montemar CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Geoffrey Blancaneaux",
+        "result": "W",
+        "score": "6-3 6-4",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-16",
+        "date": "03-Nov-2025",
+        "tournament": "M25 Valencia",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Nikolas Sanchez Izquierdo",
+        "result": "L",
+        "score": "6-2 2-6 6-3",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-17",
+        "date": "06-Oct-2025",
+        "tournament": "Valencia CH",
+        "round": "Q1",
+        "surface": "Clay",
+        "opponent": "Sumit Nagal",
+        "result": "L",
+        "score": "6-4 6-2",
+        "isCollege": false
+      }
+    ]
+  },
+  "clay": {
+    "player": "Andres Santamarta Roig",
+    "playerLabel": "Andres",
+    "profile": {
+      "slug": "AndresSantamartaRoig",
+      "country": "ESP",
+      "rank": 758,
+      "peakRank": 604,
+      "age": 19,
+      "hand": "Right",
+      "backhand": "Two-handed",
+      "heightCm": null
+    },
+    "surface": "clay",
+    "surfaceCounts": {
+      "clay": 18
+    },
+    "matchCount": 18,
+    "record": {
+      "wins": 8,
+      "losses": 10
+    },
+    "games": {
+      "won": 231,
+      "lost": 128
+    },
+    "dateRange": "Oct 2025 \u2013 Jul 2026",
+    "note": "Aggregated across 18 matches (Oct 2025 \u2013 Jul 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 50,
+      "opponentPct": 50,
+      "playerLabel": "Andres",
+      "totalPoints": 1510,
+      "source": "Weighted across 18 matches",
+      "isLoss": false
+    },
+    "statAverages": {
+      "acePct": 0.9,
+      "dfPct": 3.4,
+      "firstServeInPct": 61.0,
+      "firstServeWonPct": 61.1,
+      "secondServeWonPct": 49.9,
+      "dominanceRatio": 1.0
+    },
+    "statCoverage": {
+      "detailed": 17,
+      "total": 18
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 68,
+          "total": 257,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 82,
+          "total": 311,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 112,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 34,
+          "total": 129,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 42,
+          "total": 158,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 46,
+          "total": 173,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 42,
+          "total": 377,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 46,
+          "total": 377,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    },
+    "coachingNotes": [
+      "18 matches in this sample: 8-10 record (44% win rate).",
+      "Serving is stronger on the ad side (82% vs 68% points won) \u2014 a 14-point spread across the sample.",
+      "Returning is marginally better on the ad side (46% vs 42%).",
+      "Andres is 2-2 in matches that went the distance (4 three-setters in this sample).",
+      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 17 of 18 matches \u2014 averages use those matches, while the deuce/ad splits and point totals cover all of them."
+    ],
+    "strengths": [
+      "Reliable ad-side serving pattern to lean on in tight games (break points, game points)."
+    ],
+    "development": [
+      "Ace rate averages 0.9% \u2014 free points are rare, so rally tolerance carries the load.",
+      "First-serve points won sits at 61% \u2014 add pace or better placement on the first ball."
+    ],
+    "featuredMatches": [
+      {
+        "id": "AndresSantamartaRoig-4",
+        "date": "29-Jun-2026",
+        "tournament": "Brasov CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Federico Cina",
+        "opponentRank": 174,
+        "result": "W",
+        "score": "6-4 6-3",
+        "pointsWonPct": 57,
+        "totalPoints": 80,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-6",
+        "date": "22-Jun-2026",
+        "tournament": "Plovdiv CH",
+        "round": "QF",
+        "surface": "Clay",
+        "opponent": "Ognjen Milic",
+        "opponentRank": 370,
+        "result": "W",
+        "score": "6-0 6-2",
+        "pointsWonPct": 64,
+        "totalPoints": 59,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-7",
+        "date": "22-Jun-2026",
+        "tournament": "Plovdiv CH",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Enrico Dalla Valle",
+        "opponentRank": 363,
+        "result": "W",
+        "score": "6-2 6-4",
+        "pointsWonPct": 58,
+        "totalPoints": 76,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-8",
+        "date": "22-Jun-2026",
+        "tournament": "Plovdiv CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Philip Henning",
+        "opponentRank": 252,
+        "result": "W",
+        "score": "6-4 6-1",
+        "pointsWonPct": 57,
+        "totalPoints": 71,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-12",
+        "date": "24-Nov-2025",
+        "tournament": "Maia CH",
+        "round": "Q2",
+        "surface": "Clay",
+        "opponent": "Stefan Palosi",
+        "opponentRank": 526,
+        "result": "W",
+        "score": "4-6 6-1 6-2",
+        "pointsWonPct": 61,
+        "totalPoints": 105,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-11",
+        "date": "24-Nov-2025",
+        "tournament": "Maia CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Francisco Rocha",
+        "opponentRank": 767,
+        "result": "W",
+        "score": "6-4 6-4",
+        "pointsWonPct": 54,
+        "totalPoints": 84,
+        "source": "Dominance ratio",
+        "isCollege": false
+      }
+    ],
+    "matches": [
+      {
+        "id": "AndresSantamartaRoig-0",
+        "date": "20-Jul-2026",
+        "tournament": "M25 Denia",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Lorenzo Angelini",
+        "result": "L",
+        "score": "6-3 6-1",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-1",
+        "date": "13-Jul-2026",
+        "tournament": "Bunschoten CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Max Schoenhaus",
+        "result": "L",
+        "score": "7-5 6-1",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-2",
+        "date": "06-Jul-2026",
+        "tournament": "Liege CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Gilles Arnaud Bailly",
+        "result": "L",
+        "score": "5-7 6-4 7-5",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-3",
+        "date": "29-Jun-2026",
+        "tournament": "Brasov CH",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Maks Kasnikowski",
+        "result": "L",
+        "score": "6-3 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-4",
+        "date": "29-Jun-2026",
+        "tournament": "Brasov CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Federico Cina",
+        "result": "W",
+        "score": "6-4 6-3",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-5",
+        "date": "22-Jun-2026",
+        "tournament": "Plovdiv CH",
+        "round": "SF",
+        "surface": "Clay",
+        "opponent": "Inaki Montes De La Torre",
+        "result": "L",
+        "score": "6-4 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-6",
+        "date": "22-Jun-2026",
+        "tournament": "Plovdiv CH",
+        "round": "QF",
+        "surface": "Clay",
+        "opponent": "Ognjen Milic",
+        "result": "W",
+        "score": "6-0 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-7",
+        "date": "22-Jun-2026",
+        "tournament": "Plovdiv CH",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Enrico Dalla Valle",
+        "result": "W",
+        "score": "6-2 6-4",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-8",
+        "date": "22-Jun-2026",
+        "tournament": "Plovdiv CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Philip Henning",
+        "result": "W",
+        "score": "6-4 6-1",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-9",
+        "date": "15-Jun-2026",
+        "tournament": "Royan CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Max Alcala Gurri",
+        "result": "L",
+        "score": "7-5 6-1",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-10",
+        "date": "24-Nov-2025",
+        "tournament": "Maia CH",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Daniel Merida Aguilar",
+        "result": "L",
+        "score": "6-3 6-4",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-11",
+        "date": "24-Nov-2025",
+        "tournament": "Maia CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Francisco Rocha",
+        "result": "W",
+        "score": "6-4 6-4",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-12",
+        "date": "24-Nov-2025",
+        "tournament": "Maia CH",
+        "round": "Q2",
+        "surface": "Clay",
+        "opponent": "Stefan Palosi",
+        "result": "W",
+        "score": "4-6 6-1 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-13",
+        "date": "24-Nov-2025",
+        "tournament": "Maia CH",
+        "round": "Q1",
+        "surface": "Clay",
+        "opponent": "Raul Brancaccio",
+        "result": "W",
+        "score": "6-4 3-6 4-1 RET",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-14",
+        "date": "17-Nov-2025",
+        "tournament": "Montemar CH",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Andrej Nedic",
+        "result": "L",
+        "score": "6-4 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-15",
+        "date": "17-Nov-2025",
+        "tournament": "Montemar CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Geoffrey Blancaneaux",
+        "result": "W",
+        "score": "6-3 6-4",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-16",
+        "date": "03-Nov-2025",
+        "tournament": "M25 Valencia",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Nikolas Sanchez Izquierdo",
+        "result": "L",
+        "score": "6-2 2-6 6-3",
+        "isCollege": false
+      },
+      {
+        "id": "AndresSantamartaRoig-17",
+        "date": "06-Oct-2025",
+        "tournament": "Valencia CH",
+        "round": "Q1",
+        "surface": "Clay",
+        "opponent": "Sumit Nagal",
+        "result": "L",
+        "score": "6-4 6-2",
+        "isCollege": false
+      }
+    ]
+  }
+}

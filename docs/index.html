@@ -12,7 +12,7 @@
     <div class="header-inner">
       <p class="eyebrow">Virginia Cavaliers · Coaching analysis tool</p>
       <h1>UVA Men's Tennis Match Analyzer</h1>
-      <p class="subtitle">Click a player below, choose a match, then analyze — stats, coaching notes, and deuce/ad pie charts</p>
+      <p class="subtitle">Click a player for a comprehensive analysis — every match aggregated into one deuce/ad breakdown</p>
     </div>
   </header>
 
@@ -25,7 +25,7 @@
       </div>
 
       <div id="roster-grid" class="roster-grid"></div>
-      <p class="roster-hint">Select a player card to load their matches (includes college duals &amp; NCAA when available).</p>
+      <p class="roster-hint">Select a player card to build their full-career report (includes college duals &amp; NCAA when available).</p>
 
       <details class="advanced-search">
       <summary class="divider-label">Search any Tennis Abstract player</summary>
@@ -41,15 +41,8 @@
 
       <div id="player-card" class="player-card hidden"></div>
 
-      <label class="label" for="tournament-filter">Filter by tournament (optional)</label>
-      <input id="tournament-filter" type="text" placeholder="e.g. Zug, ACC, NCAA" />
+      <div id="surface-filter" class="surface-filter hidden"></div>
 
-      <label class="label" for="match-select">Select match</label>
-      <select id="match-select" disabled>
-        <option value="">Select a roster player above…</option>
-      </select>
-
-      <button id="analyze-btn" class="primary-btn" type="button" disabled>Analyze match</button>
       <p id="status" class="status"></p>
     </section>
 
@@ -59,10 +52,10 @@
       <h2>How it works</h2>
       <ol>
         <li>Pick any player from the current UVA men's tennis roster</li>
-        <li>Optionally filter matches by tournament</li>
-        <li>Select a match and click <strong>Analyze match</strong></li>
+        <li>Every available match is aggregated into one comprehensive analysis</li>
+        <li>Filter by surface to see hard-court or clay tendencies on their own</li>
       </ol>
-      <p class="empty-note">Stats, coaching notes, key moments, and deuce/ad pie charts for each match you select.</p>
+      <p class="empty-note">Career deuce/ad serve and return splits, weighted stat averages, coaching notes, and featured match breakdowns.</p>
     </section>
   </main>
 

@@ -1,0 +1,794 @@
+{
+  "all": {
+    "player": "Roy Horovitz",
+    "playerLabel": "Roy",
+    "profile": {
+      "slug": "RoyHorovitz",
+      "country": "USA",
+      "rank": 1778,
+      "peakRank": 1561,
+      "age": 19,
+      "hand": "Left",
+      "backhand": "Two-handed",
+      "heightCm": null
+    },
+    "surface": "all",
+    "surfaceCounts": {
+      "hard": 3,
+      "clay": 5
+    },
+    "matchCount": 8,
+    "record": {
+      "wins": 3,
+      "losses": 5
+    },
+    "games": {
+      "won": 105,
+      "lost": 54
+    },
+    "dateRange": "Apr 2023 \u2013 Feb 2026",
+    "note": "Aggregated across 8 matches (Apr 2023 \u2013 Feb 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 62,
+      "opponentPct": 38,
+      "playerLabel": "Roy",
+      "totalPoints": 669,
+      "source": "Weighted across 8 matches",
+      "isLoss": false
+    },
+    "statAverages": {
+      "acePct": 1.7,
+      "dfPct": 1.7,
+      "firstServeInPct": 63.8,
+      "firstServeWonPct": 70.3,
+      "secondServeWonPct": 38.1,
+      "dominanceRatio": 1.0
+    },
+    "statCoverage": {
+      "detailed": 1,
+      "total": 8
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 70,
+          "total": 116,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 85,
+          "total": 141,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 49,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 35,
+          "total": 58,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 42,
+          "total": 70,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 46,
+          "total": 76,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 42,
+          "total": 167,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 46,
+          "total": 167,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    },
+    "coachingNotes": [
+      "8 matches in this sample: 3-5 record (38% win rate).",
+      "Serving is stronger on the ad side (85% vs 70% points won) \u2014 a 15-point spread across the sample.",
+      "Returning is marginally better on the ad side (46% vs 42%).",
+      "Roy is 1-1 in matches that went the distance (2 three-setters in this sample).",
+      "College play (duals, ITA, NCAA): 1-0 across 1 matches.",
+      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 1 of 8 matches \u2014 averages use those matches, while the deuce/ad splits and point totals cover all of them."
+    ],
+    "strengths": [
+      "Reliable ad-side serving pattern to lean on in tight games (break points, game points).",
+      "Double fault rate of 1.7% shows dependable second-serve mechanics."
+    ],
+    "development": [
+      "Ace rate averages 1.7% \u2014 free points are rare, so rally tolerance carries the load.",
+      "First-serve points won sits at 70% \u2014 add pace or better placement on the first ball.",
+      "Second-serve points won is 38% \u2014 opponents are stepping in on the second delivery."
+    ],
+    "featuredMatches": [
+      {
+        "id": "RoyHorovitz-college-acc-clem-26",
+        "date": "28-Feb-2026",
+        "tournament": "ACC Dual vs Clemson",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Maximo Castor",
+        "opponentRank": null,
+        "result": "W",
+        "score": "6-2  6-4",
+        "pointsWonPct": 60,
+        "totalPoints": 76,
+        "source": "Dominance ratio",
+        "isCollege": true
+      },
+      {
+        "id": "RoyHorovitz-2",
+        "date": "12-Feb-2024",
+        "tournament": "M15 Palm Coast FL",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Evan Bynoe",
+        "opponentRank": 1211,
+        "result": "W",
+        "score": "4-6 6-1 6-1",
+        "pointsWonPct": 67,
+        "totalPoints": 101,
+        "source": "Games-won estimate",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-1",
+        "date": "12-Feb-2024",
+        "tournament": "M15 Palm Coast FL",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Toby Alex Kodat",
+        "opponentRank": 319,
+        "result": "L",
+        "score": "6-3 6-2",
+        "pointsWonPct": 71,
+        "totalPoints": 71,
+        "source": "Games-won estimate",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-3",
+        "date": "25-Sep-2023",
+        "tournament": "M15 Albuquerque NM",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Jordan Hasson",
+        "opponentRank": 950,
+        "result": "L",
+        "score": "6-1 6-3",
+        "pointsWonPct": 75,
+        "totalPoints": 67,
+        "source": "Games-won estimate",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-6",
+        "date": "24-Apr-2023",
+        "tournament": "M15 Vero Beach FL",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Miguel Angel Cabrera",
+        "opponentRank": 1922,
+        "result": "W",
+        "score": "6-3 6-3",
+        "pointsWonPct": 67,
+        "totalPoints": 76,
+        "source": "Games-won estimate",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-5",
+        "date": "24-Apr-2023",
+        "tournament": "M15 Vero Beach FL",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Roberto Cid",
+        "opponentRank": 677,
+        "result": "L",
+        "score": "6-3 6-3",
+        "pointsWonPct": 67,
+        "totalPoints": 76,
+        "source": "Games-won estimate",
+        "isCollege": false
+      }
+    ],
+    "matches": [
+      {
+        "id": "RoyHorovitz-college-acc-clem-26",
+        "date": "28-Feb-2026",
+        "tournament": "ACC Dual vs Clemson",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Maximo Castor",
+        "result": "W",
+        "score": "6-2  6-4",
+        "isCollege": true
+      },
+      {
+        "id": "RoyHorovitz-0",
+        "date": "15-Apr-2024",
+        "tournament": "Tallahassee CH",
+        "round": "Q1",
+        "surface": "Clay",
+        "opponent": "Bogdan Bobrov",
+        "result": "L",
+        "score": "6-2 6-4",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-1",
+        "date": "12-Feb-2024",
+        "tournament": "M15 Palm Coast FL",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Toby Alex Kodat",
+        "result": "L",
+        "score": "6-3 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-2",
+        "date": "12-Feb-2024",
+        "tournament": "M15 Palm Coast FL",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Evan Bynoe",
+        "result": "W",
+        "score": "4-6 6-1 6-1",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-3",
+        "date": "25-Sep-2023",
+        "tournament": "M15 Albuquerque NM",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Jordan Hasson",
+        "result": "L",
+        "score": "6-1 6-3",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-4",
+        "date": "11-Sep-2023",
+        "tournament": "M15 Champaign IL",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Alexander Petrov",
+        "result": "L",
+        "score": "5-7 6-3 6-3",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-5",
+        "date": "24-Apr-2023",
+        "tournament": "M15 Vero Beach FL",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Roberto Cid",
+        "result": "L",
+        "score": "6-3 6-3",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-6",
+        "date": "24-Apr-2023",
+        "tournament": "M15 Vero Beach FL",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Miguel Angel Cabrera",
+        "result": "W",
+        "score": "6-3 6-3",
+        "isCollege": false
+      }
+    ]
+  },
+  "hard": {
+    "player": "Roy Horovitz",
+    "playerLabel": "Roy",
+    "profile": {
+      "slug": "RoyHorovitz",
+      "country": "USA",
+      "rank": 1778,
+      "peakRank": 1561,
+      "age": 19,
+      "hand": "Left",
+      "backhand": "Two-handed",
+      "heightCm": null
+    },
+    "surface": "hard",
+    "surfaceCounts": {
+      "hard": 3,
+      "clay": 5
+    },
+    "matchCount": 3,
+    "record": {
+      "wins": 1,
+      "losses": 2
+    },
+    "games": {
+      "won": 41,
+      "lost": 23
+    },
+    "dateRange": "Sep 2023 \u2013 Feb 2026",
+    "note": "Aggregated across 3 matches (Sep 2023 \u2013 Feb 2026). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 62,
+      "opponentPct": 38,
+      "playerLabel": "Roy",
+      "totalPoints": 269,
+      "source": "Weighted across 3 matches",
+      "isLoss": false
+    },
+    "statAverages": {
+      "acePct": null,
+      "dfPct": null,
+      "firstServeInPct": null,
+      "firstServeWonPct": null,
+      "secondServeWonPct": null,
+      "dominanceRatio": 1.5
+    },
+    "statCoverage": {
+      "detailed": 0,
+      "total": 3
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 70,
+          "total": 46,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 85,
+          "total": 57,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 20,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 35,
+          "total": 23,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 43,
+          "total": 28,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 47,
+          "total": 31,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 43,
+          "total": 67,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 47,
+          "total": 67,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    },
+    "coachingNotes": [
+      "3 matches in this sample: 1-2 record (33% win rate).",
+      "Serving is stronger on the ad side (85% vs 70% points won) \u2014 a 16-point spread across the sample.",
+      "Returning is marginally better on the ad side (47% vs 43%).",
+      "Roy is 0-1 in matches that went the distance (1 three-setters in this sample).",
+      "College play (duals, ITA, NCAA): 1-0 across 1 matches.",
+      "None of these matches have published box scores, so ace and serve-percentage averages are unavailable. Scoreline-derived figures (points won, games, deuce/ad splits) still cover every match."
+    ],
+    "strengths": [
+      "Reliable ad-side serving pattern to lean on in tight games (break points, game points)."
+    ],
+    "development": [],
+    "featuredMatches": [
+      {
+        "id": "RoyHorovitz-college-acc-clem-26",
+        "date": "28-Feb-2026",
+        "tournament": "ACC Dual vs Clemson",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Maximo Castor",
+        "opponentRank": null,
+        "result": "W",
+        "score": "6-2  6-4",
+        "pointsWonPct": 60,
+        "totalPoints": 76,
+        "source": "Dominance ratio",
+        "isCollege": true
+      },
+      {
+        "id": "RoyHorovitz-3",
+        "date": "25-Sep-2023",
+        "tournament": "M15 Albuquerque NM",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Jordan Hasson",
+        "opponentRank": 950,
+        "result": "L",
+        "score": "6-1 6-3",
+        "pointsWonPct": 75,
+        "totalPoints": 67,
+        "source": "Games-won estimate",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-4",
+        "date": "11-Sep-2023",
+        "tournament": "M15 Champaign IL",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Alexander Petrov",
+        "opponentRank": 1120,
+        "result": "L",
+        "score": "5-7 6-3 6-3",
+        "pointsWonPct": 57,
+        "totalPoints": 126,
+        "source": "Games-won estimate",
+        "isCollege": false
+      }
+    ],
+    "matches": [
+      {
+        "id": "RoyHorovitz-college-acc-clem-26",
+        "date": "28-Feb-2026",
+        "tournament": "ACC Dual vs Clemson",
+        "round": "Dual",
+        "surface": "Hard",
+        "opponent": "Maximo Castor",
+        "result": "W",
+        "score": "6-2  6-4",
+        "isCollege": true
+      },
+      {
+        "id": "RoyHorovitz-3",
+        "date": "25-Sep-2023",
+        "tournament": "M15 Albuquerque NM",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Jordan Hasson",
+        "result": "L",
+        "score": "6-1 6-3",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-4",
+        "date": "11-Sep-2023",
+        "tournament": "M15 Champaign IL",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Alexander Petrov",
+        "result": "L",
+        "score": "5-7 6-3 6-3",
+        "isCollege": false
+      }
+    ]
+  },
+  "clay": {
+    "player": "Roy Horovitz",
+    "playerLabel": "Roy",
+    "profile": {
+      "slug": "RoyHorovitz",
+      "country": "USA",
+      "rank": 1778,
+      "peakRank": 1561,
+      "age": 19,
+      "hand": "Left",
+      "backhand": "Two-handed",
+      "heightCm": null
+    },
+    "surface": "clay",
+    "surfaceCounts": {
+      "hard": 3,
+      "clay": 5
+    },
+    "matchCount": 5,
+    "record": {
+      "wins": 2,
+      "losses": 3
+    },
+    "games": {
+      "won": 64,
+      "lost": 31
+    },
+    "dateRange": "Apr 2023 \u2013 Apr 2024",
+    "note": "Aggregated across 5 matches (Apr 2023 \u2013 Apr 2024). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 62,
+      "opponentPct": 38,
+      "playerLabel": "Roy",
+      "totalPoints": 400,
+      "source": "Weighted across 5 matches",
+      "isLoss": false
+    },
+    "statAverages": {
+      "acePct": 1.7,
+      "dfPct": 1.7,
+      "firstServeInPct": 63.8,
+      "firstServeWonPct": 70.3,
+      "secondServeWonPct": 38.1,
+      "dominanceRatio": 0.6
+    },
+    "statCoverage": {
+      "detailed": 1,
+      "total": 5
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 69,
+          "total": 69,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 84,
+          "total": 84,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 29,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 35,
+          "total": 34,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 41,
+          "total": 41,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 45,
+          "total": 45,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 41,
+          "total": 100,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 45,
+          "total": 100,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    },
+    "coachingNotes": [
+      "5 matches in this sample: 2-3 record (40% win rate).",
+      "Serving is stronger on the ad side (84% vs 69% points won) \u2014 a 15-point spread across the sample.",
+      "Returning is marginally better on the ad side (45% vs 41%).",
+      "Roy is 1-0 in matches that went the distance (1 three-setters in this sample).",
+      "Box-score serve stats (ace %, double faults, first/second serve won) are published for 1 of 5 matches \u2014 averages use those matches, while the deuce/ad splits and point totals cover all of them."
+    ],
+    "strengths": [
+      "Reliable ad-side serving pattern to lean on in tight games (break points, game points).",
+      "Double fault rate of 1.7% shows dependable second-serve mechanics.",
+      "Strong closing record in three-set matches \u2014 holds up physically and mentally."
+    ],
+    "development": [
+      "Ace rate averages 1.7% \u2014 free points are rare, so rally tolerance carries the load.",
+      "First-serve points won sits at 70% \u2014 add pace or better placement on the first ball.",
+      "Second-serve points won is 38% \u2014 opponents are stepping in on the second delivery."
+    ],
+    "featuredMatches": [
+      {
+        "id": "RoyHorovitz-0",
+        "date": "15-Apr-2024",
+        "tournament": "Tallahassee CH",
+        "round": "Q1",
+        "surface": "Clay",
+        "opponent": "Bogdan Bobrov",
+        "opponentRank": 404,
+        "result": "L",
+        "score": "6-2 6-4",
+        "pointsWonPct": 37,
+        "totalPoints": 76,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-2",
+        "date": "12-Feb-2024",
+        "tournament": "M15 Palm Coast FL",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Evan Bynoe",
+        "opponentRank": 1211,
+        "result": "W",
+        "score": "4-6 6-1 6-1",
+        "pointsWonPct": 67,
+        "totalPoints": 101,
+        "source": "Games-won estimate",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-1",
+        "date": "12-Feb-2024",
+        "tournament": "M15 Palm Coast FL",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Toby Alex Kodat",
+        "opponentRank": 319,
+        "result": "L",
+        "score": "6-3 6-2",
+        "pointsWonPct": 71,
+        "totalPoints": 71,
+        "source": "Games-won estimate",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-6",
+        "date": "24-Apr-2023",
+        "tournament": "M15 Vero Beach FL",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Miguel Angel Cabrera",
+        "opponentRank": 1922,
+        "result": "W",
+        "score": "6-3 6-3",
+        "pointsWonPct": 67,
+        "totalPoints": 76,
+        "source": "Games-won estimate",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-5",
+        "date": "24-Apr-2023",
+        "tournament": "M15 Vero Beach FL",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Roberto Cid",
+        "opponentRank": 677,
+        "result": "L",
+        "score": "6-3 6-3",
+        "pointsWonPct": 67,
+        "totalPoints": 76,
+        "source": "Games-won estimate",
+        "isCollege": false
+      }
+    ],
+    "matches": [
+      {
+        "id": "RoyHorovitz-0",
+        "date": "15-Apr-2024",
+        "tournament": "Tallahassee CH",
+        "round": "Q1",
+        "surface": "Clay",
+        "opponent": "Bogdan Bobrov",
+        "result": "L",
+        "score": "6-2 6-4",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-1",
+        "date": "12-Feb-2024",
+        "tournament": "M15 Palm Coast FL",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Toby Alex Kodat",
+        "result": "L",
+        "score": "6-3 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-2",
+        "date": "12-Feb-2024",
+        "tournament": "M15 Palm Coast FL",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Evan Bynoe",
+        "result": "W",
+        "score": "4-6 6-1 6-1",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-5",
+        "date": "24-Apr-2023",
+        "tournament": "M15 Vero Beach FL",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Roberto Cid",
+        "result": "L",
+        "score": "6-3 6-3",
+        "isCollege": false
+      },
+      {
+        "id": "RoyHorovitz-6",
+        "date": "24-Apr-2023",
+        "tournament": "M15 Vero Beach FL",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Miguel Angel Cabrera",
+        "result": "W",
+        "score": "6-3 6-3",
+        "isCollege": false
+      }
+    ]
+  }
+}

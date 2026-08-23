@@ -1,0 +1,1092 @@
+{
+  "all": {
+    "player": "Luca Preda",
+    "playerLabel": "Luca",
+    "profile": {
+      "slug": "LucaPreda",
+      "country": "ROU",
+      "rank": 1255,
+      "peakRank": 748,
+      "age": 20,
+      "hand": "Left",
+      "backhand": "Two-handed",
+      "heightCm": null
+    },
+    "surface": "all",
+    "surfaceCounts": {
+      "hard": 9,
+      "clay": 10
+    },
+    "matchCount": 19,
+    "record": {
+      "wins": 9,
+      "losses": 10
+    },
+    "games": {
+      "won": 229,
+      "lost": 156
+    },
+    "dateRange": "Jun 2025 \u2013 Nov 2025",
+    "note": "Aggregated across 19 matches (Jun 2025 \u2013 Nov 2025). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 51,
+      "opponentPct": 49,
+      "playerLabel": "Luca",
+      "totalPoints": 1618,
+      "source": "Weighted across 19 matches",
+      "isLoss": false
+    },
+    "statAverages": {
+      "acePct": 3.4,
+      "dfPct": 4.5,
+      "firstServeInPct": 67.0,
+      "firstServeWonPct": 63.7,
+      "secondServeWonPct": 44.6,
+      "dominanceRatio": 1.1
+    },
+    "statCoverage": {
+      "detailed": 19,
+      "total": 19
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 68,
+          "total": 276,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 83,
+          "total": 333,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 120,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 34,
+          "total": 138,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 43,
+          "total": 172,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 46,
+          "total": 187,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 43,
+          "total": 404,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 46,
+          "total": 404,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    },
+    "coachingNotes": [
+      "19 matches in this sample: 9-10 record (47% win rate).",
+      "Serving is stronger on the ad side (83% vs 68% points won) \u2014 a 14-point spread across the sample.",
+      "Returning is marginally better on the ad side (46% vs 43%).",
+      "Luca is 3-7 in matches that went the distance (10 three-setters in this sample)."
+    ],
+    "strengths": [
+      "Reliable ad-side serving pattern to lean on in tight games (break points, game points)."
+    ],
+    "development": [
+      "Ace rate averages 3.4% \u2014 free points are rare, so rally tolerance carries the load.",
+      "First-serve points won sits at 64% \u2014 add pace or better placement on the first ball.",
+      "Second-serve points won is 45% \u2014 opponents are stepping in on the second delivery."
+    ],
+    "featuredMatches": [
+      {
+        "id": "LucaPreda-3",
+        "date": "17-Nov-2025",
+        "tournament": "M25 Heraklion",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Amit Vales",
+        "opponentRank": 880,
+        "result": "W",
+        "score": "6-0 6-2",
+        "pointsWonPct": 63,
+        "totalPoints": 59,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-8",
+        "date": "06-Oct-2025",
+        "tournament": "Hersonissos 5 CH",
+        "round": "Q1",
+        "surface": "Hard",
+        "opponent": "Egor Gerasimov",
+        "opponentRank": 546,
+        "result": "W",
+        "score": "6-4 7-6(8)",
+        "pointsWonPct": 57,
+        "totalPoints": 97,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-10",
+        "date": "04-Aug-2025",
+        "tournament": "M15 Sofia",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Samuele Seghetti",
+        "opponentRank": 1240,
+        "result": "W",
+        "score": "6-3 6-0",
+        "pointsWonPct": 62,
+        "totalPoints": 63,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-12",
+        "date": "14-Jul-2025",
+        "tournament": "M15 Slobozia",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Stefan Palosi",
+        "opponentRank": 623,
+        "result": "W",
+        "score": "6-3 6-1",
+        "pointsWonPct": 60,
+        "totalPoints": 67,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-13",
+        "date": "14-Jul-2025",
+        "tournament": "M15 Slobozia",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Calin Teodor Stirbu",
+        "opponentRank": 1213,
+        "result": "W",
+        "score": "3-6 6-3 6-0",
+        "pointsWonPct": 56,
+        "totalPoints": 101,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-18",
+        "date": "23-Jun-2025",
+        "tournament": "M25 Targu Mures",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Ioan Alexandru Teglas",
+        "opponentRank": null,
+        "result": "W",
+        "score": "6-2 6-0",
+        "pointsWonPct": 68,
+        "totalPoints": 59,
+        "source": "Dominance ratio",
+        "isCollege": false
+      }
+    ],
+    "matches": [
+      {
+        "id": "LucaPreda-0",
+        "date": "24-Nov-2025",
+        "tournament": "Athens CH",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Sandro Kopp",
+        "result": "L",
+        "score": "7-5 1-0 RET",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-1",
+        "date": "17-Nov-2025",
+        "tournament": "M25 Heraklion",
+        "round": "QF",
+        "surface": "Hard",
+        "opponent": "Ioannis Xilas",
+        "result": "L",
+        "score": "4-6 6-2 0-0",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-2",
+        "date": "17-Nov-2025",
+        "tournament": "M25 Heraklion",
+        "round": "R16",
+        "surface": "Hard",
+        "opponent": "James Story",
+        "result": "W",
+        "score": "3-6 7-5 7-5",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-3",
+        "date": "17-Nov-2025",
+        "tournament": "M25 Heraklion",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Amit Vales",
+        "result": "W",
+        "score": "6-0 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-4",
+        "date": "10-Nov-2025",
+        "tournament": "M15 Heraklion",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Philip Henning",
+        "result": "L",
+        "score": "6-3 2-6 6-3",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-5",
+        "date": "13-Oct-2025",
+        "tournament": "Hersonissos 6 CH",
+        "round": "R16",
+        "surface": "Hard",
+        "opponent": "Giles Hussey",
+        "result": "L",
+        "score": "6-2 4-6 6-3",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-6",
+        "date": "13-Oct-2025",
+        "tournament": "Hersonissos 6 CH",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Oliver Crawford",
+        "result": "W",
+        "score": "7-6(5) 7-5",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-7",
+        "date": "06-Oct-2025",
+        "tournament": "Hersonissos 5 CH",
+        "round": "Q2",
+        "surface": "Hard",
+        "opponent": "Harry Wendelken",
+        "result": "L",
+        "score": "2-6 6-4 7-6(3)",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-8",
+        "date": "06-Oct-2025",
+        "tournament": "Hersonissos 5 CH",
+        "round": "Q1",
+        "surface": "Hard",
+        "opponent": "Egor Gerasimov",
+        "result": "W",
+        "score": "6-4 7-6(8)",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-9",
+        "date": "04-Aug-2025",
+        "tournament": "M15 Sofia",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Alexander Vasilev",
+        "result": "L",
+        "score": "1-4 RET",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-10",
+        "date": "04-Aug-2025",
+        "tournament": "M15 Sofia",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Samuele Seghetti",
+        "result": "W",
+        "score": "6-3 6-0",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-11",
+        "date": "14-Jul-2025",
+        "tournament": "M15 Slobozia",
+        "round": "QF",
+        "surface": "Clay",
+        "opponent": "Radu David Turcanu",
+        "result": "L",
+        "score": "6-4 1-6 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-12",
+        "date": "14-Jul-2025",
+        "tournament": "M15 Slobozia",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Stefan Palosi",
+        "result": "W",
+        "score": "6-3 6-1",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-13",
+        "date": "14-Jul-2025",
+        "tournament": "M15 Slobozia",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Calin Teodor Stirbu",
+        "result": "W",
+        "score": "3-6 6-3 6-0",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-14",
+        "date": "07-Jul-2025",
+        "tournament": "Iasi CH",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Duje Ajdukovic",
+        "result": "L",
+        "score": "4-6 7-5 6-4",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-15",
+        "date": "07-Jul-2025",
+        "tournament": "Iasi CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Marko Topo",
+        "result": "W",
+        "score": "6-2 0-6 6-4",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-16",
+        "date": "30-Jun-2025",
+        "tournament": "Brasov CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Luka Pavlovic",
+        "result": "L",
+        "score": "6-0 6-0",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-17",
+        "date": "23-Jun-2025",
+        "tournament": "M25 Targu Mures",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Cezar Cretu",
+        "result": "L",
+        "score": "4-4 RET",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-18",
+        "date": "23-Jun-2025",
+        "tournament": "M25 Targu Mures",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Ioan Alexandru Teglas",
+        "result": "W",
+        "score": "6-2 6-0",
+        "isCollege": false
+      }
+    ]
+  },
+  "hard": {
+    "player": "Luca Preda",
+    "playerLabel": "Luca",
+    "profile": {
+      "slug": "LucaPreda",
+      "country": "ROU",
+      "rank": 1255,
+      "peakRank": 748,
+      "age": 20,
+      "hand": "Left",
+      "backhand": "Two-handed",
+      "heightCm": null
+    },
+    "surface": "hard",
+    "surfaceCounts": {
+      "hard": 9,
+      "clay": 10
+    },
+    "matchCount": 9,
+    "record": {
+      "wins": 4,
+      "losses": 5
+    },
+    "games": {
+      "won": 119,
+      "lost": 91
+    },
+    "dateRange": "Oct 2025 \u2013 Nov 2025",
+    "note": "Aggregated across 9 matches (Oct 2025 \u2013 Nov 2025). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 50,
+      "opponentPct": 50,
+      "playerLabel": "Luca",
+      "totalPoints": 883,
+      "source": "Weighted across 9 matches",
+      "isLoss": false
+    },
+    "statAverages": {
+      "acePct": 3.5,
+      "dfPct": 4.8,
+      "firstServeInPct": 66.7,
+      "firstServeWonPct": 63.5,
+      "secondServeWonPct": 46.2,
+      "dominanceRatio": 1.0
+    },
+    "statCoverage": {
+      "detailed": 9,
+      "total": 9
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 68,
+          "total": 150,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 82,
+          "total": 182,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 65,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 34,
+          "total": 75,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 42,
+          "total": 92,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 46,
+          "total": 101,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 42,
+          "total": 220,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 46,
+          "total": 220,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    },
+    "coachingNotes": [
+      "9 matches in this sample: 4-5 record (44% win rate).",
+      "Serving is stronger on the ad side (82% vs 68% points won) \u2014 a 14-point spread across the sample.",
+      "Returning is marginally better on the ad side (46% vs 42%).",
+      "Luca is 1-5 in matches that went the distance (6 three-setters in this sample)."
+    ],
+    "strengths": [
+      "Reliable ad-side serving pattern to lean on in tight games (break points, game points)."
+    ],
+    "development": [
+      "Ace rate averages 3.5% \u2014 free points are rare, so rally tolerance carries the load.",
+      "First-serve points won sits at 64% \u2014 add pace or better placement on the first ball.",
+      "Second-serve points won is 46% \u2014 opponents are stepping in on the second delivery."
+    ],
+    "featuredMatches": [
+      {
+        "id": "LucaPreda-3",
+        "date": "17-Nov-2025",
+        "tournament": "M25 Heraklion",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Amit Vales",
+        "opponentRank": 880,
+        "result": "W",
+        "score": "6-0 6-2",
+        "pointsWonPct": 63,
+        "totalPoints": 59,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-2",
+        "date": "17-Nov-2025",
+        "tournament": "M25 Heraklion",
+        "round": "R16",
+        "surface": "Hard",
+        "opponent": "James Story",
+        "opponentRank": 463,
+        "result": "W",
+        "score": "3-6 7-5 7-5",
+        "pointsWonPct": 49,
+        "totalPoints": 139,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-1",
+        "date": "17-Nov-2025",
+        "tournament": "M25 Heraklion",
+        "round": "QF",
+        "surface": "Hard",
+        "opponent": "Ioannis Xilas",
+        "opponentRank": 447,
+        "result": "L",
+        "score": "4-6 6-2 0-0",
+        "pointsWonPct": 47,
+        "totalPoints": 76,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-6",
+        "date": "13-Oct-2025",
+        "tournament": "Hersonissos 6 CH",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Oliver Crawford",
+        "opponentRank": 188,
+        "result": "W",
+        "score": "7-6(5) 7-5",
+        "pointsWonPct": 51,
+        "totalPoints": 105,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-8",
+        "date": "06-Oct-2025",
+        "tournament": "Hersonissos 5 CH",
+        "round": "Q1",
+        "surface": "Hard",
+        "opponent": "Egor Gerasimov",
+        "opponentRank": 546,
+        "result": "W",
+        "score": "6-4 7-6(8)",
+        "pointsWonPct": 57,
+        "totalPoints": 97,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-7",
+        "date": "06-Oct-2025",
+        "tournament": "Hersonissos 5 CH",
+        "round": "Q2",
+        "surface": "Hard",
+        "opponent": "Harry Wendelken",
+        "opponentRank": 459,
+        "result": "L",
+        "score": "2-6 6-4 7-6(3)",
+        "pointsWonPct": 53,
+        "totalPoints": 130,
+        "source": "Dominance ratio",
+        "isCollege": false
+      }
+    ],
+    "matches": [
+      {
+        "id": "LucaPreda-0",
+        "date": "24-Nov-2025",
+        "tournament": "Athens CH",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Sandro Kopp",
+        "result": "L",
+        "score": "7-5 1-0 RET",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-1",
+        "date": "17-Nov-2025",
+        "tournament": "M25 Heraklion",
+        "round": "QF",
+        "surface": "Hard",
+        "opponent": "Ioannis Xilas",
+        "result": "L",
+        "score": "4-6 6-2 0-0",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-2",
+        "date": "17-Nov-2025",
+        "tournament": "M25 Heraklion",
+        "round": "R16",
+        "surface": "Hard",
+        "opponent": "James Story",
+        "result": "W",
+        "score": "3-6 7-5 7-5",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-3",
+        "date": "17-Nov-2025",
+        "tournament": "M25 Heraklion",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Amit Vales",
+        "result": "W",
+        "score": "6-0 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-4",
+        "date": "10-Nov-2025",
+        "tournament": "M15 Heraklion",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Philip Henning",
+        "result": "L",
+        "score": "6-3 2-6 6-3",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-5",
+        "date": "13-Oct-2025",
+        "tournament": "Hersonissos 6 CH",
+        "round": "R16",
+        "surface": "Hard",
+        "opponent": "Giles Hussey",
+        "result": "L",
+        "score": "6-2 4-6 6-3",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-6",
+        "date": "13-Oct-2025",
+        "tournament": "Hersonissos 6 CH",
+        "round": "R32",
+        "surface": "Hard",
+        "opponent": "Oliver Crawford",
+        "result": "W",
+        "score": "7-6(5) 7-5",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-7",
+        "date": "06-Oct-2025",
+        "tournament": "Hersonissos 5 CH",
+        "round": "Q2",
+        "surface": "Hard",
+        "opponent": "Harry Wendelken",
+        "result": "L",
+        "score": "2-6 6-4 7-6(3)",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-8",
+        "date": "06-Oct-2025",
+        "tournament": "Hersonissos 5 CH",
+        "round": "Q1",
+        "surface": "Hard",
+        "opponent": "Egor Gerasimov",
+        "result": "W",
+        "score": "6-4 7-6(8)",
+        "isCollege": false
+      }
+    ]
+  },
+  "clay": {
+    "player": "Luca Preda",
+    "playerLabel": "Luca",
+    "profile": {
+      "slug": "LucaPreda",
+      "country": "ROU",
+      "rank": 1255,
+      "peakRank": 748,
+      "age": 20,
+      "hand": "Left",
+      "backhand": "Two-handed",
+      "heightCm": null
+    },
+    "surface": "clay",
+    "surfaceCounts": {
+      "hard": 9,
+      "clay": 10
+    },
+    "matchCount": 10,
+    "record": {
+      "wins": 5,
+      "losses": 5
+    },
+    "games": {
+      "won": 110,
+      "lost": 65
+    },
+    "dateRange": "Jun 2025 \u2013 Aug 2025",
+    "note": "Aggregated across 10 matches (Jun 2025 \u2013 Aug 2025). Point totals are estimated from scorelines; deuce/ad splits use charted hard-court reference rates adjusted by each match's serve and return stats. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 53,
+      "opponentPct": 47,
+      "playerLabel": "Luca",
+      "totalPoints": 735,
+      "source": "Weighted across 10 matches",
+      "isLoss": false
+    },
+    "statAverages": {
+      "acePct": 3.3,
+      "dfPct": 4.1,
+      "firstServeInPct": 67.3,
+      "firstServeWonPct": 63.9,
+      "secondServeWonPct": 42.7,
+      "dominanceRatio": 1.2
+    },
+    "statCoverage": {
+      "detailed": 10,
+      "total": 10
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 68,
+          "total": 125,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 83,
+          "total": 151,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 54,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 34,
+          "total": 63,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 43,
+          "total": 79,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 47,
+          "total": 86,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 43,
+          "total": 183,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 47,
+          "total": 183,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    },
+    "coachingNotes": [
+      "10 matches in this sample: 5-5 record (50% win rate).",
+      "Serving is stronger on the ad side (83% vs 68% points won) \u2014 a 14-point spread across the sample.",
+      "Returning is marginally better on the ad side (47% vs 43%).",
+      "Luca is 2-2 in matches that went the distance (4 three-setters in this sample)."
+    ],
+    "strengths": [
+      "Reliable ad-side serving pattern to lean on in tight games (break points, game points)."
+    ],
+    "development": [
+      "Ace rate averages 3.3% \u2014 free points are rare, so rally tolerance carries the load.",
+      "First-serve points won sits at 64% \u2014 add pace or better placement on the first ball.",
+      "Second-serve points won is 43% \u2014 opponents are stepping in on the second delivery."
+    ],
+    "featuredMatches": [
+      {
+        "id": "LucaPreda-10",
+        "date": "04-Aug-2025",
+        "tournament": "M15 Sofia",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Samuele Seghetti",
+        "opponentRank": 1240,
+        "result": "W",
+        "score": "6-3 6-0",
+        "pointsWonPct": 62,
+        "totalPoints": 63,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-9",
+        "date": "04-Aug-2025",
+        "tournament": "M15 Sofia",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Alexander Vasilev",
+        "opponentRank": 1305,
+        "result": "L",
+        "score": "1-4 RET",
+        "pointsWonPct": 63,
+        "totalPoints": 21,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-12",
+        "date": "14-Jul-2025",
+        "tournament": "M15 Slobozia",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Stefan Palosi",
+        "opponentRank": 623,
+        "result": "W",
+        "score": "6-3 6-1",
+        "pointsWonPct": 60,
+        "totalPoints": 67,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-13",
+        "date": "14-Jul-2025",
+        "tournament": "M15 Slobozia",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Calin Teodor Stirbu",
+        "opponentRank": 1213,
+        "result": "W",
+        "score": "3-6 6-3 6-0",
+        "pointsWonPct": 56,
+        "totalPoints": 101,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-15",
+        "date": "07-Jul-2025",
+        "tournament": "Iasi CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Marko Topo",
+        "opponentRank": 276,
+        "result": "W",
+        "score": "6-2 0-6 6-4",
+        "pointsWonPct": 52,
+        "totalPoints": 101,
+        "source": "Dominance ratio",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-18",
+        "date": "23-Jun-2025",
+        "tournament": "M25 Targu Mures",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Ioan Alexandru Teglas",
+        "opponentRank": null,
+        "result": "W",
+        "score": "6-2 6-0",
+        "pointsWonPct": 68,
+        "totalPoints": 59,
+        "source": "Dominance ratio",
+        "isCollege": false
+      }
+    ],
+    "matches": [
+      {
+        "id": "LucaPreda-9",
+        "date": "04-Aug-2025",
+        "tournament": "M15 Sofia",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Alexander Vasilev",
+        "result": "L",
+        "score": "1-4 RET",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-10",
+        "date": "04-Aug-2025",
+        "tournament": "M15 Sofia",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Samuele Seghetti",
+        "result": "W",
+        "score": "6-3 6-0",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-11",
+        "date": "14-Jul-2025",
+        "tournament": "M15 Slobozia",
+        "round": "QF",
+        "surface": "Clay",
+        "opponent": "Radu David Turcanu",
+        "result": "L",
+        "score": "6-4 1-6 6-2",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-12",
+        "date": "14-Jul-2025",
+        "tournament": "M15 Slobozia",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Stefan Palosi",
+        "result": "W",
+        "score": "6-3 6-1",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-13",
+        "date": "14-Jul-2025",
+        "tournament": "M15 Slobozia",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Calin Teodor Stirbu",
+        "result": "W",
+        "score": "3-6 6-3 6-0",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-14",
+        "date": "07-Jul-2025",
+        "tournament": "Iasi CH",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Duje Ajdukovic",
+        "result": "L",
+        "score": "4-6 7-5 6-4",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-15",
+        "date": "07-Jul-2025",
+        "tournament": "Iasi CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Marko Topo",
+        "result": "W",
+        "score": "6-2 0-6 6-4",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-16",
+        "date": "30-Jun-2025",
+        "tournament": "Brasov CH",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Luka Pavlovic",
+        "result": "L",
+        "score": "6-0 6-0",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-17",
+        "date": "23-Jun-2025",
+        "tournament": "M25 Targu Mures",
+        "round": "R16",
+        "surface": "Clay",
+        "opponent": "Cezar Cretu",
+        "result": "L",
+        "score": "4-4 RET",
+        "isCollege": false
+      },
+      {
+        "id": "LucaPreda-18",
+        "date": "23-Jun-2025",
+        "tournament": "M25 Targu Mures",
+        "round": "R32",
+        "surface": "Clay",
+        "opponent": "Ioan Alexandru Teglas",
+        "result": "W",
+        "score": "6-2 6-0",
+        "isCollege": false
+      }
+    ]
+  }
+}

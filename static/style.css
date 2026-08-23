@@ -221,6 +221,115 @@ button:hover { border-color: var(--accent); }
   margin-bottom: 12px;
 }
 
+.coverage-note {
+  margin: -6px 0 18px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.surface-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.surface-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.surface-chip:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.surface-chip.active {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.chip-count {
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+.pill.college {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.all-matches {
+  margin-top: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+}
+
+.all-matches summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.match-list {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+}
+
+.match-row {
+  display: grid;
+  grid-template-columns: 28px 1fr auto auto;
+  gap: 12px;
+  align-items: center;
+  padding: 9px 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.88rem;
+}
+
+.match-row-result {
+  font-weight: 700;
+}
+
+.match-row.win .match-row-result { color: var(--success); }
+.match-row.loss .match-row-result { color: var(--danger); }
+
+.match-row-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.match-row-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.match-row-score,
+.match-row-date {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+@media (max-width: 620px) {
+  .match-row {
+    grid-template-columns: 24px 1fr auto;
+  }
+  .match-row-date { display: none; }
+}
+
 .roster-card {
   text-align: left;
   padding: 12px 14px;

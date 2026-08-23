@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 from lib.analysis import build_match_analysis
 from lib.pie_charts import build_pie_charts
+from lib.aggregate import build_player_report
 from lib.college_matches import fetch_player_matches
 from lib.tennis_abstract import (
     fetch_player,
@@ -108,6 +109,18 @@ def api_player(slug: str):
                 "matches": [match_to_dict(m) for m in matches],
             }
         )
+    except LookupError as exc:
+        return jsonify({"error": str(exc)}), 404
+    except Exception as exc:  # noqa: BLE001
+        return jsonify({"error": str(exc)}), 500
+
+
+@app.get("/api/report/<slug>")
+def api_report(slug: str):
+    surface = request.args.get("surface", "all").strip().lower() or "all"
+    try:
+        profile, matches = fetch_player_matches(slug)
+        return jsonify(build_player_report(profile, matches, surface))
     except LookupError as exc:
         return jsonify({"error": str(exc)}), 404
     except Exception as exc:  # noqa: BLE001

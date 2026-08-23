@@ -57,7 +57,7 @@ def _side_rates(match: MatchRow) -> dict[str, float]:
     second_won = match.second_serve_won_pct or 48
 
     serve_boost = (first_won - 65) * 0.15 + (ace - 8) * 0.2
-    return_boost = max(-5, min(5, (match.dominance_ratio or 1.0 - 1.0) * 8))
+    return_boost = max(-5, min(5, ((match.dominance_ratio or 1.0) - 1.0) * 8))
 
     serve_deuce = max(45, min(90, DEFAULT_SERVE_DEUCE + serve_boost))
     serve_ad = max(45, min(92, DEFAULT_SERVE_AD + serve_boost + 3))

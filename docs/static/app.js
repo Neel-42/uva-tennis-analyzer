@@ -1,11 +1,12 @@
 let currentSlug = null;
-let currentMatches = [];
+let currentReports = null;
+let currentSurface = "all";
 let rosterPlayers = [];
 let activeRosterName = null;
 
 const $ = (sel) => document.querySelector(sel);
 
-/** Empty on localhost (Flask serves API). Static bundle on GitHub Pages. */
+/** Static bundle on GitHub Pages; Flask API when running locally. */
 const STATIC_MODE = document.querySelector('meta[name="static-mode"]')?.content === "1";
 const API_BASE = (() => {
   if (STATIC_MODE) return "";
@@ -13,6 +14,14 @@ const API_BASE = (() => {
   if (meta?.content) return meta.content.replace(/\/$/, "");
   return "";
 })();
+
+const SURFACE_LABELS = {
+  all: "All surfaces",
+  hard: "Hard court",
+  clay: "Clay",
+  grass: "Grass",
+  indoor: "Indoor",
+};
 
 function apiUrl(path) {
   return `${API_BASE}${path}`;
@@ -23,9 +32,7 @@ function siteRoot() {
     const segment = location.pathname.split("/").filter(Boolean)[0];
     return segment ? `/${segment}/` : "/";
   }
-  if (location.protocol === "file:") {
-    return "./";
-  }
+  if (location.protocol === "file:") return "./";
   return "/";
 }
 
@@ -91,130 +98,201 @@ function renderSummaryPieCell(cell) {
     </div>`;
 }
 
-function renderPieCharts(pc) {
-  if (!pc?.modeled) return "";
+function renderSurfaceChips(report) {
+  const wrap = $("#surface-filter");
+  const counts = report.surfaceCounts || {};
+  const keys = ["all", "hard", "clay", "indoor", "grass"].filter(
+    (k) => k === "all" || counts[k]
+  );
 
-  const pw = pc.pointsWon;
-  const oppPct = pw.opponentPct ?? 100 - pw.playerPct;
+  wrap.innerHTML = keys
+    .map((k) => {
+      const active = k === currentSurface ? " active" : "";
+      const count = k === "all" ? Object.values(counts).reduce((a, b) => a + b, 0) : counts[k];
+      return `<button type="button" class="surface-chip${active}" data-surface="${k}">
+        ${SURFACE_LABELS[k] || k} <span class="chip-count">${count}</span>
+      </button>`;
+    })
+    .join("");
 
-  const mainPie = `
-    <div class="answer-card">
-      <h2>Points won</h2>
-      <p class="verdict ${pw.isLoss ? "loss" : ""}">${pw.playerPct}% ${pw.playerLabel}</p>
-      <div class="pie-wrap">
-        ${matchPieSvg(pw.playerPct, pw.playerLabel, pw.isLoss)}
-        <div class="pie-legend">
-          <div><span class="dot" style="background:var(--success)"></span>${pw.playerLabel} ${pw.playerPct}%</div>
-          <div><span class="dot" style="background:var(--muted)"></span>Opponent ${oppPct}%</div>
-        </div>
-      </div>
-      <p class="pie-caption">${pw.source} · ~${pw.totalPoints} total points estimated</p>
-    </div>`;
-
-  const serveSection = `
-    <div class="answer-card">
-      <h2>Serving (deuce vs ad)</h2>
-      <p class="verdict">${pc.serve.verdict}</p>
-      <p>Top row = points won on each side; bottom row = T-serve share. Win % inside each ring; total points below.</p>
-      <div class="summary-pie-grid">
-        ${(pc.serve.cells || []).map(renderSummaryPieCell).join("")}
-      </div>
-    </div>`;
-
-  const returnSection = `
-    <div class="answer-card">
-      <h2>Returning (deuce vs ad)</h2>
-      <p class="verdict tie">${pc.return.verdict}</p>
-      <p>Top row = return points won; bottom row = total return points on that side.</p>
-      <div class="summary-pie-grid">
-        ${(pc.return.cells || []).map(renderSummaryPieCell).join("")}
-      </div>
-    </div>`;
-
-  return `
-    <div class="callout">${pc.note}</div>
-    ${mainPie}
-    ${serveSection}
-    ${returnSection}`;
+  wrap.classList.remove("hidden");
+  wrap.querySelectorAll(".surface-chip").forEach((el) => {
+    el.addEventListener("click", () => selectSurface(el.dataset.surface));
+  });
 }
 
-function renderAnalysis(data) {
-  const isWin = data.result === "W";
-  const stats = data.stats || {};
+function renderFeaturedMatches(matches, playerLabel) {
+  if (!matches?.length) return "";
+  const cards = matches
+    .map((m) => {
+      const isLoss = m.result === "L";
+      const collegeTag = m.isCollege ? `<span class="pill college">College</span>` : "";
+      return `
+      <div class="match-card${isLoss ? " loss" : ""}">
+        <div class="match-head">
+          <div>
+            <h3>${m.round} · ${m.tournament}</h3>
+            <div class="match-meta">vs ${m.opponent} · ${m.score} · ${m.date}</div>
+          </div>
+          <span class="pill ${isLoss ? "loss" : "win"}">${m.result}</span>
+        </div>
+        <div class="pie-wrap">
+          ${matchPieSvg(m.pointsWonPct, playerLabel, isLoss)}
+          <div class="pie-legend">
+            <div><span class="dot" style="background:var(--success)"></span>${playerLabel} ${m.pointsWonPct}%</div>
+            <div><span class="dot" style="background:var(--muted)"></span>Opponent ${100 - m.pointsWonPct}%</div>
+          </div>
+        </div>
+        <p class="pie-caption">Estimated from ${m.source.toLowerCase()} · ~${m.totalPoints} points · ${m.surface} ${collegeTag}</p>
+      </div>`;
+    })
+    .join("");
+
+  return `
+    <h2 class="section-title">Featured matches — points won</h2>
+    <p class="lead">Highest-signal matches in this sample. Pie = share of total points won.</p>
+    <div class="match-grid">${cards}</div>`;
+}
+
+function renderMatchList(matches) {
+  if (!matches?.length) return "";
+  const rows = matches
+    .map(
+      (m) => `
+      <li class="match-row ${m.result === "W" ? "win" : "loss"}">
+        <span class="match-row-result">${m.result}</span>
+        <span class="match-row-main">
+          <strong>${m.opponent}</strong>
+          <span class="match-row-meta">${m.tournament} · ${m.round} · ${m.surface}${
+        m.isCollege ? " · college" : ""
+      }</span>
+        </span>
+        <span class="match-row-score">${m.score}</span>
+        <span class="match-row-date">${m.date}</span>
+      </li>`
+    )
+    .join("");
+
+  return `
+    <details class="all-matches">
+      <summary>All ${matches.length} matches in this sample</summary>
+      <ul class="match-list">${rows}</ul>
+    </details>`;
+}
+
+function renderReport(report) {
+  if (report.empty) {
+    $("#analysis").innerHTML = `<div class="callout">${report.note}</div>`;
+    $("#analysis").classList.remove("hidden");
+    $("#empty-state")?.classList.add("hidden");
+    return;
+  }
+
+  const avg = report.statAverages || {};
+  const pw = report.pointsWon;
+  const label = report.playerLabel;
+  const rec = report.record;
+
+  const cov = report.statCoverage;
+  let coverageNote = "";
+  if (cov && cov.detailed === 0) {
+    coverageNote = `<p class="coverage-note">No published box scores for these ${cov.total} matches, so the serve averages show a dash. Everything derived from scorelines still covers all of them.</p>`;
+  } else if (cov && cov.detailed < cov.total) {
+    coverageNote = `<p class="coverage-note">Serve averages come from the ${cov.detailed} of ${cov.total} matches with published box scores.</p>`;
+  }
 
   const statBoxes = [
-    ["Dominance ratio", stats.dominanceRatio?.toFixed(2) ?? "—"],
-    ["Ace %", stats.acePct != null ? `${stats.acePct}%` : "—"],
-    ["DF %", stats.dfPct != null ? `${stats.dfPct}%` : "—"],
-    ["1st serve in", stats.firstServeInPct != null ? `${stats.firstServeInPct}%` : "—"],
-    ["1st serve won", stats.firstServeWonPct != null ? `${stats.firstServeWonPct}%` : "—"],
-    ["2nd serve won", stats.secondServeWonPct != null ? `${stats.secondServeWonPct}%` : "—"],
-    ["BP saved", stats.bpSaved ?? "—"],
-    ["Duration", stats.duration ?? "—"],
+    ["Matches", report.matchCount],
+    ["Record", `${rec.wins}-${rec.losses}`],
+    ["Games won", `${report.games.won}-${report.games.lost}`],
+    ["Dominance ratio", avg.dominanceRatio?.toFixed(2) ?? "—"],
+    ["Ace %", avg.acePct != null ? `${avg.acePct}%` : "—"],
+    ["DF %", avg.dfPct != null ? `${avg.dfPct}%` : "—"],
+    ["1st serve won", avg.firstServeWonPct != null ? `${avg.firstServeWonPct}%` : "—"],
+    ["2nd serve won", avg.secondServeWonPct != null ? `${avg.secondServeWonPct}%` : "—"],
   ];
-
-  const pc = data.pieCharts || {};
-  const pieHtml = renderPieCharts(pc);
 
   $("#analysis").innerHTML = `
     <div class="analysis-header">
-      <h2>${data.player} vs ${data.opponent}</h2>
+      <h2>${report.player} — comprehensive analysis</h2>
       <div class="pill-row">
-        <span class="pill ${isWin ? "win" : "loss"}">${isWin ? "Win" : "Loss"}</span>
-        <span class="pill">${data.round}</span>
-        <span class="pill">${data.tournament}</span>
-        <span class="pill">${data.surface}</span>
-        <span class="pill">${data.date}</span>
+        <span class="pill">${SURFACE_LABELS[report.surface] || report.surface}</span>
+        <span class="pill">${report.matchCount} matches</span>
+        <span class="pill ${rec.wins >= rec.losses ? "win" : "loss"}">${rec.wins}-${rec.losses}</span>
+        ${report.dateRange ? `<span class="pill">${report.dateRange}</span>` : ""}
+        ${report.profile?.rank ? `<span class="pill">Rank #${report.profile.rank}</span>` : ""}
       </div>
-      <p><strong>Score:</strong> ${data.score}</p>
-      <p class="status">Source: ${data.source}</p>
     </div>
+
+    <div class="callout">${report.note}</div>
 
     <div class="grid-4">
       ${statBoxes
         .map(
-          ([label, value]) => `
+          ([l, v]) => `
         <div class="stat-box">
-          <div class="value">${value}</div>
-          <div class="label">${label}</div>
+          <div class="value">${v}</div>
+          <div class="label">${l}</div>
         </div>`
         )
         .join("")}
     </div>
+    ${coverageNote}
+
+    <div class="answer-card">
+      <h2>Points won — full sample</h2>
+      <p class="verdict">${pw.playerPct}% ${label}</p>
+      <div class="pie-wrap">
+        ${matchPieSvg(pw.playerPct, label, false)}
+        <div class="pie-legend">
+          <div><span class="dot" style="background:var(--success)"></span>${label} ${pw.playerPct}%</div>
+          <div><span class="dot" style="background:var(--muted)"></span>Opponents ${pw.opponentPct}%</div>
+        </div>
+      </div>
+      <p class="pie-caption">${pw.source} · ~${pw.totalPoints} total points estimated</p>
+    </div>
+
+    <div class="answer-card">
+      <h2>Serving (deuce vs ad)</h2>
+      <p class="verdict">${report.serve.verdict}</p>
+      <p>Aggregated across all ${report.matchCount} matches. Top row = points won on each side; bottom row = T-serve share. Win % inside each ring; total points below.</p>
+      <div class="summary-pie-grid">
+        ${(report.serve.cells || []).map(renderSummaryPieCell).join("")}
+      </div>
+    </div>
+
+    <div class="answer-card">
+      <h2>Returning (deuce vs ad)</h2>
+      <p class="verdict tie">${report.return.verdict}</p>
+      <p>Same ${report.matchCount}-match aggregate. Top row = return points won; bottom row = total return points on that side.</p>
+      <div class="summary-pie-grid">
+        ${(report.return.cells || []).map(renderSummaryPieCell).join("")}
+      </div>
+    </div>
 
     <div class="section">
-      <h3>Tactical profile</h3>
-      <p>${data.tacticalProfile}</p>
+      <h3>Coaching notes</h3>
+      <ul>${(report.coachingNotes || []).map((n) => `<li>${n}</li>`).join("") || "<li>—</li>"}</ul>
     </div>
 
     <div class="grid-2">
       <div class="section">
-        <h3>Coaching notes</h3>
-        <ul>${(data.coachingNotes || []).map((n) => `<li>${n}</li>`).join("")}</ul>
+        <h3>Strengths</h3>
+        <ul>${(report.strengths || []).map((n) => `<li>${n}</li>`).join("") || "<li>—</li>"}</ul>
       </div>
       <div class="section">
-        <h3>Key moments</h3>
-        <ul>${(data.keyMoments || []).map((n) => `<li>${n}</li>`).join("")}</ul>
+        <h3>Development</h3>
+        <ul>${(report.development || []).map((n) => `<li>${n}</li>`).join("") || "<li>—</li>"}</ul>
       </div>
     </div>
 
-    ${
-      (data.strengths || []).length || (data.development || []).length
-        ? `<div class="grid-2">
-        <div class="section"><h3>Strengths</h3><ul>${(data.strengths || []).map((n) => `<li>${n}</li>`).join("") || "<li>—</li>"}</ul></div>
-        <div class="section"><h3>Development</h3><ul>${(data.development || []).map((n) => `<li>${n}</li>`).join("") || "<li>—</li>"}</ul></div>
-      </div>`
-        : ""
-    }
+    ${renderFeaturedMatches(report.featuredMatches, label)}
 
-    <div class="section">
-      <h3>Match breakdown</h3>
-      ${pieHtml}
-    </div>
+    ${renderMatchList(report.matches)}
   `;
+
   $("#analysis").classList.remove("hidden");
   $("#empty-state")?.classList.add("hidden");
-  $("#analysis").scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function renderRosterGrid(filter = "") {
@@ -259,12 +337,11 @@ async function loadRoster(refresh = false) {
   try {
     if (STATIC_MODE) {
       if (refresh) {
-        setStatus("Reloading roster data…");
         location.reload();
         return;
       }
       const res = await fetch(staticUrl("roster.json"));
-      if (!res.ok) throw new Error("Static roster missing");
+      if (!res.ok) throw new Error("Static roster data missing");
       const data = await res.json();
       rosterPlayers = data.players || [];
       renderRosterGrid($("#roster-query").value);
@@ -283,78 +360,87 @@ async function loadRoster(refresh = false) {
   }
 }
 
+function showNoData(name) {
+  $("#player-card").innerHTML = `<strong>${name}</strong> · No public match data found yet.`;
+  $("#player-card").classList.remove("hidden");
+  $("#surface-filter").classList.add("hidden");
+  $("#analysis").classList.add("hidden");
+  setStatus(`${name} is on the roster, but public match data is not available yet.`, true);
+}
+
+async function loadReports(slug, surface = "all") {
+  if (STATIC_MODE) {
+    const res = await fetch(staticUrl(`reports/${slug}.json`));
+    if (!res.ok) throw new Error("Report data not found");
+    return await res.json();
+  }
+  const res = await fetch(apiUrl(`/api/report/${slug}?surface=${encodeURIComponent(surface)}`));
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error || "Failed to build report");
+  return { [surface]: data };
+}
+
 async function selectRosterPlayer(name) {
   activeRosterName = name;
+  currentSurface = "all";
   renderRosterGrid($("#roster-query").value);
-  setStatus(`Loading ${name}…`);
+  setStatus(`Building comprehensive analysis for ${name}…`);
   $("#player-query").value = name;
 
   try {
-    let data;
-    const rosterEntry = rosterPlayers.find((p) => p.name === name);
-    if (STATIC_MODE) {
-      if (!rosterEntry?.has_data || !rosterEntry?.slug) {
-        data = rosterEntry || { name, has_data: false };
-      } else {
-        const res = await fetch(staticUrl(`players/${rosterEntry.slug}.json`));
-        if (!res.ok) throw new Error("Player data not found");
-        data = await res.json();
-      }
-    } else {
-      const res = await fetch(apiUrl(`/api/uva-roster/${encodeURIComponent(name)}`));
-      data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Failed to load player");
+    const entry = rosterPlayers.find((p) => p.name === name);
+    if (!entry?.has_data || !entry?.slug) {
+      showNoData(name);
+      return;
     }
-
-  if (!data.slug || !data.has_data) {
-    $("#player-card").innerHTML = `<strong>${data.name}</strong> · No Tennis Abstract match data found yet.`;
-    $("#player-card").classList.remove("hidden");
-    $("#match-select").innerHTML = `<option value="">No match data available</option>`;
-    $("#match-select").disabled = true;
-    $("#analyze-btn").disabled = true;
-    setStatus(`${name} is on the roster, but public match data is not available yet.`, true);
-    return;
-  }
-
-  currentSlug = data.slug;
-  currentMatches = data.matches || [];
-  const p = data.profile;
-  $("#player-card").innerHTML = `
-    <strong>${p.full_name}</strong> [${p.country}] · Rank #${p.rank ?? "—"} · ${p.hand}-handed ${p.backhand} BH
-    ${p.age ? ` · Age ${p.age}` : ""}
-    · ${currentMatches.length} match(es)
-  `;
-  $("#player-card").classList.remove("hidden");
-  applyTournamentFilter();
-  setStatus(`${name} loaded — select a match to analyze`);
-  $("#analysis").classList.add("hidden");
+    await loadPlayerReport(entry.slug, name);
   } catch (err) {
     setStatus(err.message || "Failed to load player", true);
   }
 }
 
-function applyTournamentFilter() {
-  const tournament = $("#tournament-filter").value.trim().toLowerCase();
-  const filtered = tournament
-    ? currentMatches.filter((m) => m.tournament.toLowerCase().includes(tournament))
-    : currentMatches;
+async function loadPlayerReport(slug, displayName) {
+  currentSlug = slug;
+  currentReports = await loadReports(slug, currentSurface);
+  const report = currentReports[currentSurface] || currentReports.all;
+  if (!report) throw new Error("No report available");
 
-  const sel = $("#match-select");
-  if (!filtered.length) {
-    sel.innerHTML = `<option value="">No matches found</option>`;
-    sel.disabled = true;
-    $("#analyze-btn").disabled = true;
-    setStatus("No matches — try clearing tournament filter", true);
-    return;
+  const p = report.profile || {};
+  $("#player-card").innerHTML = `
+    <strong>${report.player}</strong>${p.country ? ` [${p.country}]` : ""}
+    · Rank #${p.rank ?? "—"} · ${p.hand ?? "—"}-handed ${p.backhand ?? ""} BH
+    ${p.age ? ` · Age ${p.age}` : ""}
+    · ${report.matchCount} matches analyzed
+  `;
+  $("#player-card").classList.remove("hidden");
+
+  renderSurfaceChips(report);
+  renderReport(report);
+  setStatus(
+    `${displayName || report.player}: ${report.matchCount} matches aggregated into one analysis`
+  );
+  $("#analysis").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+async function selectSurface(surface) {
+  if (!currentSlug) return;
+  currentSurface = surface;
+  setStatus(`Rebuilding analysis (${SURFACE_LABELS[surface] || surface})…`);
+  try {
+    if (!currentReports?.[surface]) {
+      const fetched = await loadReports(currentSlug, surface);
+      currentReports = { ...currentReports, ...fetched };
+    }
+    const report = currentReports[surface];
+    if (!report) throw new Error("No matches on this surface");
+    renderSurfaceChips(report);
+    renderReport(report);
+    setStatus(
+      `${report.player}: ${report.matchCount} ${SURFACE_LABELS[surface] || surface} matches aggregated`
+    );
+  } catch (err) {
+    setStatus(err.message || "Failed to switch surface", true);
   }
-  sel.innerHTML = filtered
-    .map((m) => {
-      const tag = /NCAA|Dual|ACC|ITA|Boar/i.test(m.tournament) ? " · college" : "";
-      return `<option value="${m.id}">${m.date} · ${m.tournament}${tag} · ${m.round} vs ${m.opponent} (${m.result} ${m.score})</option>`;
-    })
-    .join("");
-  sel.disabled = false;
-  $("#analyze-btn").disabled = false;
 }
 
 async function searchPlayers() {
@@ -416,63 +502,20 @@ async function searchPlayers() {
     .join("");
   box.classList.remove("hidden");
   box.querySelectorAll(".search-item").forEach((el) => {
-    el.addEventListener("click", () => loadPlayer(el.dataset.slug));
+    el.addEventListener("click", async () => {
+      activeRosterName = null;
+      currentSurface = "all";
+      renderRosterGrid($("#roster-query").value);
+      $("#search-results").classList.add("hidden");
+      setStatus("Building comprehensive analysis…");
+      try {
+        await loadPlayerReport(el.dataset.slug);
+      } catch (err) {
+        setStatus(err.message, true);
+      }
+    });
   });
   setStatus(`${data.results.length} player(s) found`);
-}
-
-async function loadPlayer(slug) {
-  currentSlug = slug;
-  activeRosterName = null;
-  renderRosterGrid($("#roster-query").value);
-  setStatus("Loading matches…");
-  $("#search-results").classList.add("hidden");
-  const tournament = $("#tournament-filter").value.trim();
-  const url = tournament
-    ? apiUrl(`/api/player/${slug}?tournament=${encodeURIComponent(tournament)}`)
-    : apiUrl(`/api/player/${slug}`);
-  const res = await fetch(url);
-  const data = await res.json();
-  if (!res.ok) {
-    setStatus(data.error || "Failed to load player", true);
-    return false;
-  }
-
-  const p = data.profile;
-  currentMatches = data.matches;
-  $("#player-card").innerHTML = `
-    <strong>${p.full_name}</strong> [${p.country}] · Rank #${p.rank ?? "—"} · ${p.hand}-handed ${p.backhand} BH
-    ${p.age ? ` · Age ${p.age}` : ""}
-  `;
-  $("#player-card").classList.remove("hidden");
-  applyTournamentFilter();
-  $("#analysis").classList.add("hidden");
-  return true;
-}
-
-async function analyzeMatch() {
-  const matchId = $("#match-select").value;
-  if (!currentSlug || !matchId) return;
-  setStatus("Building analysis…");
-  $("#analyze-btn").disabled = true;
-  try {
-    let data;
-    if (STATIC_MODE) {
-      const res = await fetch(staticUrl(`analyses/${currentSlug}/${matchId}.json`));
-      if (!res.ok) throw new Error("Analysis not found");
-      data = await res.json();
-    } else {
-      const res = await fetch(apiUrl(`/api/analyze/${currentSlug}/${matchId}`));
-      data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Analysis failed");
-    }
-    renderAnalysis(data);
-    setStatus("Analysis ready — share this view with coaching staff");
-  } catch (err) {
-    setStatus(err.message, true);
-  } finally {
-    $("#analyze-btn").disabled = false;
-  }
 }
 
 $("#roster-refresh-btn").addEventListener("click", () => loadRoster(true));
@@ -481,13 +524,6 @@ $("#search-btn").addEventListener("click", searchPlayers);
 $("#player-query").addEventListener("keydown", (e) => {
   if (e.key === "Enter") searchPlayers();
 });
-$("#tournament-filter").addEventListener("input", () => {
-  if (currentSlug) applyTournamentFilter();
-});
-$("#tournament-filter").addEventListener("keydown", (e) => {
-  if (e.key === "Enter" && currentSlug) applyTournamentFilter();
-});
-$("#analyze-btn").addEventListener("click", analyzeMatch);
 
 const params = new URLSearchParams(window.location.search);
 
@@ -499,25 +535,17 @@ async function bootFromUrl() {
     $("#roster-query").value = rosterName;
     renderRosterGrid(rosterName);
     await selectRosterPlayer(rosterName);
-  } else {
-    const slug = params.get("player");
-    if (slug) {
-      $("#player-query").value = slug.replace(/([A-Z])/g, " $1").trim();
-      if (params.get("tournament")) {
-        $("#tournament-filter").value = params.get("tournament");
-      }
-      const ok = await loadPlayer(slug);
-      if (!ok) return;
+    return;
+  }
+
+  const slug = params.get("player");
+  if (slug) {
+    currentSurface = params.get("surface") || "all";
+    try {
+      await loadPlayerReport(slug);
+    } catch (err) {
+      setStatus(err.message, true);
     }
-  }
-
-  const matchId = params.get("match");
-  if (matchId) {
-    $("#match-select").value = matchId;
-  }
-
-  if (params.get("analyze") === "1" || params.get("analyze") === "true" || matchId) {
-    await analyzeMatch();
   }
 }
 
