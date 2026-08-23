@@ -1,0 +1,96 @@
+#!/usr/bin/env python3
+"""Build docs/ for GitHub Pages from Flask templates."""
+
+from __future__ import annotations
+
+import shutil
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+DOCS = ROOT / "docs"
+STATIC_SRC = ROOT / "static"
+PARTIAL = ROOT / "templates/partials/hard_court_analysis.html"
+
+API_BASE = "https://uva-tennis-analyzer.onrender.com"
+
+
+def main() -> None:
+    hard_court = PARTIAL.read_text()
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="api-base" content="{API_BASE}" />
+  <title>UVA Tennis Match Analyzer</title>
+  <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <p class="eyebrow">Virginia Cavaliers · Coaching analysis tool</p>
+      <h1>UVA Men's Tennis Match Analyzer</h1>
+      <p class="subtitle">Search any player on the current roster — stats, coaching notes, and deuce/ad pie charts</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search-panel card">
+      <label class="label" for="roster-query">UVA roster</label>
+      <div class="search-row">
+        <input id="roster-query" type="text" placeholder="Search roster (e.g. Dietrich, Switzer, Rice)" autocomplete="off" />
+        <button id="roster-refresh-btn" type="button" class="secondary-btn">Refresh</button>
+      </div>
+
+      <div id="roster-grid" class="roster-grid"></div>
+
+      <div class="divider-label">Or search any player</div>
+
+      <label class="label" for="player-query">Player name</label>
+      <div class="search-row">
+        <input id="player-query" type="text" placeholder="Any Tennis Abstract player" autocomplete="off" />
+        <button id="search-btn" type="button">Search</button>
+      </div>
+
+      <div id="search-results" class="search-results hidden"></div>
+
+      <div id="player-card" class="player-card hidden"></div>
+
+      <label class="label" for="tournament-filter">Filter by tournament (optional)</label>
+      <input id="tournament-filter" type="text" placeholder="e.g. Zug, ACC, NCAA" />
+
+      <label class="label" for="match-select">Select match</label>
+      <select id="match-select" disabled>
+        <option value="">Select a roster player above…</option>
+      </select>
+
+      <button id="analyze-btn" class="primary-btn" type="button" disabled>Analyze match</button>
+      <p id="status" class="status"></p>
+    </section>
+
+    <section id="analysis" class="analysis hidden"></section>
+
+    {hard_court}
+  </main>
+
+  <footer class="footer">
+    Roster from <a href="https://virginiasports.com/sports/mten/roster" target="_blank" rel="noopener">VirginiaSports.com</a>
+    · Match data from <a href="https://www.tennisabstract.com" target="_blank" rel="noopener">Tennis Abstract</a>
+    · Pie charts modeled when shot-tracking unavailable
+  </footer>
+
+  <script src="static/app.js"></script>
+</body>
+</html>
+"""
+    DOCS.mkdir(parents=True, exist_ok=True)
+    (DOCS / "index.html").write_text(html)
+    docs_static = DOCS / "static"
+    docs_static.mkdir(parents=True, exist_ok=True)
+    for name in ("style.css", "app.js"):
+        shutil.copy2(STATIC_SRC / name, docs_static / name)
+    print(f"Built {DOCS / 'index.html'}")
+
+
+if __name__ == "__main__":
+    main()
