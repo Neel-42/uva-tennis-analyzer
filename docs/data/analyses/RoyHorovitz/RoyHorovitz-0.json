@@ -1,0 +1,139 @@
+{
+  "player": "Roy Horovitz",
+  "opponent": "Bogdan Bobrov",
+  "tournament": "Tallahassee CH",
+  "surface": "Clay",
+  "round": "Q1",
+  "date": "15-Apr-2024",
+  "score": "6-2 6-4",
+  "result": "L",
+  "sets": [
+    {
+      "player": 6,
+      "opponent": 2
+    },
+    {
+      "player": 6,
+      "opponent": 4
+    }
+  ],
+  "stats": {
+    "dominanceRatio": 0.59,
+    "acePct": 1.7,
+    "dfPct": 1.7,
+    "firstServeInPct": 63.8,
+    "firstServeWonPct": 70.3,
+    "secondServeWonPct": 38.1,
+    "bpSaved": "10/13",
+    "duration": "1:21",
+    "playerRank": 1571,
+    "opponentRank": 404
+  },
+  "coachingNotes": [
+    "Low ace rate 1.7% \u2014 won primarily through rally tolerance and placement.",
+    "Excellent double fault control (1.7%) \u2014 reliable second serve patterns.",
+    "First serve: 63.8% in, 70.3% won \u2014 room to improve first-serve damage or consistency.",
+    "Second serve points won: 38.1% \u2014 second serve became attackable; opponent gained return momentum.",
+    "Dominance ratio 0.59 (outplayed on key points)"
+  ],
+  "keyMoments": [
+    "Final scoreline: 6-2 6-4 (2-0 in sets).",
+    "Break points saved: 10/13."
+  ],
+  "tacticalProfile": "Loss on clay vs Bogdan Bobrov (Q1, Tallahassee CH). Outcome likely decided by serve reliability and break-point conversion.",
+  "strengths": [],
+  "development": [
+    "Rebuild second-serve patterns (kick wide/body) when behind in games."
+  ],
+  "source": "Tennis Abstract",
+  "pieCharts": {
+    "modeled": true,
+    "note": "Pie charts modeled from match box stats (dominance ratio, serve/return %). Deuce/ad splits use charted hard-court defaults adjusted for this match. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 37,
+      "opponentPct": 63,
+      "playerLabel": "Roy",
+      "totalPoints": 76,
+      "source": "Dominance ratio",
+      "isLoss": true
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 69,
+          "total": 13,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 81,
+          "total": 15,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 6,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 34,
+          "total": 6,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 47,
+          "total": 9,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 51,
+          "total": 10,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 47,
+          "total": 19,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 51,
+          "total": 19,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    }
+  },
+  "profile": {
+    "slug": "RoyHorovitz",
+    "full_name": "Roy Horovitz",
+    "country": "USA",
+    "rank": 1778,
+    "peak_rank": 1561,
+    "age": 19,
+    "hand": "Left",
+    "backhand": "Two-handed",
+    "height_cm": null,
+    "atp_id": "H0JD"
+  }
+}

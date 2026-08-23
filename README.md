@@ -2,6 +2,8 @@
 
 Interactive coaching tool for **UVA men's tennis** — roster lookup, match stats, coaching notes, and deuce/ad pie charts.
 
+GitHub Pages serves a **static build** of the app (roster, matches, and analyses are pre-fetched on each deploy). No separate API server required.
+
 **Live site:** https://neel-42.github.io/uva-tennis-analyzer/
 
 ## What's included
@@ -24,21 +26,15 @@ Open **http://127.0.0.1:8787**
 
 ## GitHub Pages (frontend)
 
-The site at `neel-42.github.io/uva-tennis-analyzer` is built from `docs/` on every push to `main`. Rebuild locally:
+The site at `neel-42.github.io/uva-tennis-analyzer` is rebuilt on every push to `main`. The workflow scrapes Tennis Abstract and bundles roster, match, and analysis JSON into `docs/data/`.
+
+Rebuild locally:
 
 ```bash
 python scripts/build_pages.py
 ```
 
-## API backend (for GitHub Pages)
-
-GitHub Pages serves static files only. The interactive roster and match analysis call a small Flask API hosted on [Render](https://render.com):
-
-1. Connect this repo on Render
-2. Use the included `render.yaml` (service name: `uva-tennis-analyzer`)
-3. Once live, the Pages site calls `https://uva-tennis-analyzer.onrender.com`
-
-Free Render tiers spin down after inactivity — the first load may take ~30 seconds.
+Player search on the public site is limited to the UVA roster. For live Tennis Abstract search, run the Flask app locally.
 
 ## Project structure
 

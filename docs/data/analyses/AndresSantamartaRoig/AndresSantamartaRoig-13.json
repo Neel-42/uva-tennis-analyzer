@@ -1,0 +1,143 @@
+{
+  "player": "Andres Santamarta Roig",
+  "opponent": "Raul Brancaccio",
+  "tournament": "Maia CH",
+  "surface": "Clay",
+  "round": "Q1",
+  "date": "24-Nov-2025",
+  "score": "6-4 3-6 4-1 RET",
+  "result": "W",
+  "sets": [
+    {
+      "player": 6,
+      "opponent": 4
+    },
+    {
+      "player": 3,
+      "opponent": 6
+    },
+    {
+      "player": 4,
+      "opponent": 1
+    }
+  ],
+  "stats": {
+    "dominanceRatio": 1.09,
+    "acePct": 1.5,
+    "dfPct": 0.0,
+    "firstServeInPct": 71.6,
+    "firstServeWonPct": 68.8,
+    "secondServeWonPct": 47.4,
+    "bpSaved": "4/7",
+    "duration": "1:28",
+    "playerRank": 674,
+    "opponentRank": 394
+  },
+  "coachingNotes": [
+    "Low ace rate 1.5% \u2014 won primarily through rally tolerance and placement.",
+    "Excellent double fault control (0.0%) \u2014 reliable second serve patterns.",
+    "First serve: 71.6% in, 68.8% won \u2014 room to improve first-serve damage or consistency.",
+    "Second serve points won: 47.4% \u2014 second serve became attackable; opponent gained return momentum.",
+    "Dominance ratio 1.09 (controlled more of the match)",
+    "Quality win vs #394 while ranked #758 \u2014 beat a higher-ranked opponent."
+  ],
+  "keyMoments": [
+    "Bounced back after dropping Set 2 (3-6) to win the decider 4-1.",
+    "Final scoreline: 6-4 3-6 4-1 RET (2-1 in sets).",
+    "Break points saved: 4/7."
+  ],
+  "tacticalProfile": "Victory on clay vs Raul Brancaccio (Q1, Maia CH). Outcome likely decided by serve reliability and break-point conversion.",
+  "strengths": [],
+  "development": [],
+  "source": "Tennis Abstract",
+  "pieCharts": {
+    "modeled": true,
+    "note": "Pie charts modeled from match box stats (dominance ratio, serve/return %). Deuce/ad splits use charted hard-court defaults adjusted for this match. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 52,
+      "opponentPct": 48,
+      "playerLabel": "Andres",
+      "totalPoints": 101,
+      "source": "Dominance ratio",
+      "isLoss": false
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 68,
+          "total": 17,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 81,
+          "total": 20,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 7,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 34,
+          "total": 8,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 47,
+          "total": 12,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 51,
+          "total": 13,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 47,
+          "total": 25,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 51,
+          "total": 26,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    }
+  },
+  "profile": {
+    "slug": "AndresSantamartaRoig",
+    "full_name": "Andres Santamarta Roig",
+    "country": "ESP",
+    "rank": 758,
+    "peak_rank": 604,
+    "age": 19,
+    "hand": "Right",
+    "backhand": "Two-handed",
+    "height_cm": null,
+    "atp_id": "S0Y0"
+  }
+}

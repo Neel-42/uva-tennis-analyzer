@@ -1,0 +1,130 @@
+{
+  "player": "Roy Horovitz",
+  "opponent": "Miguel Angel Cabrera",
+  "tournament": "M15 Vero Beach FL",
+  "surface": "Clay",
+  "round": "R32",
+  "date": "24-Apr-2023",
+  "score": "6-3 6-3",
+  "result": "W",
+  "sets": [
+    {
+      "player": 6,
+      "opponent": 3
+    },
+    {
+      "player": 6,
+      "opponent": 3
+    }
+  ],
+  "stats": {
+    "dominanceRatio": null,
+    "acePct": null,
+    "dfPct": null,
+    "firstServeInPct": null,
+    "firstServeWonPct": null,
+    "secondServeWonPct": null,
+    "bpSaved": "",
+    "duration": "",
+    "playerRank": null,
+    "opponentRank": 1922
+  },
+  "coachingNotes": [],
+  "keyMoments": [
+    "Final scoreline: 6-3 6-3 (2-0 in sets)."
+  ],
+  "tacticalProfile": "Victory on clay vs Miguel Angel Cabrera (R32, M15 Vero Beach FL). Outcome likely decided by serve reliability and break-point conversion.",
+  "strengths": [],
+  "development": [],
+  "source": "Tennis Abstract",
+  "pieCharts": {
+    "modeled": true,
+    "note": "Pie charts modeled from match box stats (dominance ratio, serve/return %). Deuce/ad splits use charted hard-court defaults adjusted for this match. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 67,
+      "opponentPct": 33,
+      "playerLabel": "Roy",
+      "totalPoints": 76,
+      "source": "Games-won estimate",
+      "isLoss": false
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 70,
+          "total": 13,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 85,
+          "total": 16,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 6,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 35,
+          "total": 7,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 42,
+          "total": 8,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 46,
+          "total": 9,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 42,
+          "total": 19,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 46,
+          "total": 19,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    }
+  },
+  "profile": {
+    "slug": "RoyHorovitz",
+    "full_name": "Roy Horovitz",
+    "country": "USA",
+    "rank": 1778,
+    "peak_rank": 1561,
+    "age": 19,
+    "hand": "Left",
+    "backhand": "Two-handed",
+    "height_cm": null,
+    "atp_id": "H0JD"
+  }
+}

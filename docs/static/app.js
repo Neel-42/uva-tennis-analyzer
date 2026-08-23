@@ -5,8 +5,10 @@ let activeRosterName = null;
 
 const $ = (sel) => document.querySelector(sel);
 
-/** Empty on localhost (Flask serves API). Set via meta tag on GitHub Pages. */
+/** Empty on localhost (Flask serves API). Static bundle on GitHub Pages. */
+const STATIC_MODE = document.querySelector('meta[name="static-mode"]')?.content === "1";
 const API_BASE = (() => {
+  if (STATIC_MODE) return "";
   const meta = document.querySelector('meta[name="api-base"]');
   if (meta?.content) return meta.content.replace(/\/$/, "");
   return "";
@@ -14,6 +16,10 @@ const API_BASE = (() => {
 
 function apiUrl(path) {
   return `${API_BASE}${path}`;
+}
+
+function staticUrl(path) {
+  return `data/${path.replace(/^\//, "")}`;
 }
 
 function setStatus(msg, isError = false) {
@@ -239,16 +245,26 @@ function renderRosterGrid(filter = "") {
 
 async function loadRoster(refresh = false) {
   setStatus("Loading UVA roster…");
-  const url = refresh ? apiUrl("/api/uva-roster?refresh=1") : apiUrl("/api/uva-roster");
-  const res = await fetch(url);
-  const data = await res.json();
-  if (!res.ok) {
-    setStatus(data.error || "Failed to load roster", true);
-    return;
+  try {
+    if (STATIC_MODE && !refresh) {
+      const res = await fetch(staticUrl("roster.json"));
+      if (!res.ok) throw new Error("Static roster missing");
+      const data = await res.json();
+      rosterPlayers = data.players || [];
+      renderRosterGrid($("#roster-query").value);
+      setStatus(`${rosterPlayers.length} players on ${data.season || "current"} roster`);
+      return;
+    }
+    const url = refresh ? apiUrl("/api/uva-roster?refresh=1") : apiUrl("/api/uva-roster");
+    const res = await fetch(url);
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || "Failed to load roster");
+    rosterPlayers = data.players || [];
+    renderRosterGrid($("#roster-query").value);
+    setStatus(`${rosterPlayers.length} players on ${data.season || "current"} roster`);
+  } catch (err) {
+    setStatus(err.message || "Failed to load roster", true);
   }
-  rosterPlayers = data.players || [];
-  renderRosterGrid($("#roster-query").value);
-  setStatus(`${rosterPlayers.length} players on ${data.season || "current"} roster`);
 }
 
 async function selectRosterPlayer(name) {
@@ -257,12 +273,22 @@ async function selectRosterPlayer(name) {
   setStatus(`Loading ${name}…`);
   $("#player-query").value = name;
 
-  const res = await fetch(apiUrl(`/api/uva-roster/${encodeURIComponent(name)}`));
-  const data = await res.json();
-  if (!res.ok) {
-    setStatus(data.error || "Failed to load player", true);
-    return;
-  }
+  try {
+    let data;
+    const rosterEntry = rosterPlayers.find((p) => p.name === name);
+    if (STATIC_MODE) {
+      if (!rosterEntry?.has_data || !rosterEntry?.slug) {
+        data = rosterEntry || { name, has_data: false };
+      } else {
+        const res = await fetch(staticUrl(`players/${rosterEntry.slug}.json`));
+        if (!res.ok) throw new Error("Player data not found");
+        data = await res.json();
+      }
+    } else {
+      const res = await fetch(apiUrl(`/api/uva-roster/${encodeURIComponent(name)}`));
+      data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to load player");
+    }
 
   if (!data.slug || !data.has_data) {
     $("#player-card").innerHTML = `<strong>${data.name}</strong> · No Tennis Abstract match data found yet.`;
@@ -286,6 +312,9 @@ async function selectRosterPlayer(name) {
   applyTournamentFilter();
   setStatus(`${name} loaded — select a match to analyze`);
   $("#analysis").classList.add("hidden");
+  } catch (err) {
+    setStatus(err.message || "Failed to load player", true);
+  }
 }
 
 function applyTournamentFilter() {
@@ -319,9 +348,41 @@ async function searchPlayers() {
     return;
   }
   setStatus("Searching…");
+  const box = $("#search-results");
+
+  if (STATIC_MODE) {
+    const ql = q.toLowerCase();
+    const hits = rosterPlayers.filter(
+      (p) =>
+        p.name.toLowerCase().includes(ql) ||
+        (p.hometown || "").toLowerCase().includes(ql) ||
+        (p.class_year || "").toLowerCase().includes(ql)
+    );
+    if (!hits.length) {
+      box.innerHTML = `<div class="search-item">No roster players match "${q}". On this site, search is limited to the UVA roster — pick a player card above.</div>`;
+      box.classList.remove("hidden");
+      setStatus("No roster matches", true);
+      return;
+    }
+    box.innerHTML = hits
+      .map(
+        (p) => `
+    <div class="search-item roster-search-item" data-name="${p.name}">
+      <span><strong>${p.name}</strong> · UVA roster</span>
+      <span>${p.class_year || "UVA"}</span>
+    </div>`
+      )
+      .join("");
+    box.classList.remove("hidden");
+    box.querySelectorAll(".roster-search-item").forEach((el) => {
+      el.addEventListener("click", () => selectRosterPlayer(el.dataset.name));
+    });
+    setStatus(`${hits.length} roster player(s) found`);
+    return;
+  }
+
   const res = await fetch(apiUrl(`/api/search?q=${encodeURIComponent(q)}`));
   const data = await res.json();
-  const box = $("#search-results");
   if (!data.results?.length) {
     box.innerHTML = `<div class="search-item">No players found for "${q}"</div>`;
     box.classList.remove("hidden");
@@ -379,9 +440,16 @@ async function analyzeMatch() {
   setStatus("Building analysis…");
   $("#analyze-btn").disabled = true;
   try {
-    const res = await fetch(apiUrl(`/api/analyze/${currentSlug}/${matchId}`));
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error || "Analysis failed");
+    let data;
+    if (STATIC_MODE) {
+      const res = await fetch(staticUrl(`analyses/${currentSlug}/${matchId}.json`));
+      if (!res.ok) throw new Error("Analysis not found");
+      data = await res.json();
+    } else {
+      const res = await fetch(apiUrl(`/api/analyze/${currentSlug}/${matchId}`));
+      data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Analysis failed");
+    }
     renderAnalysis(data);
     setStatus("Analysis ready — share this view with coaching staff");
   } catch (err) {

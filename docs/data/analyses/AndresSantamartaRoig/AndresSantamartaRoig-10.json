@@ -1,0 +1,137 @@
+{
+  "player": "Andres Santamarta Roig",
+  "opponent": "Daniel Merida Aguilar",
+  "tournament": "Maia CH",
+  "surface": "Clay",
+  "round": "R16",
+  "date": "24-Nov-2025",
+  "score": "6-3 6-4",
+  "result": "L",
+  "sets": [
+    {
+      "player": 6,
+      "opponent": 3
+    },
+    {
+      "player": 6,
+      "opponent": 4
+    }
+  ],
+  "stats": {
+    "dominanceRatio": 0.87,
+    "acePct": 0.0,
+    "dfPct": 1.6,
+    "firstServeInPct": 65.6,
+    "firstServeWonPct": 55.0,
+    "secondServeWonPct": 52.4,
+    "bpSaved": "3/7",
+    "duration": "1:23",
+    "playerRank": 674,
+    "opponentRank": 170
+  },
+  "coachingNotes": [
+    "Low ace rate 0.0% \u2014 won primarily through rally tolerance and placement.",
+    "Excellent double fault control (1.6%) \u2014 reliable second serve patterns.",
+    "First serve: 65.6% in, 55.0% won \u2014 room to improve first-serve damage or consistency.",
+    "Second serve points won: 52.4% \u2014 second serve became attackable; opponent gained return momentum.",
+    "Dominance ratio 0.87 (outplayed on key points)"
+  ],
+  "keyMoments": [
+    "Final scoreline: 6-3 6-4 (2-0 in sets).",
+    "Break points saved: 3/7."
+  ],
+  "tacticalProfile": "Loss on clay vs Daniel Merida Aguilar (R16, Maia CH). Outcome likely decided by serve reliability and break-point conversion.",
+  "strengths": [],
+  "development": [],
+  "source": "Tennis Abstract",
+  "pieCharts": {
+    "modeled": true,
+    "note": "Pie charts modeled from match box stats (dominance ratio, serve/return %). Deuce/ad splits use charted hard-court defaults adjusted for this match. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 47,
+      "opponentPct": 53,
+      "playerLabel": "Andres",
+      "totalPoints": 80,
+      "source": "Dominance ratio",
+      "isLoss": true
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 68,
+          "total": 14,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 83,
+          "total": 17,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 6,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 35,
+          "total": 7,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 47,
+          "total": 9,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 51,
+          "total": 10,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 47,
+          "total": 20,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 51,
+          "total": 20,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    }
+  },
+  "profile": {
+    "slug": "AndresSantamartaRoig",
+    "full_name": "Andres Santamarta Roig",
+    "country": "ESP",
+    "rank": 758,
+    "peak_rank": 604,
+    "age": 19,
+    "hand": "Right",
+    "backhand": "Two-handed",
+    "height_cm": null,
+    "atp_id": "S0Y0"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "player": "Keegan Rice",
+  "opponent": "Rio Noguchi",
+  "tournament": "Winnipeg CH",
+  "surface": "Hard",
+  "round": "R16",
+  "date": "20-Jul-2026",
+  "score": "3-6 6-4 6-0",
+  "result": "L",
+  "sets": [
+    {
+      "player": 3,
+      "opponent": 6
+    },
+    {
+      "player": 6,
+      "opponent": 4
+    },
+    {
+      "player": 6,
+      "opponent": 0
+    }
+  ],
+  "stats": {
+    "dominanceRatio": 0.83,
+    "acePct": 2.5,
+    "dfPct": 6.3,
+    "firstServeInPct": 54.4,
+    "firstServeWonPct": 55.8,
+    "secondServeWonPct": 36.1,
+    "bpSaved": "7/14",
+    "duration": "1:58",
+    "playerRank": 900,
+    "opponentRank": 216
+  },
+  "coachingNotes": [
+    "Low ace rate 2.5% \u2014 won primarily through rally tolerance and placement.",
+    "First serve: 54.4% in, 55.8% won \u2014 room to improve first-serve damage or consistency.",
+    "Second serve points won: 36.1% \u2014 second serve became attackable; opponent gained return momentum.",
+    "Dominance ratio 0.83 (outplayed on key points)"
+  ],
+  "keyMoments": [
+    "Final scoreline: 3-6 6-4 6-0 (2-1 in sets).",
+    "Break points saved: 7/14."
+  ],
+  "tacticalProfile": "Loss on hard vs Rio Noguchi (R16, Winnipeg CH). Outcome likely decided by serve reliability and break-point conversion.",
+  "strengths": [],
+  "development": [
+    "Raise first-serve percentage without sacrificing pace.",
+    "Rebuild second-serve patterns (kick wide/body) when behind in games."
+  ],
+  "source": "Tennis Abstract",
+  "pieCharts": {
+    "modeled": true,
+    "note": "Pie charts modeled from match box stats (dominance ratio, serve/return %). Deuce/ad splits use charted hard-court defaults adjusted for this match. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 45,
+      "opponentPct": 55,
+      "playerLabel": "Keegan",
+      "totalPoints": 105,
+      "source": "Dominance ratio",
+      "isLoss": true
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 67,
+          "total": 17,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 80,
+          "total": 21,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 8,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 34,
+          "total": 9,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 47,
+          "total": 12,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 51,
+          "total": 14,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 47,
+          "total": 26,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 51,
+          "total": 27,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    }
+  },
+  "profile": {
+    "slug": "KeeganRice",
+    "full_name": "Keegan Rice",
+    "country": "CAN",
+    "rank": 591,
+    "peak_rank": 582,
+    "age": 20,
+    "hand": "Right",
+    "backhand": "Two-handed",
+    "height_cm": null,
+    "atp_id": "R0JI"
+  }
+}

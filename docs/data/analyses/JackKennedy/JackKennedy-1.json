@@ -1,0 +1,139 @@
+{
+  "player": "Jack Kennedy",
+  "opponent": "Evan Zhu",
+  "tournament": "M25 Dallas TX",
+  "surface": "Hard",
+  "round": "R32",
+  "date": "06-Jul-2026",
+  "score": "6-2 6-1",
+  "result": "L",
+  "sets": [
+    {
+      "player": 6,
+      "opponent": 2
+    },
+    {
+      "player": 6,
+      "opponent": 1
+    }
+  ],
+  "stats": {
+    "dominanceRatio": 0.65,
+    "acePct": 0.0,
+    "dfPct": 4.1,
+    "firstServeInPct": 67.3,
+    "firstServeWonPct": 54.5,
+    "secondServeWonPct": 31.3,
+    "bpSaved": "1/5",
+    "duration": "1:17",
+    "playerRank": 414,
+    "opponentRank": 692
+  },
+  "coachingNotes": [
+    "Low ace rate 0.0% \u2014 won primarily through rally tolerance and placement.",
+    "First serve: 67.3% in, 54.5% won \u2014 room to improve first-serve damage or consistency.",
+    "Second serve points won: 31.3% \u2014 second serve became attackable; opponent gained return momentum.",
+    "Dominance ratio 0.65 (outplayed on key points)",
+    "Lost to lower-ranked #692 \u2014 investigate execution dip vs expectation."
+  ],
+  "keyMoments": [
+    "Final scoreline: 6-2 6-1 (2-0 in sets).",
+    "Break points saved: 1/5."
+  ],
+  "tacticalProfile": "Loss on hard vs Evan Zhu (R32, M25 Dallas TX). Outcome likely decided by serve reliability and break-point conversion.",
+  "strengths": [],
+  "development": [
+    "Rebuild second-serve patterns (kick wide/body) when behind in games."
+  ],
+  "source": "Tennis Abstract",
+  "pieCharts": {
+    "modeled": true,
+    "note": "Pie charts modeled from match box stats (dominance ratio, serve/return %). Deuce/ad splits use charted hard-court defaults adjusted for this match. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 39,
+      "opponentPct": 61,
+      "playerLabel": "Jack",
+      "totalPoints": 63,
+      "source": "Dominance ratio",
+      "isLoss": true
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 68,
+          "total": 10,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 83,
+          "total": 13,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 4,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 35,
+          "total": 6,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 47,
+          "total": 8,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 51,
+          "total": 8,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 47,
+          "total": 16,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 51,
+          "total": 16,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    }
+  },
+  "profile": {
+    "slug": "JackKennedy",
+    "full_name": "Jack Kennedy",
+    "country": "USA",
+    "rank": 392,
+    "peak_rank": 379,
+    "age": null,
+    "hand": "Left",
+    "backhand": "Two-handed",
+    "height_cm": null,
+    "atp_id": ""
+  }
+}

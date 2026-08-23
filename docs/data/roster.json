@@ -1,0 +1,107 @@
+{
+  "team": "Virginia Cavaliers Men's Tennis",
+  "season": "2026-27",
+  "source": "virginiasports.com",
+  "players": [
+    {
+      "name": "Andres Santamarta Roig",
+      "class_year": "Sophomore",
+      "hometown": "Valencia, Spain",
+      "slug": "AndresSantamartaRoig",
+      "has_data": true,
+      "rank": null,
+      "country": null,
+      "match_count": 0
+    },
+    {
+      "name": "Dylan Dietrich",
+      "class_year": "Senior",
+      "hometown": "Zurich, Switzerland",
+      "slug": "DylanDietrich",
+      "has_data": true,
+      "rank": null,
+      "country": null,
+      "match_count": 0
+    },
+    {
+      "name": "Jack Kennedy",
+      "class_year": "Freshman",
+      "hometown": "Huntington, N.Y.",
+      "slug": "JackKennedy",
+      "has_data": true,
+      "rank": null,
+      "country": null,
+      "match_count": 0
+    },
+    {
+      "name": "Jangjun Kim",
+      "class_year": "Junior",
+      "hometown": "Seoul, South Korea",
+      "slug": "JangjunKim",
+      "has_data": true,
+      "rank": null,
+      "country": null,
+      "match_count": 0
+    },
+    {
+      "name": "Keegan Rice",
+      "class_year": "Junior",
+      "hometown": "Regina, Canada",
+      "slug": "KeeganRice",
+      "has_data": true,
+      "rank": null,
+      "country": null,
+      "match_count": 0
+    },
+    {
+      "name": "Luca Preda",
+      "class_year": "Freshman",
+      "hometown": "Constanta, Romania",
+      "slug": "LucaPreda",
+      "has_data": true,
+      "rank": null,
+      "country": null,
+      "match_count": 0
+    },
+    {
+      "name": "Roy Horovitz",
+      "class_year": "Junior",
+      "hometown": "Orlando, Fla.",
+      "slug": "RoyHorovitz",
+      "has_data": true,
+      "rank": null,
+      "country": null,
+      "match_count": 0
+    },
+    {
+      "name": "Stefan Regalia",
+      "class_year": "Senior",
+      "hometown": "Arlington, Va.",
+      "slug": "StefanRegalia",
+      "has_data": false,
+      "rank": null,
+      "country": null,
+      "match_count": 0
+    },
+    {
+      "name": "Stiles Brockett",
+      "class_year": "Junior",
+      "hometown": "Fairfax, Va.",
+      "slug": "StilesBrockett",
+      "has_data": false,
+      "rank": null,
+      "country": null,
+      "match_count": 0
+    },
+    {
+      "name": "Ty Switzer",
+      "class_year": "Graduate Student",
+      "hometown": "New York, N.Y.",
+      "slug": "TySwitzer",
+      "has_data": false,
+      "rank": null,
+      "country": null,
+      "match_count": 0
+    }
+  ]
+}

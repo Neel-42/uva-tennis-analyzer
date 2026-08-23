@@ -1,0 +1,136 @@
+{
+  "player": "Roy Horovitz",
+  "opponent": "Evan Bynoe",
+  "tournament": "M15 Palm Coast FL",
+  "surface": "Clay",
+  "round": "R32",
+  "date": "12-Feb-2024",
+  "score": "4-6 6-1 6-1",
+  "result": "W",
+  "sets": [
+    {
+      "player": 4,
+      "opponent": 6
+    },
+    {
+      "player": 6,
+      "opponent": 1
+    },
+    {
+      "player": 6,
+      "opponent": 1
+    }
+  ],
+  "stats": {
+    "dominanceRatio": null,
+    "acePct": null,
+    "dfPct": null,
+    "firstServeInPct": null,
+    "firstServeWonPct": null,
+    "secondServeWonPct": null,
+    "bpSaved": "",
+    "duration": "",
+    "playerRank": 1860,
+    "opponentRank": 1211
+  },
+  "coachingNotes": [
+    "Quality win vs #1211 while ranked #1778 \u2014 beat a higher-ranked opponent."
+  ],
+  "keyMoments": [
+    "Final scoreline: 4-6 6-1 6-1 (2-1 in sets)."
+  ],
+  "tacticalProfile": "Victory on clay vs Evan Bynoe (R32, M15 Palm Coast FL). Outcome likely decided by serve reliability and break-point conversion.",
+  "strengths": [],
+  "development": [],
+  "source": "Tennis Abstract",
+  "pieCharts": {
+    "modeled": true,
+    "note": "Pie charts modeled from match box stats (dominance ratio, serve/return %). Deuce/ad splits use charted hard-court defaults adjusted for this match. Official shot coordinates are not published for most matches.",
+    "pointsWon": {
+      "playerPct": 67,
+      "opponentPct": 33,
+      "playerLabel": "Roy",
+      "totalPoints": 101,
+      "source": "Games-won estimate",
+      "isLoss": false
+    },
+    "serve": {
+      "verdict": "Ad side",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 70,
+          "total": 17,
+          "caption": "Serve points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 85,
+          "total": 21,
+          "caption": "Serve points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 T serve",
+          "pct": 30,
+          "total": 7,
+          "caption": "T-serve share",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 T serve",
+          "pct": 35,
+          "total": 9,
+          "caption": "T-serve share",
+          "highlight": false
+        }
+      ]
+    },
+    "return": {
+      "verdict": "Ad side (slight edge)",
+      "cells": [
+        {
+          "title": "Deuce court",
+          "pct": 42,
+          "total": 10,
+          "caption": "Return points won",
+          "highlight": false
+        },
+        {
+          "title": "Ad court",
+          "pct": 46,
+          "total": 12,
+          "caption": "Return points won",
+          "highlight": true
+        },
+        {
+          "title": "Deuce \u2014 total",
+          "pct": 42,
+          "total": 25,
+          "caption": "Return points played",
+          "highlight": false
+        },
+        {
+          "title": "Ad \u2014 total",
+          "pct": 46,
+          "total": 26,
+          "caption": "Return points played",
+          "highlight": false
+        }
+      ]
+    }
+  },
+  "profile": {
+    "slug": "RoyHorovitz",
+    "full_name": "Roy Horovitz",
+    "country": "USA",
+    "rank": 1778,
+    "peak_rank": 1561,
+    "age": 19,
+    "hand": "Left",
+    "backhand": "Two-handed",
+    "height_cm": null,
+    "atp_id": "H0JD"
+  }
+}
