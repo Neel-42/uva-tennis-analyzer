@@ -11,7 +11,24 @@
       "has_data": true,
       "rank": null,
       "country": null,
-      "match_count": 0
+      "match_count": 0,
+      "scouting": [
+        {
+          "kind": "strength",
+          "short": "7 wins over higher-ranked opponents",
+          "text": "Beat 7 better-ranked opponents in this sample, best of them #174 (Federico Cina at Brasov CH) \u2014 the level travels up."
+        },
+        {
+          "kind": "weakness",
+          "short": "1st serve won only 61%",
+          "text": "Just 61% of first-serve points are won \u2014 the first ball is not doing enough damage."
+        },
+        {
+          "kind": "weakness",
+          "short": "8-10 record",
+          "text": "Winning only 44% of matches (8-10) \u2014 results are not yet matching the level."
+        }
+      ]
     },
     {
       "name": "Dylan Dietrich",
@@ -21,7 +38,24 @@
       "has_data": true,
       "rank": null,
       "country": null,
-      "match_count": 0
+      "match_count": 0,
+      "scouting": [
+        {
+          "kind": "strength",
+          "short": "1st serve won 75%",
+          "text": "Wins 75% of first-serve points \u2014 the first ball reliably sets up the point."
+        },
+        {
+          "kind": "strength",
+          "short": "27-8 record",
+          "text": "Winning 77% of matches in this sample (27-8)."
+        },
+        {
+          "kind": "weakness",
+          "short": "Softest area: ace rate (7.3%)",
+          "text": "Nothing here reads as a real flaw \u2014 the most improvable number is the ace rate at 7.3%."
+        }
+      ]
     },
     {
       "name": "Jack Kennedy",
@@ -31,7 +65,24 @@
       "has_data": true,
       "rank": null,
       "country": null,
-      "match_count": 0
+      "match_count": 0,
+      "scouting": [
+        {
+          "kind": "strength",
+          "short": "Closes tight matches (9-3)",
+          "text": "9-3 in three-setters \u2014 holds up physically and mentally in long matches."
+        },
+        {
+          "kind": "strength",
+          "short": "8 wins over higher-ranked opponents",
+          "text": "Beat 8 better-ranked opponents in this sample, best of them #177 (Daniil Glinka at Tallahassee CH) \u2014 the level travels up."
+        },
+        {
+          "kind": "weakness",
+          "short": "1st serve won only 61%",
+          "text": "Just 61% of first-serve points are won \u2014 the first ball is not doing enough damage."
+        }
+      ]
     },
     {
       "name": "Jangjun Kim",
@@ -41,7 +92,24 @@
       "has_data": true,
       "rank": null,
       "country": null,
-      "match_count": 0
+      "match_count": 0,
+      "scouting": [
+        {
+          "kind": "strength",
+          "short": "1st serve won 75%",
+          "text": "Wins 75% of first-serve points \u2014 the first ball reliably sets up the point."
+        },
+        {
+          "kind": "strength",
+          "short": "9 wins over higher-ranked opponents",
+          "text": "Beat 9 better-ranked opponents in this sample, best of them #421 (Maximus Jones at M15 Tokyo) \u2014 the level travels up."
+        },
+        {
+          "kind": "weakness",
+          "short": "Softest area: ace rate (7.2%)",
+          "text": "Nothing here reads as a real flaw \u2014 the most improvable number is the ace rate at 7.2%."
+        }
+      ]
     },
     {
       "name": "Keegan Rice",
@@ -51,7 +119,24 @@
       "has_data": true,
       "rank": null,
       "country": null,
-      "match_count": 0
+      "match_count": 0,
+      "scouting": [
+        {
+          "kind": "strength",
+          "short": "9 wins over higher-ranked opponents",
+          "text": "Beat 9 better-ranked opponents in this sample, best of them #129 (Pablo Llamas Ruiz at Vancouver CH) \u2014 the level travels up."
+        },
+        {
+          "kind": "strength",
+          "short": "Ad-side serve (modeled)",
+          "text": "The model leans on the ad court (83% of serve points won vs 69% on the deuce side), though this split follows charted reference rates rather than tracked data for this player."
+        },
+        {
+          "kind": "weakness",
+          "short": "Few free points (3.4% aces)",
+          "text": "Only 3.4% of serves are aces, so almost every service point has to be won in the rally."
+        }
+      ]
     },
     {
       "name": "Luca Preda",
@@ -61,7 +146,24 @@
       "has_data": true,
       "rank": null,
       "country": null,
-      "match_count": 0
+      "match_count": 0,
+      "scouting": [
+        {
+          "kind": "strength",
+          "short": "5 wins over higher-ranked opponents",
+          "text": "Beat 5 better-ranked opponents in this sample, best of them #188 (Oliver Crawford at Hersonissos 6 CH) \u2014 the level travels up."
+        },
+        {
+          "kind": "weakness",
+          "short": "Fades late (3-7 in 3 sets)",
+          "text": "Only 3-7 in matches that went the distance \u2014 closing out is the clear gap."
+        },
+        {
+          "kind": "weakness",
+          "short": "2nd serve won 45%",
+          "text": "Second-serve points won sits at 45% \u2014 opponents step in and attack the second delivery."
+        }
+      ]
     },
     {
       "name": "Roy Horovitz",
@@ -71,7 +173,24 @@
       "has_data": true,
       "rank": null,
       "country": null,
-      "match_count": 0
+      "match_count": 0,
+      "scouting": [
+        {
+          "kind": "strength",
+          "short": "Wins 62% of points",
+          "text": "Takes 62% of all points played, a margin that usually converts to comfortable wins."
+        },
+        {
+          "kind": "strength",
+          "short": "Low double faults (1.7%)",
+          "text": "Second-serve mechanics hold up: just 1.7% double faults across the sample."
+        },
+        {
+          "kind": "weakness",
+          "short": "2nd serve won 38%",
+          "text": "Second-serve points won sits at 38% \u2014 opponents step in and attack the second delivery."
+        }
+      ]
     },
     {
       "name": "Stefan Regalia",

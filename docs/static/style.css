@@ -331,6 +331,9 @@ button:hover { border-color: var(--accent); }
 }
 
 .roster-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   text-align: left;
   padding: 12px 14px;
   border: 1px solid var(--border);
@@ -356,9 +359,73 @@ button:hover { border-color: var(--accent); }
   color: var(--muted);
 }
 
+.scouting-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.scout {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  padding: 3px 0;
+  line-height: 1.45;
+}
+
+.scout-mark {
+  flex: 0 0 auto;
+  width: 14px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.scout.strength .scout-mark { color: var(--success); }
+.scout.weakness .scout-mark { color: var(--danger); }
+.scout.note .scout-mark { color: var(--muted); }
+
+.scouting-list.compact {
+  margin: 10px 0 2px;
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}
+
+.scouting-list.compact .scout {
+  padding: 2px 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.scouting-list.compact .scout-mark {
+  width: 11px;
+  font-size: 0.8rem;
+}
+
+.scouting-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 18px;
+}
+
+.scouting-card h3 {
+  margin: 0 0 10px;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.scouting-card .scout {
+  font-size: 0.93rem;
+}
+
 .roster-card .badge {
-  display: inline-block;
-  margin-top: 8px;
+  align-self: flex-start;
+  margin-top: 10px;
   font-size: 0.72rem;
   padding: 2px 8px;
   border-radius: 999px;

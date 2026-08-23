@@ -47,6 +47,28 @@
       "detailed": 17,
       "total": 18
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "7 wins over higher-ranked opponents",
+        "text": "Beat 7 better-ranked opponents in this sample, best of them #174 (Federico Cina at Brasov CH) \u2014 the level travels up."
+      },
+      {
+        "kind": "weakness",
+        "short": "1st serve won only 61%",
+        "text": "Just 61% of first-serve points are won \u2014 the first ball is not doing enough damage."
+      },
+      {
+        "kind": "weakness",
+        "short": "8-10 record",
+        "text": "Winning only 44% of matches (8-10) \u2014 results are not yet matching the level."
+      },
+      {
+        "kind": "weakness",
+        "short": "Few free points (0.9% aces)",
+        "text": "Only 0.9% of serves are aces, so almost every service point has to be won in the rally."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [
@@ -468,6 +490,28 @@
       "detailed": 17,
       "total": 18
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "7 wins over higher-ranked opponents",
+        "text": "Beat 7 better-ranked opponents in this sample, best of them #174 (Federico Cina at Brasov CH) \u2014 the level travels up."
+      },
+      {
+        "kind": "weakness",
+        "short": "1st serve won only 61%",
+        "text": "Just 61% of first-serve points are won \u2014 the first ball is not doing enough damage."
+      },
+      {
+        "kind": "weakness",
+        "short": "8-10 record",
+        "text": "Winning only 44% of matches (8-10) \u2014 results are not yet matching the level."
+      },
+      {
+        "kind": "weakness",
+        "short": "Few free points (0.9% aces)",
+        "text": "Only 0.9% of serves are aces, so almost every service point has to be won in the rally."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [

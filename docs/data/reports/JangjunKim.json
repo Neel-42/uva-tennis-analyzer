@@ -47,6 +47,28 @@
       "detailed": 20,
       "total": 20
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "1st serve won 75%",
+        "text": "Wins 75% of first-serve points \u2014 the first ball reliably sets up the point."
+      },
+      {
+        "kind": "strength",
+        "short": "9 wins over higher-ranked opponents",
+        "text": "Beat 9 better-ranked opponents in this sample, best of them #421 (Maximus Jones at M15 Tokyo) \u2014 the level travels up."
+      },
+      {
+        "kind": "strength",
+        "short": "Wins 55% of points",
+        "text": "Takes 55% of all points played, a margin that usually converts to comfortable wins."
+      },
+      {
+        "kind": "weakness",
+        "short": "Softest area: ace rate (7.2%)",
+        "text": "Nothing here reads as a real flaw \u2014 the most improvable number is the ace rate at 7.2%."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [
@@ -487,6 +509,28 @@
       "detailed": 20,
       "total": 20
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "1st serve won 75%",
+        "text": "Wins 75% of first-serve points \u2014 the first ball reliably sets up the point."
+      },
+      {
+        "kind": "strength",
+        "short": "9 wins over higher-ranked opponents",
+        "text": "Beat 9 better-ranked opponents in this sample, best of them #421 (Maximus Jones at M15 Tokyo) \u2014 the level travels up."
+      },
+      {
+        "kind": "strength",
+        "short": "Wins 55% of points",
+        "text": "Takes 55% of all points played, a margin that usually converts to comfortable wins."
+      },
+      {
+        "kind": "weakness",
+        "short": "Softest area: ace rate (7.2%)",
+        "text": "Nothing here reads as a real flaw \u2014 the most improvable number is the ace rate at 7.2%."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [

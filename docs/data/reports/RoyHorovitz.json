@@ -48,6 +48,28 @@
       "detailed": 1,
       "total": 8
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "Wins 62% of points",
+        "text": "Takes 62% of all points played, a margin that usually converts to comfortable wins."
+      },
+      {
+        "kind": "strength",
+        "short": "Low double faults (1.7%)",
+        "text": "Second-serve mechanics hold up: just 1.7% double faults across the sample."
+      },
+      {
+        "kind": "weakness",
+        "short": "2nd serve won 38%",
+        "text": "Second-serve points won sits at 38% \u2014 opponents step in and attack the second delivery."
+      },
+      {
+        "kind": "weakness",
+        "short": "3-5 record",
+        "text": "Winning only 38% of matches (3-5) \u2014 results are not yet matching the level."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [
@@ -363,6 +385,28 @@
       "detailed": 0,
       "total": 3
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "Wins 62% of points",
+        "text": "Takes 62% of all points played, a margin that usually converts to comfortable wins."
+      },
+      {
+        "kind": "strength",
+        "short": "Return pressure (DR 1.50)",
+        "text": "Dominance ratio of 1.50 means return games create more damage than opponents manage in reply."
+      },
+      {
+        "kind": "strength",
+        "short": "Ad-side serve (modeled)",
+        "text": "The model leans on the ad court (85% of serve points won vs 70% on the deuce side), though this split follows charted reference rates rather than tracked data for this player."
+      },
+      {
+        "kind": "note",
+        "short": "Small sample (3 matches)",
+        "text": "Only 3 matches in this filter, so treat every figure above as indicative rather than settled."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [
@@ -573,6 +617,28 @@
       "detailed": 1,
       "total": 5
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "Wins 62% of points",
+        "text": "Takes 62% of all points played, a margin that usually converts to comfortable wins."
+      },
+      {
+        "kind": "weakness",
+        "short": "Return pressure light (DR 0.59)",
+        "text": "Dominance ratio of 0.59 \u2014 struggles to hurt opponents on return, so holds have to carry every match."
+      },
+      {
+        "kind": "weakness",
+        "short": "2nd serve won 38%",
+        "text": "Second-serve points won sits at 38% \u2014 opponents step in and attack the second delivery."
+      },
+      {
+        "kind": "weakness",
+        "short": "2-3 record",
+        "text": "Winning only 40% of matches (2-3) \u2014 results are not yet matching the level."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [

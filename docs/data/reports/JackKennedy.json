@@ -48,6 +48,28 @@
       "detailed": 22,
       "total": 23
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "Closes tight matches (9-3)",
+        "text": "9-3 in three-setters \u2014 holds up physically and mentally in long matches."
+      },
+      {
+        "kind": "strength",
+        "short": "8 wins over higher-ranked opponents",
+        "text": "Beat 8 better-ranked opponents in this sample, best of them #177 (Daniil Glinka at Tallahassee CH) \u2014 the level travels up."
+      },
+      {
+        "kind": "weakness",
+        "short": "1st serve won only 61%",
+        "text": "Just 61% of first-serve points are won \u2014 the first ball is not doing enough damage."
+      },
+      {
+        "kind": "weakness",
+        "short": "2nd serve won 46%",
+        "text": "Second-serve points won sits at 46% \u2014 opponents step in and attack the second delivery."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [
@@ -528,6 +550,28 @@
       "detailed": 5,
       "total": 6
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "2 wins over higher-ranked opponents",
+        "text": "Beat 2 better-ranked opponents in this sample, best of them #209 (Liam Broady at Cary CH) \u2014 the level travels up."
+      },
+      {
+        "kind": "strength",
+        "short": "Ad-side serve (modeled)",
+        "text": "The model leans on the ad court (85% of serve points won vs 69% on the deuce side), though this split follows charted reference rates rather than tracked data for this player."
+      },
+      {
+        "kind": "weakness",
+        "short": "2nd serve won 42%",
+        "text": "Second-serve points won sits at 42% \u2014 opponents step in and attack the second delivery."
+      },
+      {
+        "kind": "weakness",
+        "short": "1st serve in 56%",
+        "text": "Lands only 56% of first serves, which means living on the second ball too often."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [
@@ -819,6 +863,28 @@
       "detailed": 17,
       "total": 17
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "Closes tight matches (8-2)",
+        "text": "8-2 in three-setters \u2014 holds up physically and mentally in long matches."
+      },
+      {
+        "kind": "strength",
+        "short": "13-4 record",
+        "text": "Winning 76% of matches in this sample (13-4)."
+      },
+      {
+        "kind": "strength",
+        "short": "6 wins over higher-ranked opponents",
+        "text": "Beat 6 better-ranked opponents in this sample, best of them #177 (Daniil Glinka at Tallahassee CH) \u2014 the level travels up."
+      },
+      {
+        "kind": "weakness",
+        "short": "1st serve won only 60%",
+        "text": "Just 60% of first-serve points are won \u2014 the first ball is not doing enough damage."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [

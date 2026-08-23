@@ -98,6 +98,22 @@ function renderSummaryPieCell(cell) {
     </div>`;
 }
 
+const KIND_MARK = { strength: "+", weakness: "−", note: "·" };
+
+function renderScoutingList(items, compact = false) {
+  if (!items?.length) return "";
+  return `<ul class="scouting-list${compact ? " compact" : ""}">
+    ${items
+      .map(
+        (s) => `<li class="scout ${s.kind}">
+          <span class="scout-mark" aria-hidden="true">${KIND_MARK[s.kind] || "·"}</span>
+          <span class="scout-text">${compact ? s.short : s.text}</span>
+        </li>`
+      )
+      .join("")}
+  </ul>`;
+}
+
 function renderSurfaceChips(report) {
   const wrap = $("#surface-filter");
   const counts = report.surfaceCounts || {};
@@ -224,6 +240,15 @@ function renderReport(report) {
       </div>
     </div>
 
+    ${
+      report.scoutingReport?.length
+        ? `<div class="scouting-card">
+      <h3>Strengths &amp; weaknesses</h3>
+      ${renderScoutingList(report.scoutingReport)}
+    </div>`
+        : ""
+    }
+
     <div class="callout">${report.note}</div>
 
     <div class="grid-4">
@@ -275,17 +300,6 @@ function renderReport(report) {
       <ul>${(report.coachingNotes || []).map((n) => `<li>${n}</li>`).join("") || "<li>—</li>"}</ul>
     </div>
 
-    <div class="grid-2">
-      <div class="section">
-        <h3>Strengths</h3>
-        <ul>${(report.strengths || []).map((n) => `<li>${n}</li>`).join("") || "<li>—</li>"}</ul>
-      </div>
-      <div class="section">
-        <h3>Development</h3>
-        <ul>${(report.development || []).map((n) => `<li>${n}</li>`).join("") || "<li>—</li>"}</ul>
-      </div>
-    </div>
-
     ${renderFeaturedMatches(report.featuredMatches, label)}
 
     ${renderMatchList(report.matches)}
@@ -322,6 +336,7 @@ function renderRosterGrid(filter = "") {
         <button type="button" class="roster-card${active}" data-name="${p.name}">
           <div class="name">${p.name}</div>
           <div class="meta">${p.class_year || "UVA"}${p.hometown ? ` · ${p.hometown}` : ""}</div>
+          ${renderScoutingList(p.scouting, true)}
           ${badge}
         </button>`;
     })
@@ -355,8 +370,25 @@ async function loadRoster(refresh = false) {
     rosterPlayers = data.players || [];
     renderRosterGrid($("#roster-query").value);
     setStatus(`${rosterPlayers.length} players on ${data.season || "current"} roster`);
+    loadScoutingBullets();
   } catch (err) {
     setStatus(err.message || "Failed to load roster", true);
+  }
+}
+
+/** Local dev only: bullets are baked into roster.json for the static build. */
+async function loadScoutingBullets() {
+  if (STATIC_MODE) return;
+  try {
+    const res = await fetch(apiUrl("/api/uva-roster-scouting"));
+    const data = await res.json();
+    if (!data.scouting) return;
+    rosterPlayers = rosterPlayers.map((p) =>
+      data.scouting[p.name] ? { ...p, scouting: data.scouting[p.name] } : p
+    );
+    renderRosterGrid($("#roster-query").value);
+  } catch {
+    // Tiles stay useful without bullets; the full report still loads on click.
   }
 }
 
@@ -381,19 +413,28 @@ async function loadReports(slug, surface = "all") {
 }
 
 async function selectRosterPlayer(name) {
-  activeRosterName = name;
+  const q = name.trim().toLowerCase();
+  const entry =
+    rosterPlayers.find((p) => p.name.toLowerCase() === q) ||
+    rosterPlayers.find((p) => p.name.toLowerCase().includes(q));
+
+  if (!entry) {
+    setStatus(`No UVA roster player matches "${name}"`, true);
+    return;
+  }
+
+  activeRosterName = entry.name;
   currentSurface = "all";
   renderRosterGrid($("#roster-query").value);
-  setStatus(`Building comprehensive analysis for ${name}…`);
-  $("#player-query").value = name;
+  setStatus(`Building comprehensive analysis for ${entry.name}…`);
+  $("#player-query").value = entry.name;
 
   try {
-    const entry = rosterPlayers.find((p) => p.name === name);
-    if (!entry?.has_data || !entry?.slug) {
-      showNoData(name);
+    if (!entry.has_data || !entry.slug) {
+      showNoData(entry.name);
       return;
     }
-    await loadPlayerReport(entry.slug, name);
+    await loadPlayerReport(entry.slug, entry.name);
   } catch (err) {
     setStatus(err.message || "Failed to load player", true);
   }

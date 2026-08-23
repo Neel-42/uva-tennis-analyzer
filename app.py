@@ -10,10 +10,10 @@ from flask import Flask, jsonify, render_template, request
 
 sys.path.insert(0, os.path.dirname(__file__))
 
+from lib.aggregate import build_player_report, scouting_highlights
 from lib.analysis import build_match_analysis
-from lib.pie_charts import build_pie_charts
-from lib.aggregate import build_player_report
 from lib.college_matches import fetch_player_matches
+from lib.pie_charts import build_pie_charts
 from lib.tennis_abstract import (
     fetch_player,
     match_to_dict,
@@ -23,6 +23,8 @@ from lib.tennis_abstract import (
 from lib.uva_roster import enrich_roster_player, get_uva_roster, roster_to_dict
 
 app = Flask(__name__)
+
+_SCOUTING_CACHE: dict[str, list[dict]] = {}
 
 PAGES_ORIGINS = (
     "https://neel-42.github.io",
@@ -66,6 +68,26 @@ def api_uva_roster():
         )
     except Exception as exc:  # noqa: BLE001
         return jsonify({"error": str(exc), "players": []}), 500
+
+
+@app.get("/api/uva-roster-scouting")
+def api_uva_roster_scouting():
+    """Short scouting bullets per roster player. Scrapes on first call, then cached."""
+    if _SCOUTING_CACHE:
+        return jsonify({"scouting": _SCOUTING_CACHE})
+    try:
+        for entry in get_uva_roster():
+            if not entry.slug or not entry.has_data:
+                continue
+            try:
+                profile, matches = fetch_player_matches(entry.slug)
+                report = build_player_report(profile, matches, "all")
+                _SCOUTING_CACHE[entry.name] = scouting_highlights(report.get("scoutingReport", []))
+            except Exception:  # noqa: BLE001, S112
+                continue
+        return jsonify({"scouting": _SCOUTING_CACHE})
+    except Exception as exc:  # noqa: BLE001
+        return jsonify({"error": str(exc), "scouting": {}}), 500
 
 
 @app.get("/api/uva-roster/<path:player_name>")

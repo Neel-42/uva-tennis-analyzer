@@ -20,7 +20,7 @@ REPORTS_DIR = DATA_DIR / "reports"
 
 sys.path.insert(0, str(ROOT))
 
-from lib.aggregate import build_all_surface_reports  # noqa: E402
+from lib.aggregate import build_all_surface_reports, scouting_highlights  # noqa: E402
 from lib.college_matches import fetch_player_matches  # noqa: E402
 from lib.tennis_abstract import match_to_dict, profile_to_dict  # noqa: E402
 from lib.uva_roster import enrich_roster_player, get_uva_roster, roster_to_dict  # noqa: E402
@@ -33,21 +33,14 @@ def export_static_data() -> None:
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
 
     roster = get_uva_roster(refresh=True)
-    roster_payload = {
-        "team": "Virginia Cavaliers Men's Tennis",
-        "season": "2026-27",
-        "source": "virginiasports.com",
-        "players": roster_to_dict(roster),
-    }
-    (DATA_DIR / "roster.json").write_text(json.dumps(roster_payload, indent=2))
-    print(f"Wrote roster ({len(roster_payload['players'])} players)")
+    scouting: dict[str, list[dict]] = {}
 
     for entry in roster:
         if not entry.slug or not entry.has_data:
             continue
         for attempt in range(1, SCRAPE_ATTEMPTS + 1):
             try:
-                export_player(entry.name)
+                scouting[entry.name] = export_player(entry.name)
                 break
             except Exception as exc:  # noqa: BLE001
                 if attempt < SCRAPE_ATTEMPTS:
@@ -56,8 +49,23 @@ def export_static_data() -> None:
                 else:
                     print(f"  skip {entry.name}: {exc}")
 
+    players = roster_to_dict(roster)
+    for player in players:
+        bullets = scouting.get(player["name"])
+        if bullets:
+            player["scouting"] = bullets
 
-def export_player(name: str) -> None:
+    roster_payload = {
+        "team": "Virginia Cavaliers Men's Tennis",
+        "season": "2026-27",
+        "source": "virginiasports.com",
+        "players": players,
+    }
+    (DATA_DIR / "roster.json").write_text(json.dumps(roster_payload, indent=2))
+    print(f"Wrote roster ({len(players)} players, {len(scouting)} with scouting bullets)")
+
+
+def export_player(name: str) -> list[dict]:
     player = enrich_roster_player(name)
     if not player or not player.slug:
         raise LookupError("no Tennis Abstract slug resolved")
@@ -72,6 +80,7 @@ def export_player(name: str) -> None:
     (REPORTS_DIR / f"{player.slug}.json").write_text(json.dumps(reports, indent=2))
     surfaces = ", ".join(k for k in reports if k != "all")
     print(f"  player {player.slug}: {len(matches)} matches ({surfaces or 'single surface'})")
+    return scouting_highlights(reports["all"].get("scoutingReport", []))
 
 
 def build_html() -> None:

@@ -48,6 +48,28 @@
       "detailed": 21,
       "total": 35
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "1st serve won 75%",
+        "text": "Wins 75% of first-serve points \u2014 the first ball reliably sets up the point."
+      },
+      {
+        "kind": "strength",
+        "short": "27-8 record",
+        "text": "Winning 77% of matches in this sample (27-8)."
+      },
+      {
+        "kind": "strength",
+        "short": "11 wins over higher-ranked opponents",
+        "text": "Beat 11 better-ranked opponents in this sample, best of them #126 (Otto Virtanen at Gstaad) \u2014 the level travels up."
+      },
+      {
+        "kind": "weakness",
+        "short": "Softest area: ace rate (7.3%)",
+        "text": "Nothing here reads as a real flaw \u2014 the most improvable number is the ace rate at 7.3%."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [
@@ -657,6 +679,23 @@
       "detailed": 0,
       "total": 14
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "12-2 record",
+        "text": "Winning 86% of matches in this sample (12-2)."
+      },
+      {
+        "kind": "strength",
+        "short": "Closes tight matches (8-2)",
+        "text": "8-2 in three-setters \u2014 holds up physically and mentally in long matches."
+      },
+      {
+        "kind": "strength",
+        "short": "Ad-side serve (modeled)",
+        "text": "The model leans on the ad court (85% of serve points won vs 70% on the deuce side), though this split follows charted reference rates rather than tracked data for this player."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [
@@ -1034,6 +1073,28 @@
       "detailed": 21,
       "total": 21
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "1st serve won 75%",
+        "text": "Wins 75% of first-serve points \u2014 the first ball reliably sets up the point."
+      },
+      {
+        "kind": "strength",
+        "short": "11 wins over higher-ranked opponents",
+        "text": "Beat 11 better-ranked opponents in this sample, best of them #126 (Otto Virtanen at Gstaad) \u2014 the level travels up."
+      },
+      {
+        "kind": "strength",
+        "short": "Wins 55% of points",
+        "text": "Takes 55% of all points played, a margin that usually converts to comfortable wins."
+      },
+      {
+        "kind": "weakness",
+        "short": "Softest area: ace rate (7.3%)",
+        "text": "Nothing here reads as a real flaw \u2014 the most improvable number is the ace rate at 7.3%."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [

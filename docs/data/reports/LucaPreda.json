@@ -48,6 +48,28 @@
       "detailed": 19,
       "total": 19
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "5 wins over higher-ranked opponents",
+        "text": "Beat 5 better-ranked opponents in this sample, best of them #188 (Oliver Crawford at Hersonissos 6 CH) \u2014 the level travels up."
+      },
+      {
+        "kind": "weakness",
+        "short": "Fades late (3-7 in 3 sets)",
+        "text": "Only 3-7 in matches that went the distance \u2014 closing out is the clear gap."
+      },
+      {
+        "kind": "weakness",
+        "short": "2nd serve won 45%",
+        "text": "Second-serve points won sits at 45% \u2014 opponents step in and attack the second delivery."
+      },
+      {
+        "kind": "weakness",
+        "short": "1st serve won only 64%",
+        "text": "Just 64% of first-serve points are won \u2014 the first ball is not doing enough damage."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [
@@ -481,6 +503,28 @@
       "detailed": 9,
       "total": 9
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "3 wins over higher-ranked opponents",
+        "text": "Beat 3 better-ranked opponents in this sample, best of them #188 (Oliver Crawford at Hersonissos 6 CH) \u2014 the level travels up."
+      },
+      {
+        "kind": "weakness",
+        "short": "Fades late (1-5 in 3 sets)",
+        "text": "Only 1-5 in matches that went the distance \u2014 closing out is the clear gap."
+      },
+      {
+        "kind": "weakness",
+        "short": "4-5 record",
+        "text": "Winning only 44% of matches (4-5) \u2014 results are not yet matching the level."
+      },
+      {
+        "kind": "weakness",
+        "short": "1st serve won only 64%",
+        "text": "Just 64% of first-serve points are won \u2014 the first ball is not doing enough damage."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [
@@ -804,6 +848,28 @@
       "detailed": 10,
       "total": 10
     },
+    "scoutingReport": [
+      {
+        "kind": "strength",
+        "short": "2 wins over higher-ranked opponents",
+        "text": "Beat 2 better-ranked opponents in this sample, best of them #276 (Marko Topo at Iasi CH) \u2014 the level travels up."
+      },
+      {
+        "kind": "strength",
+        "short": "Wins 53% of points",
+        "text": "Takes 53% of all points played, a margin that usually converts to comfortable wins."
+      },
+      {
+        "kind": "weakness",
+        "short": "2nd serve won 43%",
+        "text": "Second-serve points won sits at 43% \u2014 opponents step in and attack the second delivery."
+      },
+      {
+        "kind": "weakness",
+        "short": "1st serve won only 64%",
+        "text": "Just 64% of first-serve points are won \u2014 the first ball is not doing enough damage."
+      }
+    ],
     "serve": {
       "verdict": "Ad side",
       "cells": [
